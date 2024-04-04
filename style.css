@@ -99,3 +99,13 @@ button:hover {
     border: 1px solid gray;
     border-radius: 5px;
   }
+  
+.t-container {
+        text-align: center;
+        margin-top: 50px; /* 添加顶部间距 */
+    }
+    img {
+        width: 50px; /* 设置图片宽度 */
+        height: auto; /* 保持宽高比 */
+        margin-right: 10px; /* 设置图片和标题之间的间距 */
+    }
