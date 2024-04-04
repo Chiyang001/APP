@@ -49,8 +49,8 @@ h1 {
 }
 
 button {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #ffd700; /* 金色背景 */
+    color: #1a1a1a; /* 暗黑文字颜色 */
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -59,8 +59,14 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #ffc107; /* 鼠标悬停时的金黄色背景 */
 }
+
+
+.single-column .app {
+            width: 100%; /* 设置为单列布局 */
+            margin: 10px 0; /* 调整间距 */
+        }
 
 @media (max-width: 768px) {
     .app {
@@ -109,3 +115,29 @@ button:hover {
         height: auto; /* 保持宽高比 */
         margin-right: 10px; /* 设置图片和标题之间的间距 */
     }
+    
+#toggleButton {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 9999;
+    }
+    
+.video-container {
+    text-align: center;
+}
+
+#watchTutorialButton {
+    display: inline-block;
+    background-color: #ffd700; /* 按钮背景色为金色 */
+    color: #1a1a1a; /* 文字颜色为暗黑色 */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#watchTutorialButton:hover {
+    background-color: #ffc107; /* 鼠标悬停时的背景色 */
+}
