@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>华为儿童手表4X应用下载</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+<body>
+
+
+    <div class="container">
+        <h1>华为儿童手表4X应用下载</h1>
+        <div class="app-list">
+        <div class="site-description">
+    <p>欢迎来到华为儿童手表专用应用下载平台，这里汇集了众多专为华为儿童手表4X等型号定制的精选应用。所有安装包均已经进行了v2签名，开启adb之后，直接安装即可使用。安装前您必须要开启adb调试模式，以下是视频教程：</p>
+    <iframe src="https://b23.tv/bELxAlP" width="750" height="450" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+</div>
+            <div class="app">
+                <img src="images/bilibili.png" alt="哔哩终端">
+                <h2>哔哩终端</h2>
+                <p>在手表上也能够尽情刷B站，看评论，还支持登录自己的账号同步账号信息</p>
+                <button onclick="downloadApp('https://120-232-77-23.pd1.123pan.cn:30443/download-cdn.123pan.cn/123-748/cae45188/1813931673-0/cae4518864e3d85e17a56efd2fd60aec/c-m31?v=5&t=1712289384&s=1712289384724eec4653ea0979b029e3ab3ca50945&r=2E0UNB&bzc=2&bzs=313831333933313637333a36333035373736303a383335363239323a30&filename=%E5%93%94%E5%93%A9%E7%BB%88%E7%AB%AF_2.5.1_sign.apk&x-mf-biz-cid=a366d022-3e8a-47c6-b475-b750bd385bb7-584000&auto_redirect=0&ndcp=1&cache_type=1&xmfcid=7b020e2e-8083-4aa9-a668-2d64054994e0-1-abf611255')">下载 App</button>
+
+            </div>
+            <div class="app">
+                <img src="images/google.webp" alt="应用2图标">
+                <h2>谷歌浏览器</h2>
+                <p>在手表上也能够看网页无广告纯净版，不过下载之后可能需要设置一下dpi才能够正常显示</p>
+                <button onclick="downloadApp('https://59-47-225-46.pd1.123pan.cn:30443/download-cdn.123pan.cn/123-906/e691604e/1821515487-0/e691604e24debf7f6fbb29f0de18d78a/c-m17?v=5&t=1712288910&s=1712288910c7498b1a0582b172ed0576aaef181256&r=2BG89X&bzc=2&bzs=313831333933313637333a36333035373735353a36313632313435303a30&filename=ggllqjbb_135166_sign.apk&x-mf-biz-cid=3529f1f5-8709-4ad3-bc28-148b6966d4cf-584000&auto_redirect=0&ndcp=1&cache_type=1&xmfcid=f155beb9-d2eb-48d3-b13f-25d9bb3c2928-1-abf611255')">下载 App</button>
+
+            </div>
+            <div class="app">
+                <img src="images/shizuku.png" alt="应用1图标">
+                <h2>shizuku</h2>
+                <p>为其他的应用获取adb权限，在手表上也能够尽情玩机</p>
+                <button onclick="downloadApp('https://120-232-77-31.pd1.123pan.cn:30443/download-cdn.123pan.cn/123-50/79d74285/1813931673-0/79d74285262a37a0e36642f7060b0832/c-m31?v=5&t=1712288446&s=1712288446b98975cef92759116865820de7f554c1&r=2PWLKM&bzc=2&bzs=313831333933313637333a36333035373735343a333434363436303a30&filename=moe.shizuku.privileged.api_sign.apk&x-mf-biz-cid=9f978756-e24d-4ff6-be92-b61b851996b4-3dab77&auto_redirect=0&ndcp=1&cache_type=1&xmfcid=97b6f256-ee74-429d-b3a8-8539265cab3f-0-abf611255')">下载 App</button>
+
+            </div>
+            <div class="app">
+                <img src="images/Kimi.png" alt="应用2图标">
+                <h2>Kimi</h2>
+                <p>国内人工智能模型应用，在手表上也能够体验GPT的强大</p>
+                <button onclick="downloadApp('https://59-47-225-69.pd1.123pan.cn:30443/download-cdn.123pan.cn/123-689/3074f4be/1813931673-0/3074f4be3d6cc78f68810b27952ae6b1/c-m31?v=5&t=1712289109&s=171228910905dd8f2b97cea54b78141d7200f79c01&r=EHLS77&bzc=2&bzs=313831333933313637333a36333035373735363a33343731303735313a30&filename=Kimi+Chat_1.0_sign.apk&x-mf-biz-cid=3044a37c-7c3c-42fa-a633-93ec5a2fbf9f-6eaa77&auto_redirect=0&ndcp=1&cache_type=1&xmfcid=e886627d-6a10-4457-b1de-608b9e94d1a5-1-abf611255')">下载 App</button>
+
+            </div>
+            <div class="app">
+                <img src="images/rarebox.webp" alt="应用1图标">
+                <h2>rarebox</h2>
+                <p>一款手表上也能玩机的应用，可以在手表上对其进行adb命令控制，修改屏幕分辨率，dpi等等</p>
+                <button onclick="downloadApp('https://59-47-225-43.pd1.123pan.cn:30443/download-cdn.123pan.cn/123-616/596329c5/1813931673-0/596329c56affe12a7dab487e303a4268/c-m31?v=5&t=1712289198&s=171228919872c285a1ec2a316c85a6f76c13280851&r=EG3NFS&bzc=2&bzs=313831333933313637333a36333035373735373a3632303435393a30&filename=RareBox_3.3_sign.apk&x-mf-biz-cid=a3ce49d9-076a-4d30-944b-2fe8cdc63206-6eaa77&auto_redirect=0&ndcp=1&cache_type=1&xmfcid=e2c52903-180e-4887-9322-de9d830fd093-1-abf611255')">下载 App</button>
+
+            </div>
+            <div class="app">
+                <img src="images/cleaner.png" alt="应用2图标">
+                <h2>内存清理</h2>
+                <p>界面简洁，点击一下按钮就可以清理所有的后台应用及其缓存，支持进入应用自动清理</p>
+                <button onclick="downloadApp('https://59-47-225-70.pd1.123pan.cn:30443/download-cdn.123pan.cn/123-224/5d0d215d/1821515487-0/5d0d215d0998c26487d4531e20d208e0/c-m23?v=5&t=1712289256&s=171228925691b3c1c9c42a2db6086bc205aee2f9f9&r=ETXQ0V&bzc=2&bzs=313831333933313637333a36333035373735383a3235383833373a30&filename=Memory+Cleaner_1.0_sign.apk&x-mf-biz-cid=9364d2ef-ab32-4f36-88c7-b1d638873c4e-584000&auto_redirect=0&ndcp=1&cache_type=1&xmfcid=6e175e52-c568-4bd9-8b83-250b8bce4749-0-abf611255')">下载 App</button>
+
+            </div>
+            <div class="app">
+                <img src="app1-icon.png" alt="应用1图标">
+                <h2>应用1</h2>
+                <p>应用1的简介...</p>
+                <button onclick="downloadApp('http://example.com/app1')">下载 App1</button>
+
+            </div>
+            <div class="app">
+                <img src="app2-icon.png" alt="应用2图标">
+                <h2>应用2</h2>
+                <p>应用2的简介...</p>
+                <button onclick="downloadApp('http://example.com/app1')">下载 App1</button>
+
+            </div>
+        </div>
+    </div>
+    <div class="more">
+    更多应用即将上线，敬请期待
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>
