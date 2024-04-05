@@ -18,13 +18,18 @@
     <div class="container">
         <div class="app-list">
         <div class="site-description">
-    <p>欢迎来到华为儿童手表专用应用下载平台，这里汇集了众多专为华为儿童手表定制的精选应用。所有安装包均已经进行了v1+v2签名，每一款应用均经过UP主亲自验证，开启adb之后，直接安装即可使用。安装前您必须要开启adb调试模式，以下是视频教程：（破解教程提供UP主e装机和-Symbian_S60V3）</p>
+    <p>欢迎来到华为儿童手表专用应用下载平台，这里汇集了众多专为华为儿童手表定制的精选应用。本平台是开源平台，若要成为开发者可以联系QQ：3083248889，加入到我们团队中来！所有安装包均已经进行了v1+v2签名，每一款应用均经过UP主亲自验证，开启adb之后，直接安装即可使用。安装前您必须要开启adb调试模式，以下是视频教程：（破解教程提供UP主：e装机和-Symbian_S60V3）</p>
     <div class="video-container">
     <div id="videoPlayer" style="display: none;">
         <iframe id="videoFrame" src="" width="750" height="450" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
     </div>
     <button id="watchTutorialButton" onclick="showVideo()">观看教程</button>
 </div>
+           <div class="container">
+        <div class="app-list">
+        <div class="site-description">
+    <p>4x的运行adb指令行的代码 setprop service.adb.tcp.port 5555</p>
+    <div class="video-container">
 
 
 </div>
