@@ -23,9 +23,11 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    transition: flex-direction 0.5s ease; /* 添加过渡效果 */
 }
 
 .app {
+    position: relative;
     background: rgba(255, 255, 255, 0.1); /* 毛玻璃效果 */
     backdrop-filter: blur(10px);
     border: 2px solid #ffd700; /* 金色边框 */
@@ -159,3 +161,56 @@ button:hover {
 .footer-content p {
     margin: 5px 0;
 }
+
+/* 小圆点基本样式 */
+.app .dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: #ffd700; /* 金色 */
+    opacity: 0; /* 初始时不可见 */
+    z-index: 10;
+}
+
+/* 小圆点沿边框移动的动画 */
+@keyframes move-dot {
+    0%, 100% {
+        top: 0;
+        left: 0;
+        opacity: 1;
+    }
+    25% {
+        top: 0;
+        left: 100%;
+        transform: translateX(-100%);
+    }
+    50% {
+        top: 100%;
+        left: 100%;
+        transform: translate(-100%, -100%);
+    }
+    75% {
+        top: 100%;
+        left: 0;
+        transform: translateY(-100%);
+    }
+}
+
+
+/* 小圆点大小变化的动画 */
+@keyframes size-dot {
+    0%, 100% {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    50% {
+        width: 10px; /* 或根据您的设计调整大小 */
+        height: 10px;
+        opacity: 1;
+    }
+}
+
