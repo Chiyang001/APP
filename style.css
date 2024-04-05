@@ -214,3 +214,19 @@ button:hover {
     }
 }
 
+.developer-info {
+    font-size: 16px; /* 字体大小调整为16px */
+    color: #ffd700; /* 金色文字 */
+    font-weight: normal; /* 正常字体权重 */
+    margin-top: 20px; /* 上边距 */
+    padding: 10px; /* 内边距 */
+    background-color: #000; /* 黑色背景 */
+    border: 2px solid #ffd700; /* 金色边框 */
+    border-radius: 8px; /* 边框圆角 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 盒阴影，增强立体感 */
+    text-align: center; /* 文本居中 */
+    width: fit-content; /* 宽度根据内容自适应 */
+    margin-left: auto; /* 左边距自动 */
+    margin-right: auto; /* 右边距自动 */
+    display: block; /* 使margin auto生效，居中对齐 */
+}
