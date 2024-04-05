@@ -79,8 +79,9 @@ function stopAnimation(dot) {
 }
 
 // 点击应用容器时启动动画
+// 鼠标进入应用容器时启动动画
 document.querySelectorAll('.app').forEach(app => {
-    app.addEventListener('click', function() {
+    app.addEventListener('mouseenter', function() {
         const dot = this.querySelector('.dot');
         if (dot) {
             startAnimation(dot);
