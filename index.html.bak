@@ -30,6 +30,14 @@
 
 
 </div>
+           <div class="app">
+                <div class="dot"></div>
+                <img src="images/自主安装应用全家桶.png" alt="dadashuai">
+                <h2>自主安装应用全家桶</h2>
+                <p>可以让手表自主安装应用哦！~</p>
+                <button onclick="downloadApp('https://www.123pan.com/s/aJY1jv-XEv4H.html')">下载 App</button>
+
+            </div>
 
            <div class="app">
                 <img src="images/anzhuangshi.png" alt="莘应用（原易档商店）">
