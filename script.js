@@ -46,6 +46,20 @@ function showVideo2() {
     videoPlayer.style.display = "block";
 }
 
+function showVideo3() {
+    var videoContainer = document.querySelector('.video-container');
+    var watchTutorialButton = document.getElementById('watchTutorialButton2');
+    var videoPlayer = document.getElementById('videoPlayer');
+    var videoFrame = document.getElementById('videoFrame');
+    
+    // 设置视频播放器的 src 属性
+    videoFrame.src = "https://b23.tv/BV1kF4m1K7Q9";
+    
+    // 隐藏观看教程按钮，显示视频播放器
+    watchTutorialButton.style.display = "none";
+    videoPlayer.style.display = "block";
+}
+
 function copyText() {
   var text = document.getElementById("codeToCopy").innerText; // 获取文本
   var textarea = document.createElement("textarea"); // 创建textarea元素
