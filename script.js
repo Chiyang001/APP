@@ -48,7 +48,7 @@ function showVideo2() {
 
 function showVideo3() {
     var videoContainer = document.querySelector('.video-container');
-    var watchTutorialButton = document.getElementById('watchTutorialButton2');
+    var watchTutorialButton = document.getElementById('watchTutorialButton3');
     var videoPlayer = document.getElementById('videoPlayer');
     var videoFrame = document.getElementById('videoFrame');
     
