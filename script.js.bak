@@ -1,4 +1,0 @@
-function downloadApp(appName) {
-    alert('正在下载 ' + appName);
-    // 实际下载逻辑
-}
