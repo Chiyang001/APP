@@ -67,7 +67,7 @@ button:hover {
 button-view {
     background-color: #ffd700; /* 金色背景 */
     color: #1a1a1a; /* 暗黑文字颜色 */
-    padding: 10px 20px;
+    padding: 8px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
