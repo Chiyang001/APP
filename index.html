@@ -11,76 +11,39 @@
 <button-view id="toggleButton" onclick="toggleLayout()">切换至手表/电脑手机视图</button-view>
 
 
-   <style>
-        .t-container {
-            text-align: center;
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .app-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .site-description {
-            text-align: left;
-        }
-        .video-container {
-            display: none;
-        }
-    </style>
-</head>
-<body>
-    <div class="t-container">
-        <img alt="哔哩终端">
-        <h1>华为儿童手表应用下载站</h1>
-        <p class="developer-info">开发者：@炽阳001、@e装机、@是大大帅aaa</p>
-        <p class="developer-info">QQ群：奕奕交流群&#127915;797541418</p>
+   <div class="t-container">
+    <img src="favicon.ico" alt="哔哩终端">
+    <h1>华为儿童手表应用下载站</h1>
+    <p class="developer-info">开发者：@炽阳001、@e装机、@是大大帅aaa</p>
+    <p class="developer-info">QQ群：奕奕交流群🎫797541418</p>
     </div>
 
     <div class="container">
         <div class="app-list">
-            <!-- 应用列表内容 -->
-        </div>
         <div class="site-description">
-            <p>欢迎来到华为儿童手表专用应用下载平台，这里汇集了众多专为华为儿童手表定制的精选应用。本平台是开源平台，若要成为开发者可以联系QQ：3083248889，加入到我们团队中来！所有安装包均已经进行了v1+v2签名，每一款应用均经过UP主亲自验证，开启adb之后，直接安装即可使用。安装前您必须要开启adb调试模式，以下是视频教程：（破解教程提供UP主：e装机和Symbian_S60V3）</p>
-            <p>华为儿童手表4x开启adb的代码（e装机提供）：</p>
-            <p id="codeToCopy">adb shell setprop service.adb.tcp.port 5555</p>
-            <button onclick="copyText()">复制代码</button>
-        </div>
-        <div class="video-container">
-            <iframe id="videoFrame" width="750" height="490" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-            <button id="watchTutorialButton" onclick="showVideo()">观看Symbian_S60V3教程</button>
-            <button id="watchTutorialButton2" onclick="showVideo2()">观看e装机教程</button>
-            <button id="watchTutorialButton3" onclick="showVideo3()">观看第三方相机教程</button>
-        </div>
+    <p>欢迎来到华为儿童手表专用应用下载平台，这里汇集了众多专为华为儿童手表定制的精选应用。本平台是开源平台，若要成为开发者可以联系QQ：3083248889，加入到我们团队中来！所有安装包均已经进行了v1+v2签名，每一款应用均经过UP主亲自验证，开启adb之后，直接安装即可使用。安装前您必须要开启adb调试模式，以下是视频教程：（破解教程提供UP主：e装机和Symbian_S60V3）</p>
+   <p>华为儿童手表4x开启adb的代码（e装机提供）：</p><p id="codeToCopy">adb shell setprop service.adb.tcp.port 5555</p>
+<button-view onclick="copyText()">复制代码</button-view>
+
+    <div class="video-container">
+    <div id="videoPlayer" style="display: none;">
+        <iframe id="videoFrame" src="" width="750" height="490" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
     </div>
-    <script>
-        function copyText() {
-            var codeToCopy = document.getElementById("codeToCopy");
-            navigator.clipboard.writeText(codeToCopy.innerText);
-            alert("代码已复制");
-        }
+    <button-view id="watchTutorialButton" onclick="showVideo()">观看Symbian_S60V3教程</button-view>
+    <button-view id="watchTutorialButton2" onclick="showVideo2()">观看e装机教程</button-view>
+    <button-view id="watchTutorialButton3" onclick="showVideo3()">观看第三方相机教程</button-view>
+ 
 
-        function showVideo() {
-            document.getElementById("videoFrame").src = "Symbian_S60V3教程链接";
-            document.getElementById("videoContainer").style.display = "block";
-        }
 
-        function showVideo2() {
-            document.getElementById("videoFrame").src = "e装机教程链接";
-            document.getElementById("videoContainer").style.display = "block";
-        }
 
-        function showVideo3() {
-            document.getElementById("videoFrame").src = "第三方相机教程链接";
-            document.getElementById("videoContainer").style.display = "block";
-        }
-    </script>
-</body>
+
+    
+
+
+   
+    
+</div>
+
   
 
 
