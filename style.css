@@ -53,7 +53,7 @@ h1 {
 button {
     background-color: #ffd700; /* 金色背景 */
     color: #1a1a1a; /* 暗黑文字颜色 */
-    padding: 10px 20px;
+    padding: 15px 100px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -63,6 +63,20 @@ button {
 button:hover {
     background-color: #ffc107; /* 鼠标悬停时的金黄色背景 */
 }
+
+button-view {
+    background-color: #ffd700; /* 金色背景 */
+    color: #1a1a1a; /* 暗黑文字颜色 */
+    padding: 13px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #ffc107; /* 鼠标悬停时的金黄色背景 */
+}
+
 
 
 .single-column .app {
