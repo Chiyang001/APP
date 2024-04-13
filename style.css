@@ -79,9 +79,6 @@ button:hover {
     background-color: #ffc107; /* 鼠标悬停时的金黄色背景 */
 }
 
-
-
-
 .single-column .app {
             width: 100%; /* 设置为单列布局 */
             margin: 10px 0; /* 调整间距 */
@@ -146,8 +143,6 @@ button:hover {
     text-align: center;
 }
 
-
-
 .footer {
     background-color: #1a1a1a; /* 黑色背景 */
     color: #ffd700; /* 金色文字 */
@@ -164,73 +159,4 @@ button:hover {
 
 .footer-content p {
     margin: 5px 0;
-}
-
-/* 小圆点基本样式 */
-.app .dot {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-    background-color: #ffd700; /* 金色 */
-    opacity: 0; /* 初始时不可见 */
-    z-index: 10;
-}
-
-/* 小圆点沿边框移动的动画 */
-@keyframes move-dot {
-    0%, 100% {
-        top: 0;
-        left: 0;
-        opacity: 1;
-    }
-    25% {
-        top: 0;
-        left: 100%;
-        transform: translateX(-100%);
-    }
-    50% {
-        top: 100%;
-        left: 100%;
-        transform: translate(-100%, -100%);
-    }
-    75% {
-        top: 100%;
-        left: 0;
-        transform: translateY(-100%);
-    }
-}
-
-
-/* 小圆点大小变化的动画 */
-@keyframes size-dot {
-    0%, 100% {
-        width: 0;
-        height: 0;
-        opacity: 0;
-    }
-    50% {
-        width: 10px; /* 或根据您的设计调整大小 */
-        height: 10px;
-        opacity: 1;
-    }
-}
-
-.developer-info {
-    font-size: 16px; /* 字体大小调整为16px */
-    color: #ffd700; /* 金色文字 */
-    font-weight: normal; /* 正常字体权重 */
-    margin-top: 20px; /* 上边距 */
-    padding: 10px; /* 内边距 */
-    background-color: #000; /* 黑色背景 */
-    border: 2px solid #ffd700; /* 金色边框 */
-    border-radius: 8px; /* 边框圆角 */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 盒阴影，增强立体感 */
-    text-align: center; /* 文本居中 */
-    width: fit-content; /* 宽度根据内容自适应 */
-    margin-left: auto; /* 左边距自动 */
-    margin-right: auto; /* 右边距自动 */
-    display: block; /* 使margin auto生效，居中对齐 */
 }
