@@ -29,51 +29,16 @@
     <div id="videoPlayer" style="display: none;">
         <iframe id="videoFrame" src="" width="750" height="490" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
     </div>
-    <button-view id="watchTutorialButton" onclick="showVideo()">Symbian_S60V3教程</button-view>
-    <button-view id="watchTutorialButton2" onclick="showVideo2()">e装机教程</button-view>
+    <button-view id="watchTutorialButton" onclick="showVideo()">观看Symbian_S60V3教程</button-view>
+    <button-view id="watchTutorialButton2" onclick="showVideo2()">观看e装机教程</button-view>
+    <button-view id="watchTutorialButton3" onclick="showVideo3()">观看第三方相机教程</button-view>
+ 
 
 
-<h1>其他教程</h1>
- <button-view id="watchTutorialButton3" onclick="showVideo3()">第三方相机教程</button-view>
- <button-view id="watchTutorialButton4" onclick="showVideo4()">手表玩原神教程</button-view>
 
 
-<body>
-    <div class="container">
-        <div class="search-box">
-            <type="text" class="search-btn">
-        </div>
-    </div>
-    <h1><div class="timeBox">111</div></h1>
-    <script src="https://kit.fontawesome.com/f23451c27c.js" crossorigin="anonymous"></script>
-    <script>
-        var searchBtn = document.querySelector('.search-btn')
-        var style1 = document.createElement('style')
-        var searchBox = document.querySelector('.search-box')
-        var timeBox = document.querySelector('.timeBox')
-        searchBtn.addEventListener('focus', function () {
-            style1.innerHTML = "body::before{ filter: blur(20px); transform: scale(1.01);}";
-            document.head.appendChild(style1);
-            searchBox.style.width = '440px'
-        })
-        searchBtn.addEventListener('blur', function () {
-            document.head.removeChild(style1);
-            searchBox.style.width = ""
-        })
+    
 
-        setInterval(function () {
-            var date = new Date()
-            let hh = padZero(date.getHours())
-            let mm =padZero( date.getMinutes())
-            let ss = padZero(date.getSeconds())
-            timeBox.innerText = hh + ':' + mm + ':' + ss
-        }, 1000)
-
-        function padZero(n) {
-            return n > 9 ? n : '0' + n
-        }
-    </script>
-</body>
 
    
     
@@ -88,7 +53,7 @@
                 <div class="dot"></div>
                 <img src="https://img.ddooo.com/logo/230804/20230804101947544.png" alt="dadashuai">
                 <h2>ShizukuRunner</h2>
-                <p>一个在手表上使用的命令需要配合Shizuku</p>
+                <p>一个在手表上使用的命令需要配合Shizuk</p>
                 <button onclick="downloadApp('https://fel.forxhr.top:2022/down.php/67ecba48dd628559e9bc166c5ee00cd0.apk')">下载 App</button>
 	   </div>
 		
@@ -97,7 +62,7 @@
                 <img src="https://ts1.cn.mm.bing.net/th/id/R-C.6fe649d068bbaf8d3e15cd54f2745dd6?rik=lYvExSxkunG%2bdg&riu=http%3a%2f%2fimg.talkandroid.com%2fuploads%2f2016%2f09%2fopen-camera-450x450.png&ehk=lED83E9qMngrxImeqn6YI8Qg8I2flwBXPu%2fQLiZCYo8%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="dadashuai">
                 <h2>Open Camera</h2>
                 <p>一个在手表上使用的第三方相机完美兼容</p>
-                <button onclick="downloadApp('https://120-232-77-29.pd1.123pan.cn:30443/download-cdn.123pan.cn/123-808/c1c1ad20/1820688794-0/c1c1ad20a9aa847cffcccdf8c10f4728/c-m31?v=5&t=1713064422&s=1713064422eb74c1c48ffd3332e73bd273ac7fd7de&r=HNOB2B&bzc=2&bzs=313832303638383739343a37373232333233323a343930343437353a31383230363838373934&filename=Open+Camera.apk&x-mf-biz-cid=26939f12-353d-49b2-b959-7322066dba21-584000&auto_redirect=0&ndcp=1&cache_type=1&xmfcid=b67edc01-965b-4782-a9ad-52963bc233ac-0-50111d3b1')">下载 App</button>
+                <button onclick="downloadApp('https://fel.forxhr.top:2022/down.php/c1c1ad20a9aa847cffcccdf8c10f4728.apk')">下载 App</button>
 	   </div>
 		
            <div class="app">
@@ -105,7 +70,7 @@
                 <img src="images/自主安装应用全家桶.png" alt="dadashuai">
                 <h2>自主安装应用全家桶</h2>
                 <p>可以让手表自主安装应用哦！~</p>
-                <button onclick="downloadApp('https://120-232-77-28.pd1.123pan.cn:30443/download-cdn.123pan.cn/batch-download/123-505/a46f68ae/1820688794-0/a46f68ae8552d7389c8afe2bb9f189f9?v=5&t=1713064483&s=1713064483e6ba9f475c43aaac86d50d617e2cc510&r=8DK9YV&bzc=2&bzs=313832303638383739343a37373232333233333a32323438383737343a31383230363838373934&filename=%E3%80%90RareBox%E3%80%91com.yuanwow.adb.apk&cache_type=1&data=1820688794_true_5282732337985970168_web_aJY1jv-vav4H&fromShare=1&auto_redirect=0&x-mf-biz-cid=34bf5f05-1de0-4456-98c5-f0981f29b35e-3dab77&xmfcid=859e2a17-0c87-4c14-bce3-712c1c0d572c-0-50111d3b1')">下载 App</button>
+                <button onclick="downloadApp('https://www.123pan.com/s/aJY1jv-XEv4H.html')">下载 App</button>
 
             </div>
 
@@ -114,7 +79,7 @@
                 <img src="images/磁吸桌面.png" alt="dadashuai">
                 <h2>磁吸桌面安装全家桶</h2>
                 <p>手表桌面，简洁好用</p>
-                <button onclick="downloadApp('https://120-232-77-33.pd1.123pan.cn:30443/download-cdn.123pan.cn/batch-download/123-733/9e0b92f9/1822253580-0/9e0b92f9aae9d90fc47ccc1f0a2692dd?v=5&t=1713063831&s=1713063831ccbc7e9f90c69cf6c1ab868512922f21&r=GGO2FB&bzc=2&bzs=313832303638383739343a37373232333233343a373733323536333a31383230363838373934&filename=square%2B%2Bhome%EF%BC%88%E6%A1%8C%E9%9D%A2%EF%BC%89.apk&cache_type=1&data=1820688794_true_3198291991505624268_web_aJY1jv-dav4H&fromShare=1&auto_redirect=0&x-mf-biz-cid=293b89f8-36b7-465e-88dc-afe15c2939e2-6eaa77&xmfcid=1c78df75-fc76-4c32-a056-7a89d2eb0fe0-1-50111d3b1')">下载 App</button>
+                <button onclick="downloadApp('https://www.123pan.com/s/aJY1jv-WEv4H.html')">下载 App</button>
 
             </div>
 
@@ -123,7 +88,7 @@
                 <img src="images/植物大战僵尸.png" alt="dadashuai">
                 <h2>植物大战僵尸（已改右滑）</h2>
                 <p>可怕的僵尸即将入侵你的家，唯一的防御方式就是你栽种的植物！武装你的植物，切换他们不同的功能，诸如强悍的豌豆射手或樱桃炸弹，更加快速有效的将僵尸阻挡在外！</p>
-                <button onclick="downloadApp('https://120-232-77-35.pd1.123pan.cn:30443/download-cdn.123pan.cn/123-81/21b1d837/1820688794-0/21b1d837e112a1a76584eebd98114051/c-m32?v=5&t=1713012634&s=1713012634ec3b2d4b5429e539c27ce35c5ef9bf1c&r=T2Y4BH&bzc=2&bzs=313832303638383739343a37373232323731383a37373133333733373a31383230363838373934&filename=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8_1.2(%E5%B7%B2%E6%94%B9%E5%8F%B3%E6%BB%91).apk&x-mf-biz-cid=f9987e88-9d9b-404d-a25b-7f628aa222fb-6eaa77&auto_redirect=0&ndcp=1&cache_type=1&xmfcid=24b0ec45-2346-4bc7-a1c3-cfb3685cdb84-0-50111d3b1')">下载 App</button>
+                <button onclick="downloadApp('https://www.123pan.com/s/aJY1jv-UEv4H.html')">下载 App</button>
 
             </div>
            
@@ -133,7 +98,7 @@
                 <img src="images/anzhuangshi.png" alt="莘应用（原易档商店）">
                 <h2>安装狮</h2>
                 <p>配合shizuku使用使用前必须安装</p>
-                <button onclick="downloadApp('https://120-232-77-36.pd1.123pan.cn:30443/download-cdn.123pan.cn/123-745/92d5cdaf/1821515487-0/92d5cdaf074c044db8d2df4d622a6ee9/c-m23?v=5&t=1713008424&s=1713008424b703de2ee5396d58d4c93c76f35fcd55&r=GKWHHM&bzc=2&bzs=313831333933313637333a36333035373836383a313830313337333a30&filename=%E5%AE%89%E8%A3%85%E7%8B%AE_sign.apk&x-mf-biz-cid=137580b0-a86e-4d97-b171-529e39200ec6-6eaa77&auto_redirect=0&ndcp=1&cache_type=1&xmfcid=c8f20ccc-49cd-48e4-8c03-b1c444d94cfb-1-50111d3b1')">下载 App</button>
+                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-g4Oph.html')">下载 App</button>
 
             </div>
             
@@ -142,7 +107,7 @@
                 <img src="images/apktool.png" alt="莘应用（原易档商店）">
                 <h2>APK tool M</h2>
                 <p>一个在手表上独立签名的应用</p>
-                <button onclick="downloadApp('https://120-232-77-27.pd1.123pan.cn:30443/download-cdn.123pan.cn/123-517/85212f91/1813931673-0/85212f91bc421f234f05c6e50956d205/c-m31?v=5&t=1713008553&s=1713008553682f4eae3f006908ee92470d9b6c04b8&r=KKCOVC&bzc=2&bzs=313831333933313637333a36333035373838383a31333833303737353a30&filename=Apktool+M_2.4.0-240317_sign.apk&x-mf-biz-cid=dbd23eca-9bd4-4dfc-a29f-7b3cf22adfb9-6eaa77&auto_redirect=0&ndcp=1&cache_type=1&xmfcid=bea77f1f-cf50-40dc-a495-98a5eb511b04-0-50111d3b1')">下载 App</button>
+                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-U4Oph.html')">下载 App</button>
 
             </div>
             
@@ -151,7 +116,7 @@
                 <img src="images/cx.png" alt="莘应用（原易档商店）">
                 <h2>CX文件管理器</h2>
                 <p>一款文件管理的应用</p>
-                <button onclick="downloadApp('https://120-232-77-27.pd1.123pan.cn:30443/download-cdn.123pan.cn/123-154/37f7f8ad/1813931673-0/37f7f8adac5435da75f41644079a849a/c-m31?v=5&t=1713008595&s=1713008595a0ae994e6962d3fcd7aa5ec6d86f5482&r=8YX29D&bzc=2&bzs=313831333933313637333a36333035373836393a373238353631303a30&filename=%E3%80%90%E6%A1%8C%E9%9D%A2%E7%9B%B4%E6%98%BE%E3%80%91CX%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8_1.8.3+_sign_sign.apk&x-mf-biz-cid=fe2bdaa3-5082-4dd0-95ae-390c26e84a38-6eaa77&auto_redirect=0&ndcp=1&cache_type=1&xmfcid=6df792a7-2f52-4c3d-a59c-b469b772ac31-0-50111d3b1')">下载 App</button>
+                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-F4Oph.html')">下载 App</button>
 
             </div>
 
@@ -161,7 +126,7 @@
                 <h2>莘应用（原易档商店）</h2>
                 <p>一个界面简洁、兼容性高的应用商店完全兼容4x 3p最新版本1.4</p>
                 <button onclick="downloadApp('https://fel.forxhr.top:2022/down.php/3f8709c262aec39c4c6d9a6d0d2c401f.apk')">下载 App</button>
-                <button-view onclick="downloadApp('https://edsc.top')">进入官网</button-view>
+                <button onclick="downloadApp('https://edsc.top')">进入官网</button>
             </div>
            
             <div class="app">
@@ -169,7 +134,7 @@
                 <img src="images/wannengyuedu.png" alt="哔哩终端">
                 <h2>万能阅读</h2>
                 <p>在手表上看小说，全部都是免费的</p>
-                <button onclick="downloadApp('https://120-232-77-34.pd1.123pan.cn:30443/download-cdn.123pan.cn/123-861/71a2573b/1813931673-0/71a2573b69aa1f4e3fc4fe36efe1275d/c-m31?v=5&t=1713009772&s=17130097725e10822e1926c8ce8d90bf597195996c&r=1BTKV6&bzc=2&bzs=313831333933313637333a36333035373831313a31303831383934323a30&filename=wan_neng_yue_du_6_sign.apk&x-mf-biz-cid=55d13026-3459-4761-b21d-461523ef2885-3dab77&auto_redirect=0&ndcp=1&cache_type=1&xmfcid=c9349877-8ad0-4b07-a7d3-93d9df3c53d7-0-50111d3b1')">下载 App</button>
+                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-X1Oph.html')">下载 App</button>
 
             </div>
 
@@ -178,7 +143,7 @@
                 <img src="images/kuan.png" alt="哔哩终端">
                 <h2>酷安</h2>
                 <p>开发者最喜欢的app，应用社区和讨论社区</p>
-                <button onclick="downloadApp('https://120-232-77-31.pd1.123pan.cn:30443/download-cdn.123pan.cn/123-932/a9088047/1813931673-0/a90880476d085b1dcc152e8110150fa4/c-m31?v=5&t=1713009841&s=171300984125a9b42483e69aab28552417efd944aa&r=5FM3RE&bzc=2&bzs=313831333933313637333a36333035373831323a34363736373334343a30&filename=coolapk_sign.apk&x-mf-biz-cid=8fa5c239-1888-47fe-a318-a31d6bf342fe-6eaa77&auto_redirect=0&ndcp=1&cache_type=1&xmfcid=a7953cc8-4960-4062-b2a1-f61dabf41f37-0-50111d3b1')">下载 App</button>
+                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-n1Oph.html')">下载 App</button>
 
             </div>
 
@@ -187,7 +152,7 @@
                 <img src="images/qqyinyue.png" alt="哔哩终端">
                 <h2>QQ音乐</h2>
                 <p>和其他音乐软件一样，不需要改dpi</p>
-                <button onclick="downloadApp('https://120-232-77-34.pd1.123pan.cn:30443/download-cdn.123pan.cn/123-537/86347ad2/1813931673-0/86347ad20643dde103e1090ecfe6ca19/c-m31?v=5&t=1713009860&s=17130098608af2d4149b83b5479c1bbdf9571e7e3e&r=8O88NY&bzc=2&bzs=313831333933313637333a36333035373831333a31313738393433343a30&filename=qq_music_sign.apk&x-mf-biz-cid=35a4fb12-c1f8-4f5a-b5c6-64713d0c8d10-584000&auto_redirect=0&ndcp=1&cache_type=1&xmfcid=a14fdce7-9ba5-4b70-9d5e-b78e02b21dce-1-50111d3b1')">下载 App</button>
+                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-21Oph.html')">下载 App</button>
 
             </div>
             
@@ -195,24 +160,24 @@
             <div class="dot"></div>
                 <img src="images/hechengdaxigua.png" alt="哔哩终端">
                 <h2>合成大西瓜</h2>
-                <p>合成大西瓜的玩法和之前热门的小游戏2048有些类似，相比2048没有格子限制，画面元素更丰富，玩法更有趣哦~</p>
-                <button onclick="downloadApp('https://120-232-77-23.pd1.123pan.cn:30443/download-cdn.123pan.cn/123-86/94f0e162/1813931673-0/94f0e1625df0b53d95b047e4eb4aa456/c-m31?v=5&t=1713009975&s=1713009975dc8d84b460f7de577437266b066e0bf7&r=TRHRAH&bzc=2&bzs=313831333933313637333a36333035373831343a31383935353637333a30&filename=he_cheng_da_xi_gua_sign.apk&x-mf-biz-cid=edb16301-5e39-4011-ac94-4b018c2a6d93-3dab77&auto_redirect=0&ndcp=1&cache_type=1&xmfcid=2cb16ad7-c9b9-4661-8e1c-76fa36118822-0-50111d3b1')">下载 App</button>
+                <p>一款小游戏，和2048差不多</p>
+                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-s1Oph.html')">下载 App</button>
 
             </div>
             <div class="app">
             <div class="dot"></div>
                 <img src="images/biecaibaifangkuai.png" alt="应用2图标">
-                <h2>别踩白块</h2>
+                <h2>别踩白方块</h2>
                 <p>你可以认为它是一款音乐游戏，支持在手表上游玩</p>
-                <button onclick="downloadApp('https://120-232-77-31.pd1.123pan.cn:30443/download-cdn.123pan.cn/123-610/473e7afb/1821515487-0/473e7afb65b7097d01a9d674dfdd7662/c-m23?v=5&t=1713010015&s=171301001546dd41b024b57ec741cf5d9d61e624ff&r=Q3DMG3&bzc=2&bzs=313831333933313637333a36333035373831353a353236333734323a30&filename=d_n_t_white_tile_sign.apk&x-mf-biz-cid=4df29234-b37c-49ed-bac9-e55dfb77ac75-3dab77&auto_redirect=0&ndcp=1&cache_type=1&xmfcid=3deebce9-f41f-4b34-9a29-73c2c556697f-1-50111d3b1')">下载 App</button>
+                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-W1Oph.html')">下载 App</button>
 
             </div>
             <div class="app">
             <div class="dot"></div>
                 <img src="images/aikelan.png" alt="应用1图标">
                 <h2>爱科蓝</h2>
-                <p>一款手表表盘的启动器，建议冻结系统桌面后使用</p>
-                <button onclick="downloadApp('https://120-232-77-26.pd1.123pan.cn:30443/download-cdn.123pan.cn/123-298/98250d67/1813931673-0/98250d676866c1196c51e65b8967112a/c-m31?v=5&t=1713010108&s=17130101084374e0000d6b7be1fad9e01fec493031&r=X0XC8O&bzc=2&bzs=313831333933313637333a36333035373831363a383632373035313a30&filename=ai_ke_lan_sign.apk&x-mf-biz-cid=e4542d73-2687-4eb0-bfb9-aad630a417a9-6eaa77&auto_redirect=0&ndcp=1&cache_type=1&xmfcid=25bc314f-3433-4462-86f7-cc3723b3049d-1-9eed82220')">下载 App</button>
+                <p>一款手表表盘的启动器，不过好像会和系统桌面打架</p>
+                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-C1Oph.html')">下载 App</button>
 
             </div>
            
@@ -222,8 +187,8 @@
             <div class="dot"></div>
                 <img src="images/douyin.png" alt="哔哩终端">
                 <h2>抖音</h2>
-                <p>手表上刷短视频，不过建议把dpi改小一点</p>
-                <button onclick="downloadApp('https://120-232-77-36.pd1.123pan.cn:30443/download-cdn.123pan.cn/123-183/b06b3137/1821515487-0/b06b31379e3e26e676761f4d1ee214b7/c-m23?v=5&t=1713010181&s=17130101819127f904aec8c67c5cad2f2ef948d267&r=ENA9VS&bzc=2&bzs=313831333933313637333a36333035373831303a31363732313134313a30&filename=dou_yin_jing_jian_ban_sign.apk&x-mf-biz-cid=03fb946f-8746-46fd-9950-12e523816122-3dab77&auto_redirect=0&ndcp=1&cache_type=1&xmfcid=7020aad7-7038-4c72-83bf-7c15bc38c623-1-50111d3b1')">下载 App</button>
+                <p>手表上刷短视频，不过需要把dpi改小一点</p>
+                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-P1Oph.html')">下载 App</button>
 
             </div>
 
@@ -231,8 +196,8 @@
             <div class="dot"></div>
                 <img src="images/2048.png" alt="哔哩终端">
                 <h2>2048</h2>
-                <p>2048就是2048</p>
-                <button onclick="downloadApp('https://120-232-77-23.pd1.123pan.cn:30443/download-cdn.123pan.cn/123-39/7f22b5b6/1813931673-0/7f22b5b6bba25af4cd4a54eabef27427/c-m31?v=5&t=1713010228&s=1713010228fbb71ee0156709a31fc2caf4c5f98f3a&r=P2TKE3&bzc=2&bzs=313831333933313637333a36333035373830393a323631353139393a30&filename=2048_sign.apk&x-mf-biz-cid=bedf12a0-1ece-400b-81f2-84be51dc12ea-3dab77&auto_redirect=0&ndcp=1&cache_type=1&xmfcid=e3efe071-63f7-4a3f-a5d1-db5a8eec6841-1-50111d3b1')">下载 App</button>
+                <p>2048小游戏</p>
+                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-G1Oph.html')">下载 App</button>
 
             </div>
 
@@ -241,7 +206,7 @@
                 <img src="images/weiqu.png" alt="哔哩终端">
                 <h2>唯趣应用商店</h2>
                 <p>下载各类的适配手表的应用，应用十分丰富</p>
-                <button onclick="downloadApp('https://120-232-77-25.pd1.123pan.cn:30443/download-cdn.123pan.cn/123-787/301d76b1/1813931673-0/301d76b19ec520307032b28c97434f13/c-m31?v=5&t=1713010254&s=17130102543f53f7eb03df926410f85c824df6cf06&r=CHKB4S&bzc=2&bzs=313831333933313637333a36333035373830383a353136363538373a30&filename=weiqvyysd_sign.apk&x-mf-biz-cid=0998320a-bbd6-4c79-8d9a-96d0ccd9f3a1-6eaa77&auto_redirect=0&ndcp=1&cache_type=1&xmfcid=a81d9fda-6f76-4a86-881a-366b9fc654e3-1-50111d3b1')">下载 App</button>
+                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-Y1Oph.html')">下载 App</button>
 
             </div>
             
@@ -250,15 +215,15 @@
                 <img src="images/bilibili.png" alt="哔哩终端">
                 <h2>哔哩终端</h2>
                 <p>在手表上也能够尽情刷B站，看评论，还支持登录自己的账号同步账号信息</p>
-                <button onclick="downloadApp('https://120-232-77-31.pd1.123pan.cn:30443/download-cdn.123pan.cn/123-748/cae45188/1813931673-0/cae4518864e3d85e17a56efd2fd60aec/c-m31?v=5&t=1713010343&s=17130103438bb4197b6fac328d31e07d4e98ebf8c6&r=GGVU9H&bzc=2&bzs=313831333933313637333a36333035373739393a383335363239323a30&filename=%E5%93%94%E5%93%A9%E7%BB%88%E7%AB%AF_2.5.1_sign.apk&x-mf-biz-cid=603169c6-130c-4171-9541-b39e6ec1bca4-584000&auto_redirect=0&ndcp=1&cache_type=1&xmfcid=477da926-17c6-42ef-b4ee-e03b183acaeb-1-50111d3b1')">下载 App</button>
+                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-f1Oph.html')">下载 App</button>
 
             </div>
             <div class="app">
             <div class="dot"></div>
                 <img src="images/google.webp" alt="应用2图标">
                 <h2>谷歌浏览器</h2>
-                <p>在手表上也能够看网页无广告纯净版，不过下载之后可能需要修改一下dpi才能够正常显示</p>
-                <button onclick="downloadApp('https://fel.forxhr.top:2022/down.php/6939109d979401a140124fb827ee0952.apk')">下载 App</button>
+                <p>在手表上也能够看网页无广告纯净版，不过下载之后可能需要设置一下dpi才能够正常显示</p>
+                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-m1Oph.html')">下载 App</button>
 
             </div>
             <div class="app">
@@ -266,7 +231,7 @@
                 <img src="images/shizuku.png" alt="应用1图标">
                 <h2>shizuku</h2>
                 <p>为其他的应用获取adb权限，在手表上也能够尽情玩机</p>
-                <button onclick="downloadApp('https://120-232-77-33.pd1.123pan.cn:30443/download-cdn.123pan.cn/123-50/79d74285/1813931673-0/79d74285262a37a0e36642f7060b0832/c-m31?v=5&t=1713010409&s=171301040998441a8ee3bc5d9e0f2699938b87d8d9&r=C8KVHN&bzc=2&bzs=313831333933313637333a36333035373739353a333434363436303a30&filename=moe.shizuku.privileged.api_sign.apk&x-mf-biz-cid=9b472e11-f4f2-4b1b-83ba-4e06699991b4-6eaa77&auto_redirect=0&ndcp=1&cache_type=1&xmfcid=7c105438-52f4-4a07-ae2f-59f812e453f0-1-50111d3b1')">下载 App</button>
+                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-11Oph.html')">下载 App</button>
 
             </div>
             <div class="app">
@@ -274,7 +239,7 @@
                 <img src="images/Kimi.png" alt="应用2图标">
                 <h2>Kimi</h2>
                 <p>国内人工智能模型应用，在手表上也能够体验GPT的强大</p>
-                <button onclick="downloadApp('https://120-232-77-34.pd1.123pan.cn:30443/download-cdn.123pan.cn/123-689/3074f4be/1813931673-0/3074f4be3d6cc78f68810b27952ae6b1/c-m31?v=5&t=1713010434&s=1713010434b6daec4e9d6243c0adb8fe07c9e86eb4&r=YA75FL&bzc=2&bzs=313831333933313637333a36333035373739363a33343731303735313a30&filename=Kimi+Chat_1.0_sign.apk&x-mf-biz-cid=e113240a-aba4-4a93-9c56-98838cad2bd1-3dab77&auto_redirect=0&ndcp=1&cache_type=1&xmfcid=aaec9d0c-7e65-44f5-a021-51d575b5f115-1-50111d3b1')">下载 App</button>
+                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-41Oph.html')">下载 App</button>
 
             </div>
             <div class="app">
@@ -282,15 +247,15 @@
                 <img src="images/rarebox.webp" alt="应用1图标">
                 <h2>rarebox</h2>
                 <p>一款手表上也能玩机的应用，可以在手表上对其进行adb命令控制，修改屏幕分辨率，dpi等等</p>
-                <button onclick="downloadApp('https://fel.forxhr.top:2022/down.php/a46f68ae8552d7389c8afe2bb9f189f9.apk')">下载 App</button>
+                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-x1Oph.html')">下载 App</button>
 
             </div>
             <div class="app">
             <div class="dot"></div>
                 <img src="images/cleaner.png" alt="应用2图标">
                 <h2>内存清理</h2>
-                <p>一款方便简洁的运存清理软件，点击一下即可清理所有的后台应用及其缓存，还支持进入应用自动清理</p>
-                <button onclick="downloadApp('https://fel.forxhr.top:2022/down.php/a85cdfdac1e5cf1b44e233b6fcb82a80.apk')">下载 App</button>
+                <p>界面简洁，点击一下按钮就可以清理所有的后台应用及其缓存，支持进入应用自动清理</p>
+                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-p1Oph.html')">下载 App</button>
 
             </div>
            <div class="app">
@@ -298,7 +263,7 @@
                 <img src="images/baibaoxiang.png" alt="应用2图标">
                 <h2>抬腕百宝箱</h2>
                 <p>可以玩石头剪刀布，找小鸡，bmi指数转换，二维码生成等小功能</p>
-                <button onclick="downloadApp('https://111-6-245-26.pd1.123pan.cn:30443/download-cdn.123pan.cn/123-877/2e9ac64f/1813931673-0/2e9ac64f40f530f0772d5d75d870c76d/c-m31?v=5&t=1713010743&s=1713010743ada80f1ac0a81c20a979677f2383da6b&r=1FSP2D&bzc=2&bzs=313831333933313637333a36333035373830363a3632343531373a30&filename=taiwanbbxv21.11.16_sign.apk&x-mf-biz-cid=df5fa18b-e373-4579-87c6-c9db97ac731b-3dab77&auto_redirect=0&ndcp=1&cache_type=1&xmfcid=0bdb0ebd-d641-4189-9140-1dbd132e1f46-1-50111d3b1')">下载 App</button>
+                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-g1Oph.html')">下载 App</button>
 
             </div>
            <div class="app">
@@ -306,7 +271,7 @@
                 <img src="images/biji.png" alt="应用2图标">
                 <h2>抬腕笔记</h2>
                 <p>手表上面可以记录笔记，还有隐私模式保护笔记安全，支持和手机连接</p>
-                <button onclick="downloadApp('https://120-232-77-36.pd1.123pan.cn:30443/download-cdn.123pan.cn/123-142/0376c149/1813931673-0/0376c149563661cc4aeaa8dc3019cc8e/c-m31?v=5&t=1713010767&s=1713010767231bddc3e325a3fb7a570a54a8c2ef66&r=V88EXY&bzc=2&bzs=313831333933313637333a36333035373830333a323132313033353a30&filename=wanshangjsbv22.8.20_xlhs.com_sign.apk&x-mf-biz-cid=2a5682ff-756f-4cd4-9d8e-248f47f2deb4-6eaa77&auto_redirect=0&ndcp=1&cache_type=1&xmfcid=f3590a88-4eb4-46f0-b368-462328f74bda-1-50111d3b1')">下载 App</button>
+                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-I1Oph.html')">下载 App</button>
 
             </div>
            <div class="app">
@@ -314,7 +279,7 @@
                 <img src="images/shipin.png" alt="应用2图标">
                 <h2>抬腕视频</h2>
                 <p>查找手表中的本地视频文件，支持快捷选项，支持查找网络上的视频</p>
-                <button onclick="downloadApp('https://120-232-77-27.pd1.123pan.cn:30443/download-cdn.123pan.cn/123-239/1fffb496/1813931673-0/1fffb4960f6d0685064ad7f84610c8ef/c-m31?v=5&t=1713010814&s=17130108149a4466e6e04c6daf5176b83eba74c8ee&r=01D5A0&bzc=2&bzs=313831333933313637333a36333035373830303a31373339393031373a30&filename=taiwanshiping_23.01.09_xlhs.com_sign.apk&x-mf-biz-cid=368f2f4b-eb93-4221-92e2-427dfaa241f7-6eaa77&auto_redirect=0&ndcp=1&cache_type=1&xmfcid=40b32455-3912-4137-a415-d84879db5a1e-1-50111d3b1')">下载 App</button>
+                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-a1Oph.html')">下载 App</button>
 
             </div>
            <div class="app">
@@ -322,7 +287,7 @@
                 <img src="images/wenjian.png" alt="应用2图标">
                 <h2>抬腕文件-传输</h2>
                 <p>支持浏览儿童手表中的本地文件，支持局域网传输文件</p>
-                <button onclick="downloadApp('https://120-232-77-29.pd1.123pan.cn:30443/download-cdn.123pan.cn/123-930/96815896/1813931673-0/9681589692072e02407f59f153b48fa2/c-m31?v=5&t=1713010843&s=1713010843a7ee83e33f833a6b3e2aa84fc08bfa1a&r=GV9XZV&bzc=2&bzs=313831333933313637333a36333035373830343a343135333138353a30&filename=twwjcs_320103_sign.apk&x-mf-biz-cid=ee35711c-6498-4433-ba1b-8c6d81ea8367-3dab77&auto_redirect=0&ndcp=1&cache_type=1&xmfcid=d9166624-98cc-48c8-98a3-9b8cd95907d2-1-50111d3b1')">下载 App</button>
+                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-M1Oph.html')">下载 App</button>
 
             </div>
            <div class="app">
@@ -330,15 +295,15 @@
                 <img src="images/explore.png" alt="应用2图标">
                 <h2>抬腕文件</h2>
                 <p>可以浏览儿童手表中的文件，但是不支持传输功能</p>
-                <button onclick="downloadApp('https://120-232-77-28.pd1.123pan.cn:30443/download-cdn.123pan.cn/123-741/6f214c82/1813931673-0/6f214c827247dc7d405f8f379396cee5/c-m31?v=5&t=1713010876&s=17130108761f331d146cd9194dd4b7df5f62722455&r=M7BFU4&bzc=2&bzs=313831333933313637333a36333035373830353a3535303038333a30&filename=taiwanwenjian_22.9.21_xlhs.com_sign.apk&x-mf-biz-cid=79ebd9fd-f89b-424d-9c0d-a8e690093a03-6eaa77&auto_redirect=0&ndcp=1&cache_type=1&xmfcid=f1da8930-cb97-47a5-bd25-ac0c6501ca65-1-50111d3b1')">下载 App</button>
+                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-w1Oph.html')">下载 App</button>
 
             </div>
            <div class="app">
            <div class="dot"></div>
                 <img src="images/wearbili.png" alt="应用2图标">
-                <h2>Re-WearBili</h2>
-                <p>可登录，可以正常观看视频和观看弹幕，可以缓存视频，信息等</p>
-                <button onclick="downloadApp('https://fel.forxhr.top:2022/down.php/6ad21ad126d28b150316071a87fe06f9.apk')">下载 App</button>
+                <h2>腕上哔哩</h2>
+                <p>登录好像有一点问题，不过可以正常观看视频和观看弹幕，可以缓存视频，但是删除的时候可能会将视频全部删除</p>
+                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-J1Oph.html')">下载 App</button>
 
             </div>
 

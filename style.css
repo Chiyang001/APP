@@ -50,10 +50,11 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* 修改按钮样式 */
 button {
     background-color: #ffd700; /* 金色背景 */
     color: #1a1a1a; /* 暗黑文字颜色 */
-    padding: 15px 100px;
+    padding: 20px 100px; /* 增加按钮的高度 */
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -67,15 +68,17 @@ button:hover {
 button-view {
     background-color: #ffd700; /* 金色背景 */
     color: #1a1a1a; /* 暗黑文字颜色 */
-    padding: 10px 20px;
+    padding: 20px 10px; /* 调整为20px，增加高度 */
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
 button:hover {
     background-color: #ffc107; /* 鼠标悬停时的金黄色背景 */
 }
+
 
 
 
@@ -143,20 +146,7 @@ button:hover {
     text-align: center;
 }
 
-#watchTutorialButton {
-    display: inline-block;
-    background-color: #ffd700; /* 按钮背景色为金色 */
-    color: #1a1a1a; /* 文字颜色为暗黑色 */
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
 
-#watchTutorialButton:hover {
-    background-color: #ffc107; /* 鼠标悬停时的背景色 */
-}
 
 .footer {
     background-color: #1a1a1a; /* 黑色背景 */
