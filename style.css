@@ -5,6 +5,25 @@ body {
     padding: 0;
     color: #fff; /* 文字颜色为白色 */
 }
+.t-container {
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .app-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .site-description {
+            text-align: left;
+        }
+        .video-container {
+            display: none;
+        }
 
 .container {
     max-width: 1200px;
