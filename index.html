@@ -11,7 +11,29 @@
 <button-view id="toggleButton" onclick="toggleLayout()">切换至手表/电脑手机视图</button-view>
 
 
-   <body>
+   <style>
+        .t-container {
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .app-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .site-description {
+            text-align: left;
+        }
+        .video-container {
+            display: none;
+        }
+    </style>
+</head>
+<body>
     <div class="t-container">
         <img alt="哔哩终端">
         <h1>华为儿童手表应用下载站</h1>
