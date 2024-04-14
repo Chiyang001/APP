@@ -36,9 +36,89 @@
         <div class="app-list">
         <div class="site-description">
     <p>欢迎来到华为儿童手表专用应用下载平台，这里汇集了众多专为华为儿童手表定制的精选应用。本平台是开源平台，若要成为开发者可以联系QQ：3083248889，vx:18280030694,加入到我们团队中来！所有安装包均已经进行了v1+v2签名，每一款应用均经过UP主亲自验证，开启adb之后，直接安装即可使用。安装前您必须要开启adb调试模式，教程请点击左上角菜单查看</p>
-   
 
- 
+
+
+
+
+		
+<input type="text" id="searchInput" placeholder="输入应用名称">
+  <button-search id="searchButton">搜索</button-search>
+  <ul id="results"></ul>
+  <script>
+    const products = [
+      { name: '腕上哔哩', description: '能正常观看视频和观看弹幕，还可以缓存视频哦~', downloadUrl: 'https://www.123pan.com/s/Xnh7Vv-J1Oph.html' },
+      { name: '抬腕文件', description: '可以浏览儿童手表中的文件，但是不支持传输功能' , downloadUrl: 'https://www.123pan.com/s/Xnh7Vv-w1Oph.html' },
+      { name: '抬腕文件-传输', description: '支持浏览手表中本地文件，支持局域网传输文件' , downloadUrl: 'https://www.123pan.com/s/Xnh7Vv-M1Oph.html' },
+      { name: '抬腕视频', description: '查找手表中的本地视频文件，支持快捷选项，支持查找网络上的视频' , downloadUrl: 'https://www.123pan.com/s/Xnh7Vv-a1Oph.html' }, 
+      { name: '抬腕笔记', description: '手表上面可以记录笔记，还有隐私模式保护笔记安全，支持和手机连接' , downloadUrl: 'https://www.123pan.com/s/Xnh7Vv-I1Oph.html' }, 
+      { name: '抬腕百宝箱', description: '可以玩石头剪刀布，找小鸡，bmi指数转换，二维码生成等小功能' , downloadUrl: 'https://www.123pan.com/s/Xnh7Vv-g1Oph.html' }, 
+      { name: '内存清理', description: '界面简洁，点击一下按钮就可以清理所有的后台应用及其缓存，支持进入应用自动清理' , downloadUrl: 'https://www.123pan.com/s/Xnh7Vv-p1Oph.html' }, 
+      { name: 'rarebox', description: '一款手表上也能玩机的应用，可以在手表上对其进行adb命令控制，修改屏幕分辨率，dpi等等' , downloadUrl: 'https://www.123pan.com/s/Xnh7Vv-x1Oph.html' }, 
+      { name: 'Kimi', description: '国内人工智能模型应用，在手表上也能够体验GPT的强大' , downloadUrl: 'https://www.123pan.com/s/Xnh7Vv-41Oph.html' }, 
+      { name: 'shizuku', description: '为其他的应用获取adb权限，在手表上也能够尽情玩机' , downloadUrl: 'https://www.123pan.com/s/Xnh7Vv-11Oph.html' }, 
+      { name: '谷歌浏览器', description: '在手表上也能够看网页无广告纯净版，不过下载之后可能需要设置一下dpi才能够正常显示' , downloadUrl: 'https://www.123pan.com/s/Xnh7Vv-m1Oph.html' }, 
+      { name: '哔哩终端', description: '在手表上也能够尽情刷B站，看评论，还支持登录自己的账号同步账号信息' , downloadUrl: 'https://www.123pan.com/s/Xnh7Vv-f1Oph.html' }, 
+      { name: '唯趣应用商店', description: '下载各类的适配手表的应用，应用十分丰富' , downloadUrl: 'https://www.123pan.com/s/Xnh7Vv-Y1Oph.html' }, 
+      { name: '2048', description: '2048就是2048！！' , downloadUrl: 'https://www.123pan.com/s/Xnh7Vv-G1Oph.html' }, 
+      { name: '抖音', description: '手表上刷短视频，同桌直接羡慕死！！' , downloadUrl: 'https://www.123pan.com/s/Xnh7Vv-P1Oph.html' }, 
+      { name: '爱科蓝', description: '一款手表表盘的启动器，建议先把系统桌面冻结后使用' , downloadUrl: 'https://www.123pan.com/s/Xnh7Vv-C1Oph.html' }, 
+      { name: '别踩白块', description: '一款音乐游戏，支持在手表上游玩' , downloadUrl: 'https://www.123pan.com/s/Xnh7Vv-W1Oph.html' }, 
+      { name: '合成大西瓜', description: '一款小游戏，和2048差不多' , downloadUrl: 'https://www.123pan.com/s/Xnh7Vv-s1Oph.html' }, 
+      { name: 'QQ音乐', description: '和其他音乐软件一样，不需要改dpi' , downloadUrl: 'https://www.123pan.com/s/Xnh7Vv-21Oph.html' }, 
+      { name: '酷安', description: '开发者最喜欢的app，应用社区和讨论社区' , downloadUrl: 'https://www.123pan.com/s/Xnh7Vv-n1Oph.html' }, 
+      { name: '万能阅读', description: '在手表上看小说，全部都是免费的' , downloadUrl: 'https://www.123pan.com/s/Xnh7Vv-X1Oph.html' }, 
+      { name: '莘应用（原易档商店）', description: '一个界面简洁、兼容性高的应用商店完全兼容4x 3p最新版本1.4' , downloadUrl: 'https://edsc.top/' }, 
+      { name: 'CX文件管理器', description: '一款文件管理的应用' , downloadUrl: 'https://www.123pan.com/s/Xnh7Vv-F4Oph.html' }, 
+      { name: 'APK tool M', description: '一个在手表上独立签名的应用' , downloadUrl: 'https://www.123pan.com/s/Xnh7Vv-U4Oph.html' }, 
+      { name: '安装狮', description: '配合shizuku使用使用前必须安装' , downloadUrl: 'https://www.123pan.com/s/Xnh7Vv-g4Oph.html' }, 
+      { name: '植物大战僵尸（已改右滑）', description: '可怕的僵尸即将入侵你的家，唯一的防御方式就是你栽种的植物！' , downloadUrl: 'https://www.123pan.com/s/aJY1jv-UEv4H.html' }, 
+      { name: '磁吸桌面安装全家桶', description: '手表桌面，简洁好用' , downloadUrl: 'https://www.123pan.com/s/aJY1jv-WEv4H.html' }, 
+      { name: '自主安装应用全家桶', description: '可以让手表自主安装应用哦！~' , downloadUrl: 'https://www.123pan.com/s/aJY1jv-XEv4H.html' }, 
+      { name: 'Open Camera', description: '一个在手表上使用的第三方相机完美兼容' , downloadUrl: 'https://www.123pan.com/s/aJY1jv-Tav4H.html' }, 
+      { name: 'ShizukuRunner', description: '一个在手表上使用的命令需要配合Shizuku' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/67ecba48dd628559e9bc166c5ee00cd0.apk' }, 
+      { name: '无障碍管理器', description: '一个在手表上使用的无障碍管理器需要配合Shizuku进行使用' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/9e5885c64d2aa1391bed973d5434556f.apk' }, 
+      { name: '', description: '' , downloadUrl: '' }, 
+      { name: '', description: '' , downloadUrl: '' }, 
+
+
+
+
+
+
+     // 更多应用...
+    ];
+    const searchButton = document.getElementById('searchButton');
+    const results = document.getElementById('results');
+    searchButton.addEventListener('click', () => {
+      const searchInput = document.getElementById('searchInput').value.toLowerCase();
+      const filteredProducts = products.filter(product => {
+        return product.name.toLowerCase().includes(searchInput) || product.description.toLowerCase().includes(searchInput);
+      });
+      results.innerHTML = '';
+      filteredProducts.forEach(product => {
+        const listItem = document.createElement('li');
+        listItem.innerHTML = `<strong>${product.name}</strong> - 描述：${product.description}`;
+        // 添加下载按钮
+        const downloadButton = document.createElement('button-search');
+        downloadButton.textContent = '下载';
+        downloadButton.addEventListener('click', () => {
+          downloadProduct(product.downloadUrl);
+        });
+        listItem.appendChild(downloadButton);
+        results.appendChild(listItem);
+      });
+    });
+    function downloadProduct(url) {
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = '';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
+  </script>
+
 
 
 
@@ -59,7 +139,7 @@
                 <div class="dot"></div>
                 <img src="https://fel.forxhr.top:2022/view.php/9371d279c5a83511472b7064647512c0.png" alt="dadashuai">
                 <h2>无障碍管理器</h2>
-                <p>一个在手表上使用的无障碍管理器需要配合Shizuk进行使用</p>
+                <p>一个在手表上使用的无障碍管理器需要配合Shizuku进行使用</p>
                 <button onclick="downloadApp('https://fel.forxhr.top:2022/down.php/9e5885c64d2aa1391bed973d5434556f.apk')">下载 App</button>
         </div>
 		
@@ -329,7 +409,7 @@
 	<p>炽阳001制作 &copy; 2024. 版权所有。</p>
         <p>权限归炽阳001所有，e装机&是大大帅aaa享有合作设计权。</p>
         <p>本网站属于非盈利性质网站，不进行任何商业经营活动</p>
-          <p>网站版本2.2.0</p>
+          <p>网站版本2.2.1</p>
     </div>
 </footer>
 
