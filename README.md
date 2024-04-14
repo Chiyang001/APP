@@ -7,6 +7,8 @@
     <li>3.优化css的样式代码</li>
     <li>4.优化其他的一些bug</li>
     <li>5.解决了下载链接失效的问题</li>
+    <li> 奕奕修改：</li>
+    <li> 1.创建目录导航文件夹Navigation directory</li>
   </ul>
 </body>
 <body>
