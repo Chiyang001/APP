@@ -9,6 +9,7 @@
     <li>5.解决了下载链接失效的问题</li>
     <li> 奕奕修改：</li>
     <li> 1.创建目录导航文件夹Navigation directory</li>
+    <li> 2.更新一些页面的介绍</li>
   </ul>
 </body>
 <body>
