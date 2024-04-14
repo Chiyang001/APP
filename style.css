@@ -6,7 +6,6 @@ body {
     color: #fff; /* 文字颜色为白色 */
 }
 
-
 .container {
     max-width: 1200px;
     margin: auto;
@@ -234,4 +233,51 @@ button:hover {
     margin-left: auto; /* 左边距自动 */
     margin-right: auto; /* 右边距自动 */
     display: block; /* 使margin auto生效，居中对齐 */
+}
+
+.menu-toggle {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: gold;
+    transition: 0.3s;
+}
+
+.nav-list {
+    list-style: none;
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    padding: 0;
+    margin: 0;
+    transition: 0.3s;
+}
+
+.nav-list li {
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid gold;
+}
+
+.nav-list li a {
+    display: block;
+    padding: 10px;
+    color: gold;
+    text-decoration: none;
+}
+
+.nav-list li:hover {
+    background-color: #333;
 }
