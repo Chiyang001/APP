@@ -116,6 +116,7 @@
     <button class="button-view" id="watchTutorialButton" onclick="showVideo()">观看Symbian_S60V3教程</button>
     <button class="button-view" id="watchTutorialButton2" onclick="showVideo2()">观看e装机教程</button>
     <button class="button-view" id="watchTutorialButton3" onclick="showVideo3()">观看第三方相机教程</button>
+    <button class="button-view" id="watchTutorialButton4" onclick="showVideo4()">观看手表玩原神教程</button>
 </div>
 
 <script>
@@ -136,7 +137,11 @@ function showVideo3() {
     videoFrame.src = "https://b23.tv/BV1kF4m1K7Q9";
     document.getElementById('videoPlayer').style.display = "block";
 }
-
+function showVideo4() {
+    var videoFrame = document.getElementById('videoFrame');
+    videoFrame.src = "https://b23.tv/BV1Mw4m1m7E9";
+    document.getElementById('videoPlayer').style.display = "block";
+}
 
 function copyText() {
   var text = document.getElementById("codeToCopy").innerText; // 获取文本
