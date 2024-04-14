@@ -37,9 +37,67 @@
         .animated {
             animation: fade 3s ease-in-out;
         }
+        .menu-toggle {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: gold;
+    transition: 0.3s;
+}
+
+.nav-list {
+    list-style: none;
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    padding: 0;
+    margin: 0;
+    transition: 0.3s;
+}
+
+.nav-list li {
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid gold;
+}
+
+.nav-list li a {
+    display: block;
+    padding: 10px;
+    color: gold;
+    text-decoration: none;
+}
+
+.nav-list li:hover {
+    background-color: #333;
+}
+
     </style>
 </head>
 <body>
+<div class="menu-toggle" id="mobile-menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</div>
+<ul class="nav-list" id="nav-list">
+    <li><a href="index.html">首页</a></li>
+    <li><a href="lesson.html">破解教程</a></li>
+    <li><a href="warning.html">破解警告</a></li>
+    <li><a href="connect.html">联系我们</a></li>
+</ul>
     <div class="container animated">
         <h1>破解警告</h1>
         <p>欢迎来到华为儿童手表专用应用下载平台。我们提供了许多专为华为儿童手表定制的精选应用。然而，需要提醒的是，我们平台的运作基于一个系统漏洞，利用adb命令实现对手表系统的破解，以安装非官方应用。当你进入此网站，并使用该网站的相关功能时，表明你已经同意下方的免责声明和警告：</p>
@@ -57,4 +115,14 @@
 
     </div>
 </body>
+<script>
+document.getElementById('mobile-menu').addEventListener('click', function() {
+    var nav = document.getElementById('nav-list');
+    if (nav.style.left === '0px') {
+        nav.style.left = '-100%';
+    } else {
+        nav.style.left = '0px';
+    }
+});
+</script>
 </html>
