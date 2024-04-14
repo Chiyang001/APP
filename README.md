@@ -10,6 +10,7 @@
     <li> 奕奕修改：</li>
     <li> 1.创建目录导航文件夹Navigation directory</li>
     <li> 2.更新一些页面的介绍</li>
+    <li> 3.增加一些联系方法</li>
   </ul>
 </body>
 <body>
