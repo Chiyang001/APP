@@ -14,12 +14,12 @@
     <span class="bar"></span>
     <span class="bar"></span>
 </div>
-<ul class="nav-list" id="nav-list">
+<h2><ul class="nav-list" id="nav-list">
     <li><a href="index.html">首页</a></li>
     <li><a href="Navigation directory/lesson.html">破解教程</a></li>
     <li><a href="Navigation directory/warning.html">破解警告</a></li>
     <li><a href="Navigation directory/connect.html">联系我们</a></li>
-</ul>
+</ul></h2>
 
 <button-view id="toggleButton" onclick="toggleLayout()">切换至手表/电脑手机视图</button-view>
 
@@ -38,15 +38,19 @@
     <p>欢迎来到华为儿童手表专用应用下载平台，这里汇集了众多专为华为儿童手表定制的精选应用。本平台是开源平台，若要成为开发者可以联系QQ：3083248889，vx:18280030694,加入到我们团队中来！所有安装包均已经进行了v1+v2签名，每一款应用均经过UP主亲自验证，开启adb之后，直接安装即可使用。安装前您必须要开启adb调试模式，教程请点击左上角菜单查看</p>
 
 
-
-
-
 		
-<input type="text" id="searchInput" placeholder="输入应用名称">
-  <button-search id="searchButton">搜索</button-search>
-  <ul id="results"></ul>
-  <script>
-    const products = [
+    <div class="center-text">
+    <input type="text" id="searchInput" placeholder="输入应用名称关键词">
+    <button-search id="searchButton">搜索</button-search>
+    </div>
+
+    <ul id="searchResults"></ul>
+<script>
+
+   
+      document.addEventListener('DOMContentLoaded', (event) => {
+        let products = [
+
       { name: '腕上哔哩', description: '能正常观看视频和观看弹幕，还可以缓存视频哦~', downloadUrl: 'https://www.123pan.com/s/Xnh7Vv-J1Oph.html' },
       { name: '抬腕文件', description: '可以浏览儿童手表中的文件，但是不支持传输功能' , downloadUrl: 'https://www.123pan.com/s/Xnh7Vv-w1Oph.html' },
       { name: '抬腕文件-传输', description: '支持浏览手表中本地文件，支持局域网传输文件' , downloadUrl: 'https://www.123pan.com/s/Xnh7Vv-M1Oph.html' },
@@ -78,59 +82,64 @@
       { name: 'Open Camera', description: '一个在手表上使用的第三方相机完美兼容' , downloadUrl: 'https://www.123pan.com/s/aJY1jv-Tav4H.html' }, 
       { name: 'ShizukuRunner', description: '一个在手表上使用的命令需要配合Shizuku' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/67ecba48dd628559e9bc166c5ee00cd0.apk' }, 
       { name: '无障碍管理器', description: '一个在手表上使用的无障碍管理器需要配合Shizuku进行使用' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/9e5885c64d2aa1391bed973d5434556f.apk' }, 
-      { name: '', description: '' , downloadUrl: '' }, 
-      { name: '', description: '' , downloadUrl: '' }, 
+      { name: '元气骑士', description: '[已改右滑]探索地牢，收集各种奇异的武器，然后丧心病的战爆小怪兽！' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/4590ae07af47392f502837406113efd0.apk' }, 
+      { name: '我的世界', description: '[已改右滑]一款沙盒游戏，拥有丰富的游戏内容，版本为1.16地狱大更新！' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/eac4cefc24b39e75fcaae477320c1246.apk' }, 
+      { name: '文件管理器', description: '支持文件的复制、粘贴、移动、压缩、解压缩等等' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/79ecc2178bbfd7886a3f7de3c90ef574.apk' }, 
+      { name: '计算器', description: '简便计算器' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/733501e9507d60937e131bc5b8f28da2.apk' }, 
+      { name: '斗地主', description: '单人斗地主，没有网，也能玩！！' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/a052c70c43277d995ebc532483d4682c.apk' }, 
+      { name: '登山赛车', description: '[已改右滑]经典游戏，超有趣超虐心的赛车竞速游戏！基于真实赛车物理特性开发，仅需两键就能驰骋各类特色赛道' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/6591a4902f5bad20d6e4ac2e81d37941.apk' }, 
+      { name: '地铁跑酷', description: '[已改右滑]这款流行的休闲跑酷游戏，让你的角色尽享各种乐趣；众多炫酷的动画效果在这里一一呈现' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/4287b9c497a8041d4e979f8666636895.apk' }, 
+      { name: 'App Cloner', description: 'App Cloner是一款拥有多种功能的应用！' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/468ce37416ef5babcad726f527d79762.apk' }, 
 
 
 
+             // ——————————更多——————————示例：{ name: '', description: '' , downloadUrl: '' }, 
+        ];
 
+        // 获取页面元素
+        let searchInput = document.getElementById('searchInput');
+        let searchButton = document.getElementById('searchButton');
+        let searchResults = document.getElementById('searchResults');
 
+        // 页面加载时清空搜索结果
+        searchResults.innerHTML = '';
 
-     // 更多应用...
-    ];
-    const searchButton = document.getElementById('searchButton');
-    const results = document.getElementById('results');
-    searchButton.addEventListener('click', () => {
-      const searchInput = document.getElementById('searchInput').value.toLowerCase();
-      const filteredProducts = products.filter(product => {
-        return product.name.toLowerCase().includes(searchInput) || product.description.toLowerCase().includes(searchInput);
-      });
-      results.innerHTML = '';
-      filteredProducts.forEach(product => {
-        const listItem = document.createElement('li');
-        listItem.innerHTML = `<strong>${product.name}</strong> - 描述：${product.description}`;
-        // 添加下载按钮
-        const downloadButton = document.createElement('button-search');
-        downloadButton.textContent = '下载';
-        downloadButton.addEventListener('click', () => {
-          downloadProduct(product.downloadUrl);
+        // 监听搜索按钮点击事件
+        searchButton.addEventListener('click', function() {
+            const searchTerm = searchInput.value.toLowerCase().trim();
+            if (searchTerm === '') {
+                searchResults.innerHTML = '';
+                return;
+            }
+            const filteredProducts = filterProducts(searchTerm);
+            displayResults(filteredProducts);
         });
-        listItem.appendChild(downloadButton);
-        results.appendChild(listItem);
-      });
+
+        // 过滤应用函数
+        function filterProducts(searchTerm) {
+            return products.filter(product => 
+                product.name.toLowerCase().includes(searchTerm) || 
+                product.description.toLowerCase().includes(searchTerm)
+            );
+        }
+
+        // 显示搜索结果
+        function displayResults(filteredProducts) {
+            searchResults.innerHTML = '';
+            if (filteredProducts.length === 0) {
+                searchResults.innerHTML = '<li>没有找到匹配的结果。</li>';
+            } else {
+                filteredProducts.forEach(product => {
+                    const listItem = document.createElement('li');
+                    listItem.innerHTML = `<strong>${product.name}</strong> - 描述：${product.description} - <button-search><a href="${product.downloadUrl}" target="_blank">下载</a></button-search>`;
+                    searchResults.appendChild(listItem);
+                });
+            }
+        }
     });
-    function downloadProduct(url) {
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = '';
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-    }
-  </script>
+</script>
 
 
-
-
-
-    
-
-
-   
-    
-
-
-  
 
 
 </div>
@@ -474,7 +483,7 @@
 	<p>炽阳001制作 &copy; 2024. 版权所有。</p>
         <p>权限归炽阳001所有，e装机&是大大帅aaa享有合作设计权。</p>
         <p>本网站属于非盈利性质网站，不进行任何商业经营活动</p>
-          <p>网站版本2.2.1</p>
+          <p>网站版本2.2.2</p>
     </div>
 </footer>
 
