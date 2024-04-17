@@ -12,6 +12,23 @@
             width: 50%; 
             margin: 0 auto;
         }
+
+	       body {
+    /* 媒体查询：当屏幕宽度小于或等于400像素时 */
+    @media screen and (max-width: 400px) {
+	#mobile-menu {
+  	width: 60px;
+  	height: 50px;
+	}
+	#mobile-menu .bar {
+  	width: 200%;
+  	height: 30px;  // 厚度
+  	margin: 20px 0;
+  	transition: 0.4s;
+	}
+    }
+
+
     </style>	
 </head>
 <body>
