@@ -1,38 +1,28 @@
-
-
-/* 重置浏览器默认样式 */
-* {
+/* 重置一些基本元素的样式 */
+body, h1, ul, li, p {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* 页面整体样式 */
+/* 设置页面的基本字体和背景 */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #1a1a1a;
+    color: #ffffff;
     padding: 20px;
 }
 
 /* 选择框样式 */
-div {
-    margin: 20px 0;
-    text-align: center;
-}
-
-label {
-    margin-right: 10px;
-    font-weight: bold;
-}
-
 select {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
     outline: none;
     cursor: pointer;
+    background-color: #333;
+    color: #ffffff;
+    margin-top: 10px;
 }
 
 /* 应用列表样式 */
@@ -45,25 +35,44 @@ select {
 }
 
 /* 应用列表项样式 */
-.app-item {
+#apps-list li {
     background-color: #333;
-    border: 1px solid #f0e68c; 
+    border: 2px solid #ffd700; /* 金色边框 */
     border-radius: 5px;
     padding: 15px;
+    margin-bottom: 10px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: #f0e68c;
+    color: #ffd700; /* 金色文字 */
+    transition: transform 0.3s ease;
 }
 
-.app-item h3 {
-    margin-bottom: 10px;
-    color: #f0e68c; 
+/* 应用列表项悬停效果 */
+#apps-list li:hover {
+    transform: translateY(-5px);
 }
 
-.app-item p {
-    font-size: 14px;
+/* 应用名称样式 */
+#apps-list li strong {
+    display: block;
     margin-bottom: 10px;
-    color: #f0e68c;
+    font-size: 1.2em;
+}
+
+/* 下载链接样式 */
+#apps-list li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffd700;
+    background-color: #444;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* 下载链接悬停效果 */
+#apps-list li a:hover {
+    background-color: #505050;
 }
 
 /* 响应式设计 */
