@@ -41,9 +41,22 @@
       { name: '登山赛车', description: '[已改右滑]经典游戏，超有趣超虐心的赛车竞速游戏！基于真实赛车物理特性开发，仅需两键就能驰骋各类特色赛道' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/6591a4902f5bad20d6e4ac2e81d37941.apk' }, 
       { name: '地铁跑酷', description: '[已改右滑]这款流行的休闲跑酷游戏，让你的角色尽享各种乐趣；众多炫酷的动画效果在这里一一呈现' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/4287b9c497a8041d4e979f8666636895.apk' }, 
       { name: 'App Cloner', description: 'App Cloner是一款拥有多种功能的应用！' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/468ce37416ef5babcad726f527d79762.apk' }, 
-
-
-
+      { name: '讯飞输入法手表版', description: '一款全新的智能手表输入法,它针对智能手表用户打造,可以轻松输入文字,并且界面图标清晰明了,非常适合手腕操作。且支持多种输入方式', downloadUrl: 'https://fel.forxhr.top:2022/down.php/7e3a61d2ca0dc1498ac1a1a60339951c.apk' },
+      { name: 'AIDA64', description: '一款硬件检测工具软件，它可以对手表进行详细的硬件检测,包括CPU、内存、电池、屏幕、传感器、网络等多种功能，并且它提供的参数都非常细致。', downloadUrl: 'https://fel.forxhr.top:2022/down.php/d9777a5216aa28d0144319ee71baed10.apk' },
+      { name: '弓箭手大作战', description: '[已改右滑]一款超爽的多人射击类游戏；游戏支持人机对战，也可以进行多人在线联网对战；游戏操作简单，玩法新颖，让人欲罢不能！', downloadUrl: 'https://fel.forxhr.top:2022/down.php/e30f2e66ce4e14ec470a42d9164d2226.apk' },
+      { name: 'DryLake24', description: '[已改右滑]在游戏中玩家要控制自己的机甲在干涸的湖泊上与敌人战斗。玩家控制的机甲不仅能射击、奔跑还可以侧滑或是紧急回转', downloadUrl: 'https://fel.forxhr.top:2022/down.php/220f3f86dbd96db9652947cd5caffa33.apk' },
+      { name: 'Hankmi应用商店', description: '这里拥有非常多适合手表使用的软件，可以选择应用源，且软件拥有快速搜索引擎，对应用名称、简介、模糊搜索都能秒出结果', downloadUrl: 'https://fel.forxhr.top:2022/down.php/6f4bffcc32420f279e2885014bea9d87.apk' },
+      { name: "Shattered Pixel Dung", description: "一款好玩的地牢冒险游戏，经典像素风格，感受怀旧的闯关乐趣，不断获取各种的道具，解决不同难题，让自己存活下来并迎接全新的挑战！", "downloadUrl": "https://fel.forxhr.top:2022/down.php/dddc818e8b3b031335ef00b67ceaafbc.apk" },
+      { name: "Temple Run 2", description: "游戏操作简单易懂，只需要一只手就能玩，轻松即可上手，但是又如此困难，任何一个失误都能让你从头再来，而游戏过程却又如此刺激，让人欲罢不能，你只能不断的往前逃亡逃避抓捕，道路却仿佛没有尽头", "downloadUrl": "https://fel.forxhr.top:2022/down.php/200a02c33507e7f0cceaec9eff5b876c.apk" },
+      { name: "Tic Tac Toe", description: "一款画风非常简约的对战类益智休闲手游，游戏充满了霓虹灯色彩，多种模式供玩家选择，你可以对电脑AI对战也可以与你的小伙伴展开一场益智对战", "downloadUrl": "https://fel.forxhr.top:2022/down.php/f71b0c2f0dc0feb1ae7bdf17a8456abb.apk" },
+      { name: "UC浏览器", description: "内置多个搜索引擎可以快速切换,线上还能直接复制粘贴网址快速进入相关的网站,也能进行无痕浏览,帮助用户保护自己的隐私", "downloadUrl": "https://fel.forxhr.top:2022/down.php/6e407ceb3acfeeb75642e6b016be42ca.apk" },
+      { name: "创建快捷方式", "description": "在手表上也可以查看应用的包名，活动列表等", "downloadUrl": "https://fel.forxhr.top:2022/down.php/86f1e557ed70489ffac3f125db5936e4.apk" },
+      { name: '魔法少女小圆之晓美焰', description: '一款动作冒险类游戏,根据同名ip所改编的同人小游戏,超解压的玩法模式等你来挑战,日系画风完美呈现,操作起来轻松便捷,给玩家带来无限的游戏体验', downloadUrl:'https://fel.forxhr.top:2022/down.php/827786e4b248f5a83d366f923ac23676.apk' },
+      { name: '墨迹天气（圆屏）', description: '此版本适配圆屏智能手表，墨迹天气提供天气预报、空气质量监测、短时气候预报、生活指数服务等功能', downloadUrl: 'https://fel.forxhr.top:2022/down.php/56ef712689881e88b820e6ae15b10c38.apk' },
+      { name: '双人游戏', description: '[已改右滑]拥有超多游戏等你来玩！可以双人对决，也可以人机对决，超好玩，根本停不下来！！', downloadUrl: 'https://fel.forxhr.top:2022/down.php/96c1f973ce5cda5aab15b7c0205ac9b7.apk' },
+      { name: '小趣商店', description: '一款很实用的应用商店软件,超多功能,而且还拥有海量的应用软件和游戏,让你的手表跟手机一样方便！！', downloadUrl: 'https://fel.forxhr.top:2022/down.php/65fb3ae7389975e6cc995938576829ee.apk' },
+      { name: '羊了个羊3D', description: '羊了个羊3D中直接分为了两种模式，一种是普通模式，一种是玩梗模式。不同的模式中将会给你带来很多乐趣。', downloadUrl: 'https://fel.forxhr.top:2022/down.php/b11d2e79bb5d8b8cf3205cd71539f9cf.apk' },
+      { name: '真实汽车驾驶模拟器', description: '[已改右滑]清晰的3D画面和一比一还原的驾驶界面让人身临其境,硬核的驾驶过程和第一人称视角也让游戏更具可玩性', downloadUrl: 'https://fel.forxhr.top:2022/down.php/368691ffa01977fc6d15983f80a20248.apk' },
              // ——————————更多——————————示例：{ name: '', description: '' , downloadUrl: '' }, 
         ];
 	
