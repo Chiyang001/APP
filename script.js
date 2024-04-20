@@ -14,9 +14,21 @@ function downloadApp(downloadUrl) {
 }
 
 function toggleLayout() {
-            var container = document.querySelector('.app-list');
-            container.classList.toggle('single-column');
-        }
+    var appContainer = document.querySelector('.app-container');
+    var toggleButton = document.getElementById('toggleButton');
+    if (appContainer.classList.contains('single-column')) {
+        appContainer.classList.remove('single-column');
+        appContainer.classList.add('four-column');
+        toggleButton.textContent = '切换至手机视图';
+    } else if (appContainer.classList.contains('four-column')) {
+        appContainer.classList.remove('four-column');
+        toggleButton.textContent = '切换至手表视图';
+    } else {
+        appContainer.classList.add('single-column');
+        toggleButton.textContent = '切换至多列电脑视图';
+    }
+}
+
         
 
 

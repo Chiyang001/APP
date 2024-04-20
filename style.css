@@ -6,6 +6,46 @@ body {
     color: #fff; /* 文字颜色为白色 */
 }
 
+/* 4列布局 */
+.four-column .app {
+    width: calc(25% - 20px);
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .app {
+        width: calc(50% - 20px);
+        margin: 10px; /* 在小屏幕上保持较小的间距 */
+    }
+}
+
+@media (max-width: 480px) {
+    .app {
+        width: 100%;
+        margin: 10px 0; /* 在更小的屏幕上，上下间距，左右无边距 */
+    }
+}
+
+.app-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* 为了响应式，确保在小屏设备上也能良好显示 */
+@media (max-width: 600px) {
+    .app {
+        flex: 0 0 calc(50% - 10px); /* 在较小屏幕上占据50%宽度，适应最多2个应用每行 */
+    }
+}
+
+/* 可选：进一步优化更小屏幕的显示 */
+@media (max-width: 400px) {
+    .app {
+        flex: 0 0 calc(100% - 10px); /* 占据100%宽度，即每个应用独占一行 */
+    }
+}
+
 .container {
     max-width: 1200px;
     margin: auto;
@@ -28,14 +68,17 @@ h1 {
 
 
 .app {
-    position: relative;
+   display: flex;
+    flex-direction: column; /* 设置为垂直排列 */
+    align-items: center; /* 如果需要让内容在容器中居中显示 */
     background: rgba(255, 255, 255, 0.1); /* 毛玻璃效果 */
     backdrop-filter: blur(10px);
     border: 2px solid #ffd700; /* 金色边框 */
     border-radius: 10px;
     padding: 20px;
-    margin: 10px;
-    width: calc(33.333% - 20px);
+   width: calc(50% - 20px);
+    margin: 10px; /* 调整此处为较小的间距 */
+    box-sizing: border-box;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     outline: none; /* 移除默认的焦点轮廓 */
@@ -75,11 +118,15 @@ h1 {
 button {
     background-color: #ffd700; /* 金色背景 */
     color: #1a1a1a; /* 暗黑文字颜色 */
-    padding: 20px 100px; /* 增加按钮的高度 */
+    padding: 20px 10px; /* 增加按钮的高度，宽度自适应 */
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    
+    max-width: 100%; /* 确保按钮不会超过父容器的宽度 */
+    text-align: center; /* 文字居中显示 */
+    
 }
 
 button:hover {
