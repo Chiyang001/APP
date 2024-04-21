@@ -3,10 +3,10 @@
 <head>
    
     <title>华为儿童手表应用下载站</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="homestyle.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script src="searchlist.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="homestyle.css">
     <style>
         .center-text {
             text-align: center;
@@ -25,13 +25,13 @@
 </div>
 <h2><ul class="nav-list" id="nav-list">
     <li><a href="index.html">首页</a></li>
-    
+    <li><a href="allAPP.html">应用库</a></li>
     <li><a href="Navigation directory/lesson.html">破解教程</a></li>
     <li><a href="Navigation directory/warning.html">破解警告</a></li>
     <li><a href="Navigation directory/connect.html">联系我们</a></li>
 </ul></h2>
 
-<button-view id="toggleButton" onclick="toggleLayout()">切换至多列电脑视图</button-view>
+<button-view id="toggleButton" onclick="toggleLayout()">切换至手表/电脑手机视图</button-view>
 
 
     <div class="t-container">
@@ -46,57 +46,13 @@
         <div class="app-list">
         <div class="site-description">
     <p>欢迎来到华为儿童手表专用应用下载平台，这里汇集了众多专为华为儿童手表定制的精选应用。本平台是开源平台。如果网站有bug或想提意见请加Q群：253474207；若要成为开发者可以联系QQ：3083248889，vx:18280030694,加入到我们团队中来！所有安装包均已经进行了v1+v2签名，每一款应用均经过UP主亲自验证，开启adb之后，直接安装即可使用。安装前您必须要开启adb调试模式，教程请点击左上角菜单查看</p>
-
-
-		
     <div class="center-text">
-        <input type="text" id="searchInput" placeholder="输入应用名称关键词">
-        <button-search id="searchButton">搜索</button-search>
+	<h1>——精选应用——</h1>
     </div>
-
-    <ul id="searchResults"></ul>
-
 
 
 </div>
 
-<div class="filter-container">
-    <div class="filter-header">
-        <label for="category">选择分类：</label>
-        <select id="category">
-            <option value="">全部</option>
-            <option value="娱乐">娱乐</option>
-            <option value="工具">工具</option>
-            <option value="商店">商店</option>
-           
-            <!-- 更多分类 -->
-        </select>
-    </div>
-    <div class="apps-display">
-        <ul id="apps-list">
-            <!-- 应用列表 -->
-        </ul>
-    </div>
-</div>
-
-
-<div class="app-container single-column">
-	<div class="app" data-category="工具">
-                <div class="dot"></div>
-                <img src="images/讯飞输入法手表版.png" alt="dadashuai">
-        	<h2>讯飞输入法手表版</h2>
-        	
-	        <p>一款全新的智能手表输入法,它针对智能手表用户打造,可以轻松输入文字,并且界面图标清晰明了,非常适合手腕操作。且支持多种输入方式</p>
-		<button onclick="downloadApp('https://fel.forxhr.top:2022/down.php/7e3a61d2ca0dc1498ac1a1a60339951c.apk')">下载 App</button>
-	</div>	
-
-	<div class="app" data-category="工具">
-                <div class="dot"></div>
-                <img src="images/AIDA64.png" alt="dadashuai">
-        	<h2>AIDA64</h2>
-	        <p>一款硬件检测工具软件，它可以对手表进行详细的硬件检测,包括CPU、内存、电池、屏幕、传感器、网络等多种功能，并且它提供的参数都非常细致。</p>
-		<button onclick="downloadApp('https://fel.forxhr.top:2022/down.php/d9777a5216aa28d0144319ee71baed10.apk')">下载 App</button>
-	</div>	
 
 	<div class="app" data-category="娱乐">
                 <div class="dot"></div>
@@ -112,14 +68,6 @@
         	<h2>DryLake24</h2>
 	        <p>[已改右滑]在游戏中玩家要控制自己的机甲在干涸的湖泊上与敌人战斗。玩家控制的机甲不仅能射击、奔跑还可以侧滑或是紧急回转</p>
 		<button onclick="downloadApp('https://fel.forxhr.top:2022/down.php/220f3f86dbd96db9652947cd5caffa33.apk')">下载 App</button>
-	</div>	
-
-	<div class="app" data-category="商店">
-                <div class="dot"></div>
-                <img src="images/Hankmi应用商店.png" alt="dadashuai">
-        	<h2>Hankmi应用商店</h2>
-	        <p>这里拥有非常多适合手表使用的软件，可以选择应用源，且软件拥有快速搜索引擎，对应用名称、简介、模糊搜索都能秒出结果</p>
-		<button onclick="downloadApp('https://fel.forxhr.top:2022/down.php/6f4bffcc32420f279e2885014bea9d87.apk')">下载 App</button>
 	</div>	
 
 	<div class="app" data-category="娱乐">
@@ -154,29 +102,6 @@
 		<button onclick="downloadApp('https://fel.forxhr.top:2022/down.php/6e407ceb3acfeeb75642e6b016be42ca.apk')">下载 App</button>
 	</div>	
 
-	<div class="app" data-category="工具">
-                <div class="dot"></div>
-                <img src="images/创建快捷方式.png" alt="dadashuai">
-        	<h2>创建快捷方式</h2>
-	        <p>在手表上也可以查看应用的包名，活动列表等</p>
-		<button onclick="downloadApp('https://fel.forxhr.top:2022/down.php/86f1e557ed70489ffac3f125db5936e4.apk')">下载 App</button>
-	</div>	
-
-	<div class="app" data-category="娱乐">
-                <div class="dot"></div>
-                <img src="images/魔法少女小圆之晓美焰.png" alt="dadashuai">
-        	<h2>魔法少女小圆之晓美焰</h2>
-	        <p>一款动作冒险类游戏,根据同名ip所改编的同人小游戏,超解压的玩法模式等你来挑战,日系画风完美呈现,操作起来轻松便捷,给玩家带来无限的游戏体验</p>
-		<button onclick="downloadApp('https://fel.forxhr.top:2022/down.php/827786e4b248f5a83d366f923ac23676.apk')">下载 App</button>
-	</div>	
-
-	<div class="app" data-category="工具">
-                <div class="dot"></div>
-                <img src="images/墨迹天气（圆屏）.png" alt="dadashuai">
-        	<h2>墨迹天气（圆屏）</h2>
-	        <p>此版本适配圆屏智能手表，墨迹天气提供天气预报、空气质量监测、短时气候预报、生活指数服务等功能</p>
-		<button onclick="downloadApp('https://fel.forxhr.top:2022/down.php/56ef712689881e88b820e6ae15b10c38.apk')">下载 App</button>
-	</div>	
 
 	<div class="app" data-category="娱乐">
                 <div class="dot"></div>
@@ -186,37 +111,8 @@
 		<button onclick="downloadApp('https://fel.forxhr.top:2022/down.php/96c1f973ce5cda5aab15b7c0205ac9b7.apk')">下载 App</button>
 	</div>	
 
-	<div class="app" data-category="商店">
-                <div class="dot"></div>
-                <img src="images/小趣空间.png" alt="dadashuai">
-        	<h2>小趣商店</h2>
-	        <p>一款很实用的应用商店软件,超多功能,而且还拥有海量的应用软件和游戏,让你的手表跟手机一样方便！！</p>
-		<button onclick="downloadApp('https://fel.forxhr.top:2022/down.php/65fb3ae7389975e6cc995938576829ee.apk')">下载 App</button>
-	</div>	
 
-	<div class="app" data-category="娱乐">
-                <div class="dot"></div>
-                <img src="images/羊了个羊.png" alt="dadashuai">
-        	<h2>羊了个羊3D</h2>
-	        <p>羊了个羊3D中直接分为了两种模式，一种是普通模式，一种是玩梗模式。不同的模式中将会给你带来很多乐趣。</p>
-		<button onclick="downloadApp('https://fel.forxhr.top:2022/down.php/b11d2e79bb5d8b8cf3205cd71539f9cf.apk')">下载 App</button>
-	</div>	
-
-	<div class="app" data-category="娱乐">
-                <div class="dot"></div>
-                <img src="images/真实汽车驾驶模拟器.png" alt="dadashuai">
-        	<h2>真实汽车驾驶模拟器</h2>
-	        <p>[已改右滑]清晰的3D画面和一比一还原的驾驶界面让人身临其境,硬核的驾驶过程和第一人称视角也让游戏更具可玩性</p>
-		<button onclick="downloadApp('https://fel.forxhr.top:2022/down.php/368691ffa01977fc6d15983f80a20248.apk')">下载 App</button>
-	</div>	
-
-	<div class="app" data-category="工具">
-                <div class="dot"></div>
-                <img src="images/App Cloner.png" alt="dadashuai">
-        	<h2>App Cloner</h2>
-	        <p>App Cloner可以扩展克隆的应用程序，以添加功能，例如密码保护，隐身模式，隐藏Android ID或欺骗位置。您还可以强制应用仅通过Wi-Fi消耗数据。有超200种应用程序自定义选项</p>
-		<button onclick="downloadApp('https://fel.forxhr.top:2022/down.php/468ce37416ef5babcad726f527d79762.apk')">下载 App</button>
-	</div>	
+	
 
 	<div class="app" data-category="娱乐">
                 <div class="dot"></div>
@@ -233,38 +129,6 @@
 	        <p>[已改右滑]经典游戏，超有趣超虐心的赛车竞速游戏！基于真实赛车物理特性开发，仅需两键就能驰骋各类特色赛道。</p>
 		<button onclick="downloadApp('https://fel.forxhr.top:2022/down.php/6591a4902f5bad20d6e4ac2e81d37941.apk')">下载 App</button>
 	</div>	
-
-	 <div class="app" data-category="娱乐">
-                <div class="dot"></div>
-                <img src="images/斗地主.png" alt="dadashuai">
-        	<h2>斗地主</h2>
-	        <p>单人斗地主，没有网，也能玩！！</p>
-		<button onclick="downloadApp('https://fel.forxhr.top:2022/down.php/a052c70c43277d995ebc532483d4682c.apk')">下载 App</button>
-	</div>	
-		
-        <div class="app" data-category="工具">
-                <div class="dot"></div>
-                <img src="images/计算器.png" alt="dadashuai">
-        	<h2>计算器</h2>
-	        <p>简便计算器</p>
-		<button onclick="downloadApp('https://fel.forxhr.top:2022/down.php/733501e9507d60937e131bc5b8f28da2.apk')">下载 App</button>
-	</div>	
-		
-	<div class="app" data-category="工具">
-                <div class="dot"></div>
-                <img src="images/文件管理器.png" alt="dadashuai">
-                <h2>文件管理器</h2>
-                <p>支持文件的复制、粘贴、移动、压缩、解压缩、文件信息查看、查看隐藏文件、查看运行进程等等功能，非常简单实用!</p>
-		<button onclick="downloadApp('https://fel.forxhr.top:2022/down.php/79ecc2178bbfd7886a3f7de3c90ef574.apk')">下载 App</button>
-        </div>	
-		
-	<div class="app" data-category="娱乐">
-                <div class="dot"></div>
-                <img src="images/我的世界.png" alt="dadashuai">
-                <h2>我的世界</h2>
-                <p>[已改右滑]一款沙盒游戏，拥有丰富的游戏内容，版本为1.16地狱大更新！</p>
-		<button onclick="downloadApp('https://fel.forxhr.top:2022/down.php/eac4cefc24b39e75fcaae477320c1246.apk')">下载 App</button>
-        </div>		
 		
 	<div class="app" data-category="娱乐">
                 <div class="dot"></div>
@@ -274,21 +138,8 @@
 		<button onclick="downloadApp('https://fel.forxhr.top:2022/down.php/4590ae07af47392f502837406113efd0.apk')">下载 App</button>
         </div>	
      
-	<div class="app" data-category="工具">
-                <div class="dot"></div>
-                <img src="https://fel.forxhr.top:2022/view.php/9371d279c5a83511472b7064647512c0.png" alt="dadashuai">
-                <h2>无障碍管理器</h2>
-                <p>一个在手表上使用的无障碍管理器需要配合Shizuku进行使用</p>
-                <button onclick="downloadApp('https://fel.forxhr.top:2022/down.php/9e5885c64d2aa1391bed973d5434556f.apk')">下载 App</button>
-        </div>
-		
-	<div class="app" data-category="工具">
-                <div class="dot"></div>
-                <img src="https://img.ddooo.com/logo/230804/20230804101947544.png" alt="dadashuai">
-                <h2>ShizukuRunner</h2>
-                <p>一个在手表上使用的命令需要配合Shizuku</p>
-                <button onclick="downloadApp('https://fel.forxhr.top:2022/down.php/67ecba48dd628559e9bc166c5ee00cd0.apk')">下载 App</button>
-	   </div>
+
+
 		
             <div class="app" data-category="工具">
                 <div class="dot"></div>
@@ -324,16 +175,7 @@
                 <button onclick="downloadApp('https://www.123pan.com/s/aJY1jv-UEv4H.html')">下载 App</button>
 
             </div>
-           
-            
-           <div class="app" data-category="商店">
-                <div class="dot"></div>
-                <img src="images/anzhuangshi.png" alt="莘应用（原易档商店）">
-                <h2>安装狮</h2>
-                <p>配合shizuku使用使用前必须安装</p>
-                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-g4Oph.html')">下载 App</button>
-
-            </div>
+          
             
             <div class="app" data-category="工具">
                 <div class="dot"></div>
@@ -358,19 +200,9 @@
                 <img src="images/xinyingyong.png">
                 <h2>莘应用（原易档商店）</h2>
                 <p>一个界面简洁、兼容性高的应用商店完全兼容4x 3p最新版本1.4</p>
-                
-                
                 <button onclick="downloadApp('https://edsc.top')">进入官网</button>
             </div>
            
-            <div class="app" data-category="娱乐">
-            <div class="dot"></div>
-                <img src="images/wannengyuedu.png" alt="哔哩终端">
-                <h2>万能阅读</h2>
-                <p>在手表上看小说，全部都是免费的</p>
-                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-X1Oph.html')">下载 App</button>
-
-            </div>
 
             <div class="app" data-category="商店">
             <div class="dot"></div>
@@ -381,177 +213,14 @@
 
             </div>
 
-            <div class="app" data-category="娱乐">
-            <div class="dot"></div>
-                <img src="images/qqyinyue.png" alt="哔哩终端">
-                <h2>QQ音乐</h2>
-                <p>和其他音乐软件一样，不需要改dpi</p>
-                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-21Oph.html')">下载 App</button>
-
-            </div>
-            
-            <div class="app" data-category="娱乐">
-            <div class="dot"></div>
-                <img src="images/hechengdaxigua.png" alt="哔哩终端">
-                <h2>合成大西瓜</h2>
-                <p>一款小游戏，和2048差不多</p>
-                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-s1Oph.html')">下载 App</button>
-
-            </div>
-            <div class="app" data-category="娱乐">
-            <div class="dot"></div>
-                <img src="images/biecaibaifangkuai.png" alt="应用2图标">
-                <h2>别踩白方块</h2>
-                <p>你可以认为它是一款音乐游戏，支持在手表上游玩</p>
-                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-W1Oph.html')">下载 App</button>
-
-            </div>
-            <div class="app" data-category="工具">
-            <div class="dot"></div>
-                <img src="images/aikelan.png" alt="应用1图标">
-                <h2>爱科蓝</h2>
-                <p>一款手表表盘的启动器，不过好像会和系统桌面打架</p>
-                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-C1Oph.html')">下载 App</button>
-
-            </div>
-           
-            
-
-            <div class="app" data-category="娱乐">
-            <div class="dot"></div>
-                <img src="images/douyin.png" alt="哔哩终端">
-                <h2>抖音</h2>
-                <p>手表上刷短视频，不过需要把dpi改小一点</p>
-                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-P1Oph.html')">下载 App</button>
-
-            </div>
-
-            <div class="app" data-category="娱乐">
-            <div class="dot"></div>
-                <img src="images/2048.png" alt="哔哩终端">
-                <h2>2048</h2>
-                <p>2048小游戏</p>
-                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-G1Oph.html')">下载 App</button>
-
-            </div>
-
-            <div class="app" data-category="商店">
-            <div class="dot"></div>
-                <img src="images/weiqu.png" alt="哔哩终端">
-                <h2>唯趣应用商店</h2>
-                <p>下载各类的适配手表的应用，应用十分丰富</p>
-                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-Y1Oph.html')">下载 App</button>
-
-            </div>
-            
-            <div class="app" data-category="娱乐">
-            <div class="dot"></div>
-                <img src="images/bilibili.png" alt="哔哩终端">
-                <h2>哔哩终端</h2>
-                <p>在手表上也能够尽情刷B站，看评论，还支持登录自己的账号同步账号信息</p>
-                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-f1Oph.html')">下载 App</button>
-
-            </div>
-            <div class="app" data-category="工具">
-            <div class="dot"></div>
-                <img src="images/google.webp" alt="应用2图标">
-                <h2>谷歌浏览器</h2>
-                <p>在手表上也能够看网页无广告纯净版，不过下载之后可能需要设置一下dpi才能够正常显示</p>
-                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-m1Oph.html')">下载 App</button>
-
-            </div>
-            <div class="app" data-category="工具">
-            <div class="dot"></div>
-                <img src="images/shizuku.png" alt="应用1图标">
-                <h2>shizuku</h2>
-                <p>为其他的应用获取adb权限，在手表上也能够尽情玩机</p>
-                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-11Oph.html')">下载 App</button>
-
-            </div>
-            <div class="app" data-category="工具">
-            <div class="dot"></div>
-                <img src="images/Kimi.png" alt="应用2图标">
-                <h2>Kimi</h2>
-                <p>国内人工智能模型应用，在手表上也能够体验GPT的强大</p>
-                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-41Oph.html')">下载 App</button>
-
-            </div>
-            <div class="app" data-category="工具">
-            <div class="dot"></div>
-                <img src="images/rarebox.webp" alt="应用1图标">
-                <h2>rarebox</h2>
-                <p>一款手表上也能玩机的应用，可以在手表上对其进行adb命令控制，修改屏幕分辨率，dpi等等</p>
-                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-x1Oph.html')">下载 App</button>
-
-            </div>
-            <div class="app" data-category="工具">
-            <div class="dot"></div>
-                <img src="images/cleaner.png" alt="应用2图标">
-                <h2>内存清理</h2>
-                <p>界面简洁，点击一下按钮就可以清理所有的后台应用及其缓存，支持进入应用自动清理</p>
-                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-p1Oph.html')">下载 App</button>
-
-            </div>
-           <div class="app" data-category="工具">
-           <div class="dot"></div>
-                <img src="images/baibaoxiang.png" alt="应用2图标">
-                <h2>抬腕百宝箱</h2>
-                <p>可以玩石头剪刀布，找小鸡，bmi指数转换，二维码生成等小功能</p>
-                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-g1Oph.html')">下载 App</button>
-
-            </div>
-           <div class="app" data-category="工具">
-           <div class="dot"></div>
-                <img src="images/biji.png" alt="应用2图标">
-                <h2>抬腕笔记</h2>
-                <p>手表上面可以记录笔记，还有隐私模式保护笔记安全，支持和手机连接</p>
-                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-I1Oph.html')">下载 App</button>
-
-            </div>
-           <div class="app" data-category="工具">
-           <div class="dot"></div>
-                <img src="images/shipin.png" alt="应用2图标">
-                <h2>抬腕视频</h2>
-                <p>查找手表中的本地视频文件，支持快捷选项，支持查找网络上的视频</p>
-                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-a1Oph.html')">下载 App</button>
-
-            </div>
-           <div class="app" data-category="工具">
-           <div class="dot"></div>
-                <img src="images/wenjian.png" alt="应用2图标">
-                <h2>抬腕文件-传输</h2>
-                <p>支持浏览儿童手表中的本地文件，支持局域网传输文件</p>
-                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-M1Oph.html')">下载 App</button>
-
-            </div>
-           <div class="app" data-category="工具">
-           <div class="dot"></div>
-                <img src="images/explore.png" alt="应用2图标">
-                <h2>抬腕文件</h2>
-                <p>可以浏览儿童手表中的文件，但是不支持传输功能</p>
-                <button onclick="downloadApp('https://www.123pan.com/s/Xnh7Vv-w1Oph.html')">下载 App</button>
-
-            </div>
-           <div class="app" data-category="娱乐">
-           <div class="dot"></div>
-                <img src="images/wearbili.png" alt="应用2图标">
-                <h2>Re:WeaBili</h2>
-                <p>可登录，还可以观看视频和彩色弹幕，缓存视频，我的消息等</p>
-                <button onclick="downloadApp('https://fel.forxhr.top:2022/down.php/6ad21ad126d28b150316071a87fe06f9.apk')">下载 App</button>
-
-            </div>
-
-  </div>
 <footer class="footer">
     <div class="footer-content">
-        <h1>更多应用即将上线，敬请期待</h1>
 	<p>炽阳001制作 &copy; 2024. 版权所有。</p>
         <p>权限归炽阳001所有，e装机&是大大帅aaa享有合作设计权。</p>
         <p>本网站属于非盈利性质网站，不进行任何商业经营活动</p>
           <p>网站版本2.2.3</p>
     </div>
 </footer>
-
-    <script src="script.js"></script>
+    <script src="homescript.js"></script>
 </body>
 </html>
