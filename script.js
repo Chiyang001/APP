@@ -1,3 +1,24 @@
+//应用分类js
+
+document.addEventListener('DOMContentLoaded', function() {
+    var selectElement = document.getElementById('category');
+    var apps = document.querySelectorAll('.app');
+
+    selectElement.addEventListener('change', function() {
+        var selectedCategory = this.value;
+        apps.forEach(function(app) {
+            if (app.getAttribute('data-category') === selectedCategory || selectedCategory === '') {
+                app.style.display = 'block'; // 显示对应分类的app
+            } else {
+                app.style.display = 'none'; // 隐藏不符合分类的app
+            }
+        });
+    });
+});
+
+
+
+
 function downloadApp(downloadUrl) {
     // 创建一个隐藏的<a>元素
     var link = document.createElement("a");

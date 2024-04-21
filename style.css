@@ -6,6 +6,68 @@ body {
     color: #fff; /* 文字颜色为白色 */
 }
 
+.filter-container {
+    background-color: black;
+    color: gold;
+    border: 1px solid gold;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filter-header label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.filter-header select {
+    padding: 5px 10px;
+    background-color: #333;
+    color: gold;
+    border: 1px solid gold;
+    font-size: 14px;
+}
+
+.apps-display ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.apps-display li {
+    background-color: #222;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gold;
+}
+
+.apps-display li img {
+    width: 100%; /* 调整为合适的尺寸 */
+    height: auto;
+}
+
+.apps-display button {
+    background-color: gold;
+    color: black;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.apps-display button:hover {
+    background-color: #ffd700; /* 更亮的金色 */
+}
+
+
 /* 4列布局 */
 .four-column .app {
     width: calc(25% - 20px);
