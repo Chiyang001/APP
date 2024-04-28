@@ -59,7 +59,11 @@
       { name: '真实汽车驾驶模拟器', description: '[已改右滑]清晰的3D画面和一比一还原的驾驶界面让人身临其境,硬核的驾驶过程和第一人称视角也让游戏更具可玩性', downloadUrl: 'https://fel.forxhr.top:2022/down.php/368691ffa01977fc6d15983f80a20248.apk' },
       { name: 'Win98模拟器', description: '[已改右滑][已汉化]win98模拟器电脑版是一款模拟win98系统的手机游戏，你可以在win98模拟器中文版最新版PC版里玩到很多童年的游戏比如扫雷纸牌等！' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/6071c51475816ba91bcfef93bfa4e2a8.apk' },
       { name: '跳动的线', description: '玩家需跟随音乐节奏点击，使线条转向，指引线条躲避障碍，到达终点。游戏内包含各种场景，音乐会和不同场景混合，每个关卡皆有特色' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/e74a3de0668343c4c6f7708bed188fde.apk' },
-           
+      { name: '夜间屏幕', description: '你是否进经历过晚上玩表时却因为太亮而闪的眼睛痛，这款应用可以帮助你，可以强制亮度，妈妈再也不用担心我晚上玩表被闪到眼睛了' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/e622fc3dd300c6c570b20c8564ff2ff9.apk' }, 
+      { name: '电子木鱼', description: '功德+1 功德+1' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/f9b15b4a6fdf142331711ca6bec82f17.apk' }, 
+      { name: '倒数日', description: '倒数日 是一个帮你记录生活中重要日子的小工具，例如:恋人生日还有多少天？还信用卡还有多少天？发工资还有多少天？距离世界末日还有多少天……' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/3a9cf5cc6c562dcb8b7c1b0d2d3c3245.apk' }, 
+      { name: '跑跑卡丁车', description: '[已改右滑]游戏以卡通风格的卡丁车为主题，简单易上手，多样的赛车和场景，丰富的游戏模式，玩家需要驾驶卡丁车进行赛车竞速，完成各种任务和挑战，感兴趣的下载玩玩吧！' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/73aa1dafadcbd4022a80853303424ad2.apk' }, 
+		
              // ——————————更多——————————示例：{ name: '', description: '' , downloadUrl: '' }, 
         ];
 	
