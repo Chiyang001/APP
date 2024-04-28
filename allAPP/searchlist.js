@@ -57,6 +57,9 @@
       { name: '小趣商店', description: '一款很实用的应用商店软件,超多功能,而且还拥有海量的应用软件和游戏,让你的手表跟手机一样方便！！', downloadUrl: 'https://fel.forxhr.top:2022/down.php/65fb3ae7389975e6cc995938576829ee.apk' },
       { name: '羊了个羊3D', description: '羊了个羊3D中直接分为了两种模式，一种是普通模式，一种是玩梗模式。不同的模式中将会给你带来很多乐趣。', downloadUrl: 'https://fel.forxhr.top:2022/down.php/b11d2e79bb5d8b8cf3205cd71539f9cf.apk' },
       { name: '真实汽车驾驶模拟器', description: '[已改右滑]清晰的3D画面和一比一还原的驾驶界面让人身临其境,硬核的驾驶过程和第一人称视角也让游戏更具可玩性', downloadUrl: 'https://fel.forxhr.top:2022/down.php/368691ffa01977fc6d15983f80a20248.apk' },
+      { name: 'Win98模拟器', description: '[已改右滑][已汉化]win98模拟器电脑版是一款模拟win98系统的手机游戏，你可以在win98模拟器中文版最新版PC版里玩到很多童年的游戏比如扫雷纸牌等！' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/6071c51475816ba91bcfef93bfa4e2a8.apk' },
+      { name: '跳动的线', description: '玩家需跟随音乐节奏点击，使线条转向，指引线条躲避障碍，到达终点。游戏内包含各种场景，音乐会和不同场景混合，每个关卡皆有特色' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/e74a3de0668343c4c6f7708bed188fde.apk' },
+           
              // ——————————更多——————————示例：{ name: '', description: '' , downloadUrl: '' }, 
         ];
 	
