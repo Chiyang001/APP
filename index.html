@@ -20,18 +20,25 @@
     </style>	
 </head>
 <body>
-<div class="example-contained" style="position: relative; overflow: hidden">
-  <mdui-navigation-drawer contained>
+<div class="example-modal" style="position: relative; overflow: hidden">
+  <mdui-navigation-drawer modal close-on-esc close-on-overlay-click contained>
     <mdui-button class="close">关闭侧边抽屉栏</mdui-button>
   </mdui-navigation-drawer>
 
   <div style="height: 160px;">
     <mdui-button class="open">打开侧边抽屉栏</mdui-button>
+    <h2><ul class="nav-list" id="nav-list">
+    <li><a href="index.html">首页</a></li>
+    <li><a href="allAPP.html">应用库</a></li>
+    <li><a href="Navigation directory/lesson.html">破解教程</a></li>
+    <li><a href="Navigation directory/warning.html">破解警告</a></li>
+    <li><a href="Navigation directory/connect.html">联系我们</a></li>
+</ul></h2>
   </div>
 </div>
 
 <script>
-  const example = document.querySelector(".example-contained");
+  const example = document.querySelector(".example-modal");
   const navigationDrawer = example.querySelector("mdui-navigation-drawer");
   const openButton = example.querySelector(".open");
   const closeButton = example.querySelector(".close");
@@ -39,19 +46,6 @@
   openButton.addEventListener("click", () => navigationDrawer.open = true);
   closeButton.addEventListener("click", () => navigationDrawer.open = false);
 </script>
-<div class="menu-toggle" id="mobile-menu">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
-   
-</div>
-<h2><ul class="nav-list" id="nav-list">
-    <li><a href="index.html">首页</a></li>
-    <li><a href="allAPP.html">应用库</a></li>
-    <li><a href="Navigation directory/lesson.html">破解教程</a></li>
-    <li><a href="Navigation directory/warning.html">破解警告</a></li>
-    <li><a href="Navigation directory/connect.html">联系我们</a></li>
-</ul></h2>
 
 <button-view id="toggleButton" onclick="toggleLayout()">切换至手表/电脑手机视图</button-view>
 
