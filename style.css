@@ -5,6 +5,20 @@ body {
     padding: 0;
     color: #fff; /* 文字颜色为白色 */
 }
+/* 设置按钮的字体大小 */
+.mdui-typo-button {
+    font-size: 18px; /* 根据需要调整这个值 */
+}
+
+/* 设置按钮的图标大小 */
+.mdui-icon {
+    font-size: 18px; /* 与上面的字体大小保持一致 */
+}
+
+/* 调整按钮内边距以适应文字和图标的大小 */
+.mdui-button {
+    padding: 0 10px; /* 根据您的设计需求调整左右内边距 */
+}
 
 .filter-container {
     background-color: black;
