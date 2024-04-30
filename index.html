@@ -14,30 +14,32 @@
 <style>
         .center-text {
             text-align: center;
-            width: 50%;
+            width: 50%; 
             margin: 0 auto;
         }
-        /* 设置按钮的字体大小 */
-        .mdui-typo-button {
-            font-size: 18px; /* 根据需要调整这个值 */
-        }
-        /* 设置按钮的图标大小 */
-        .mdui-icon {
-            font-size: 18px; /* 与上面的字体大小保持一致 */
-        }
-        /* 调整按钮内边距以适应文字和图标的大小 */
-        .mdui-button {
-            padding: 0 10px; /* 根据您的设计需求调整左右内边距 */
-        }
-    </style>
+	    /* 设置按钮的字体大小 */
+.mdui-typo-button {
+    font-size: 18px; /* 根据需要调整这个值 */
+}
+
+/* 设置按钮的图标大小 */
+.mdui-icon {
+    font-size: 18px; /* 与上面的字体大小保持一致 */
+}
+
+/* 调整按钮内边距以适应文字和图标的大小 */
+.mdui-button {
+    padding: 0 10px; /* 根据您的设计需求调整左右内边距 */
+}
+
+    </style>	
 </head>
-<body class="mdui-appbar-with-toolbar mdui-theme-primary-indigo mdui-theme-accent-pink">
-    <!-- 主内容区域 -->
-    <div class="mdui-container center-text">
-        <h1>欢迎来到华为儿童手表应用下载站</h1>
-    </div>
-    <!-- 侧边抽屉栏 -->
-    <div class="mdui-drawer mdui-drawer-close mdui-color-white mdui-appbar-fixed mdui-shadow-2dp">
+<body>
+<div class="example-modal" style="position: relative; overflow: hidden">
+  <mdui-navigation-drawer modal close-on-esc close-on-overlay-click contained>
+    <mdui-button class="close">关闭侧边抽屉栏</mdui-button>
+    <ul>
+     <div class="mdui-drawer mdui-drawer-close mdui-color-white mdui-appbar-fixed mdui-shadow-2dp">
         <ul class="mdui-list">
             <li class="mdui-list-item mdui-ripple">
                 <a href="index.html" class="mdui-typo-button mdui-text-truncate">首页</a>
@@ -55,27 +57,28 @@
                 <a href="Navigation%20directory/connect.html" class="mdui-typo-button mdui-text-truncate">联系我们</a>
             </li>
         </ul>
-    </div>
-    <!-- 工具栏 -->
-    <div class="mdui-toolbar mdui-appbar mdui-shadow-0dp">
-        <div class="mdui-toolbar-spacer"></div>
-        <!-- 打开侧边抽屉栏按钮 -->
-        <button class="mdui-btn mdui-btn-icon mdui-ripple mdui-color-white mdui-fab mdui-fab-fixed mdui-fab-bottom-right mdui-fab-hide-on-large screen mdui-fab-offset-horizontal-standard mdui-fab-offset-vertical-standard" id="openDrawerButton">
-            <i class="mdui-icon material-icons">menu</i>
-        </button>
-    </div>
-    <!-- 引入 MDUI JavaScript -->
-    <script src="https://unpkg.com/mdui@2/dist/js/mdui.min.js"></script>
-    <script>
-        // 初始化 MDUI 并自动编译所有元素
-        mdui.init();
-        // 获取打开侧边抽屉栏的按钮
-        var openDrawerButton = document.getElementById('openDrawerButton');
-        // 为按钮添加点击事件监听器，以触发侧边抽屉栏的打开动作
-        openDrawerButton.addEventListener('click', function() {
-            mdui.drawer.open();
-        });
-    </script>
+    </ul>
+  </mdui-navigation-drawer>
+  
+  <div style="height: 160px;">
+    <mdui-button class="open">打开侧边抽屉栏</mdui-button>
+  </div>
+</div>
+
+<script>
+  const example = document.querySelector(".example-modal");
+  const navigationDrawer = example.querySelector("mdui-navigation-drawer");
+  const openButton = example.querySelector(".open");
+  const closeButton = example.querySelector(".close");
+
+  openButton.addEventListener("click", () => {
+    navigationDrawer.open = true;
+  });
+
+  closeButton.addEventListener("click", () => {
+    navigationDrawer.open = false;
+  });
+</script>
 
 <button-view id="toggleButton" onclick="toggleLayout()">切换至手表/电脑手机视图</button-view>
 
