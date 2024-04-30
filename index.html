@@ -3,13 +3,8 @@
 <head>
    
     <title>华为儿童手表应用下载站</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@2.0/dist/css/mdui.min.css">
     <link rel="stylesheet" type="text/css" href="homestyle.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@2.0/dist/css/mdui.min.css">
     <script src="searchlist.js"></script>
     <link rel="stylesheet" href="homestyle.css">
     <style>
@@ -22,62 +17,19 @@
 </head>
 <body>
 
-</head>
-<body class="mdui-appbar-with-toolbar mdui-theme-primary-indigo mdui-theme-accent-pink">
-    <!-- AppBar Layout -->
-    <div class="mdui-appbar mdui-appbar-fixed">
-        <div class="mdui-toolbar">
-            <!-- Hamburger Button -->
-            <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" aria-label="Menu">
-                <i class="mdui-icon material-icons">menu</i>
-            </button>
-            <!-- Title -->
-            <span class="mdui-typo-title">主页</span>
-        </div>
-    </div>
-
-    <!-- Drawer Layout -->
-    <div class="mdui-drawer" id="main-drawer">
-        <ul class="mdui-list" mdui-collapse="{accordion: true}">
-            <li class="mdui-list-item">
-                <a href="index.html" class="mdui-typo">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
-                    <span class="mdui-list-item-text">首页</span>
-                </a>
-            </li>
-            <li class="mdui-list-item">
-                <a href="allAPP.html" class="mdui-typo">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">apps</i>
-                    <span class="mdui-list-item-text">应用库</span>
-                </a>
-            </li>
-            <li class="mdui-list-item">
-                <a href="Navigation%20directory/lesson.html" class="mdui-typo">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">help</i>
-                    <span class="mdui-list-item-text">破解教程</span>
-                </a>
-            </li>
-            <li class="mdui-list-item">
-                <a href="Navigation%20directory/warning.html" class="mdui-typo">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">warning</i>
-                    <span class="mdui-list-item-text">破解警告</span>
-                </a>
-            </li>
-            <li class="mdui-list-item">
-                <a href="Navigation%20directory/connect.html" class="mdui-typo">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">contact_mail</i>
-                    <span class="mdui-list-item-text">联系我们</span>
-                </a>
-            </li>
-        </ul>
-    </div>
-
-    <!-- MDUI JS and theme -->
-    <script src="https://cdn.jsdelivr.net/npm/mdui@2.0/dist/js/mdui.min.js"></script>
-    <script>
-        // Instantiate MDUI for Drawer and Toolbar
-        mdui.init();
-    </script>
+<div class="menu-toggle" id="mobile-menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+   
+</div>
+<h2><ul class="nav-list" id="nav-list">
+    <li><a href="index.html">首页</a></li>
+    <li><a href="allAPP.html">应用库</a></li>
+    <li><a href="Navigation directory/lesson.html">破解教程</a></li>
+    <li><a href="Navigation directory/warning.html">破解警告</a></li>
+    <li><a href="Navigation directory/connect.html">联系我们</a></li>
+</ul></h2>
 
 <button-view id="toggleButton" onclick="toggleLayout()">切换至手表/电脑手机视图</button-view>
 
