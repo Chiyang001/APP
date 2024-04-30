@@ -7,6 +7,10 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script src="searchlist.js"></script>
     <link rel="stylesheet" href="homestyle.css">
+<link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css">
+<script src="https://unpkg.com/mdui@2/mdui.global.js">
+     </script>
+
     <style>
         .center-text {
             text-align: center;
@@ -16,7 +20,25 @@
     </style>	
 </head>
 <body>
+<div class="example-contained" style="position: relative; overflow: hidden">
+  <mdui-navigation-drawer contained>
+    <mdui-button class="close">关闭侧边抽屉栏</mdui-button>
+  </mdui-navigation-drawer>
 
+  <div style="height: 160px;">
+    <mdui-button class="open">打开侧边抽屉栏</mdui-button>
+  </div>
+</div>
+
+<script>
+  const example = document.querySelector(".example-contained");
+  const navigationDrawer = example.querySelector("mdui-navigation-drawer");
+  const openButton = example.querySelector(".open");
+  const closeButton = example.querySelector(".close");
+
+  openButton.addEventListener("click", () => navigationDrawer.open = true);
+  closeButton.addEventListener("click", () => navigationDrawer.open = false);
+</script>
 <div class="menu-toggle" id="mobile-menu">
     <span class="bar"></span>
     <span class="bar"></span>
