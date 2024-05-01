@@ -63,7 +63,10 @@
       { name: '电子木鱼', description: '功德+1 功德+1' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/f9b15b4a6fdf142331711ca6bec82f17.apk' }, 
       { name: '倒数日', description: '倒数日 是一个帮你记录生活中重要日子的小工具，例如:恋人生日还有多少天？还信用卡还有多少天？发工资还有多少天？距离世界末日还有多少天……' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/3a9cf5cc6c562dcb8b7c1b0d2d3c3245.apk' }, 
       { name: '跑跑卡丁车', description: '[已改右滑]游戏以卡通风格的卡丁车为主题，简单易上手，多样的赛车和场景，丰富的游戏模式，玩家需要驾驶卡丁车进行赛车竞速，完成各种任务和挑战，感兴趣的下载玩玩吧！' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/73aa1dafadcbd4022a80853303424ad2.apk' }, 
-		
+      { name: '几何战机2', description: '[已改右滑]多元新鲜玩法精彩纷呈：超视距攻击、魔鬼训练、精英改造、神秘技能、配件大师、后备支援，全新概念战力爆表由此开启！奇思妙想养成专属战机，超多制胜方法等你一手掌控！' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/e143a7390932b8783ccc18a1a9653d84.apk' }, 	
+      { name: '答案之书', description: '在你感觉时间正确的时候，按下按钮，你要寻找的答案就在那里。 遇到任何问题，你都可以打开它。 获取答案 你的答案是 再尝试一次' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/4a3801d8a8d514578d220d3dda77b163.apk' }, 	
+      { name: 'Dungeon Cards', description: '这是一款难以定义游戏类型的魔性卡牌游戏，它披着卡牌的外衣，具备时下最流行的像素风，又有着RPG的元素，甚至还有中国最古老的益智游戏华容道的影子，第一次玩就让你欲罢不能！' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/ee5444833c48cb7f16c29528c611814a.apk' }, 	
+      { name: '番茄时钟', description: '真正有效的时间管理方法并非一味地压抑本能，而是会以一种顺应人性的方式引导我们提高效率。番茄工作法正是如此。' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/cccbb8ceeab68ecab68d53c4c46d1cc9.apk' }, 	
              // ——————————更多——————————示例：{ name: '', description: '' , downloadUrl: '' }, 
         ];
 	
