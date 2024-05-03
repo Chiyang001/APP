@@ -44,126 +44,24 @@
     font-size: 16px;
     line-height: 1.6;
 }
-    body {
 
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
 
-        .menu-container {
-            position: relative;
-            height: 100vh;
-            overflow: hidden;
-        }
 
-        .menu-toggle {
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 0;
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            z-index: 1000;
-        }
-
-        .menu-toggle span,
-        .menu-toggle span:before,
-        .menu-toggle span:after,
-        .menu-toggle span:nth-child(4) {
-            display: block;
-            background-color: #ffd700;
-            height: 5px;
-            width: 30px;
-            transition: all 0.3s;
-            position: absolute;
-            top: 50%;
-            left: 0;
-
-        transform-origin: center;
-            margin-top: 1px;
-        }
-
-        .menu-toggle span:before {
-            content: '';
-            margin-top: 5px; /* 4px height / 2 */
-        }
-
-        .menu-toggle span:after {
-            content: '';
-            margin-top: 13px; /* 4px height / 2 */
-        }
-
-        .menu-toggle span:nth-child(4) {
-            content: '';
-            margin-top: 20px; /* 4px height * 3 lines / 2 */
-        }
-
-        .menu {
-            list-style-type: none;
-            background-color: #block;
-            position: fixed;
-            top: 0;
-            left: -200px;
-            width: 200px;
-            height: 100%;
-            transition: left 0.3s ease-in-out;
-            overflow-y: auto;
-   	    left: -700px; /* 稍微增大负值，以确保菜单完全隐藏 */
-            padding: 20px;
-        }
-
-        .menu.active {
-            left: 0;
-            border-right: 5px solid #ffd700; /* 添加黄色边框 */
-        }
-
-        .menu li {
-            margin-bottom: 10px;
-        }
-
-        .menu li a {
-            text-decoration: none;
-            color: grey;
-            transition: color 0.3s;
-            display: block;
-            padding: 10px;
-            border: 1px solid transparent;
-        }
-
-        .menu li a:hover {
-            color: #ffd700;
-            border-color: #ffd700;
-        }
-	    }
     </style>	
 </head>
 <body>
-<div class="menu-container">
-    <button class="menu-toggle" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-    </button>
-    <ul class="menu" id="menuList">
-    <li><a href="index.html">首页</a></li>
+<div class="menu-toggle" id="mobile-menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</div>
+<h2><ul class="nav-list" id="nav-list">
+    <li><a href="index.html">返回首页</a></li>
     <li><a href="allAPP.html">应用库</a></li>
     <li><a href="Navigation directory/lesson.html">破解教程</a></li>
     <li><a href="Navigation directory/warning.html">破解警告</a></li>
     <li><a href="Navigation directory/connect.html">联系我们</a></li>
-    </ul>
-</div>
-
-<script>
-    var menuVisible = false;
-    var menu = document.getElementById("menuList");
-
-    function toggleMenu() {
-        menuVisible = !menuVisible;
-        menu.classList.toggle("active");
-    }
-</script>
-
+</ul></h2>
 
 <button-view id="toggleButton" onclick="toggleLayout()">切换至多列电脑视图</button-view>
 
