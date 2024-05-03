@@ -7,79 +7,46 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script src="searchlist.js"></script>
     <link rel="stylesheet" href="homestyle.css">
-<link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css">
-<script src="https://unpkg.com/mdui@2/mdui.global.js">
-     </script>
-
-<style>
+    <style>
         .center-text {
             text-align: center;
             width: 50%; 
             margin: 0 auto;
         }
-	    /* 设置按钮的字体大小 */
-.mdui-typo-button {
-    font-size: 18px; /* 根据需要调整这个值 */
-}
-
-/* 设置按钮的图标大小 */
-.mdui-icon {
-    font-size: 18px; /* 与上面的字体大小保持一致 */
-}
-
-/* 调整按钮内边距以适应文字和图标的大小 */
-.mdui-button {
-    padding: 0 10px; /* 根据您的设计需求调整左右内边距 */
-}
-
     </style>	
 </head>
 <body>
-<div class="example-modal" style="position: relative; overflow: hidden">
-  <mdui-navigation-drawer modal close-on-esc close-on-overlay-click contained>
-    <mdui-button class="close">关闭侧边抽屉栏</mdui-button>
-    <ul>
-     <div class="mdui-drawer mdui-drawer-close mdui-color-white mdui-appbar-fixed mdui-shadow-2dp">
-        <ul class="mdui-list">
-	<mdui-list>
-         <mdui-list-item a href="index.html"icon="people" end-icon="arrow_right">首页</mdui-list-item>
-        </mdui-list>
-            
-            <li class="mdui-list-item mdui-ripple">
-                <a href="allAPP.html" class="mdui-typo-button mdui-text-truncate">应用库</a>
-            </li>
-            <li class="mdui-list-item mdui-ripple">
-                <a href="Navigation%20directory/lesson.html" class="mdui-typo-button mdui-text-truncate">破解教程</a>
-            </li>
-            <li class="mdui-list-item mdui-ripple">
-                <a href="Navigation%20directory/warning.html" class="mdui-typo-button mdui-text-truncate">破解警告</a>
-            </li>
-            <li class="mdui-list-item mdui-ripple">
-                <a href="Navigation%20directory/connect.html" class="mdui-typo-button mdui-text-truncate">联系我们</a>
-            </li>
-        </ul>
+
+
+
+<div class="menu-container">
+    <button class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+    </button>
+    <ul class="menu" id="menuList">
+    <li><a href="index.html">首页</a></li>
+    <li><a href="allAPP/allAPP.html">应用库</a></li>
+    <li><a href="Navigation directory/lesson.html">破解教程</a></li>
+    <li><a href="Navigation directory/warning.html">破解警告</a></li>
+    <li><a href="Navigation directory/connect.html">联系我们</a></li>
     </ul>
-  </mdui-navigation-drawer>
-  
-  <div style="height: 160px;">
-    <mdui-button class="open">打开侧边抽屉栏</mdui-button>
-  </div>
 </div>
 
 <script>
-  const example = document.querySelector(".example-modal");
-  const navigationDrawer = example.querySelector("mdui-navigation-drawer");
-  const openButton = example.querySelector(".open");
-  const closeButton = example.querySelector(".close");
+    var menuVisible = false;
+    var menu = document.getElementById("menuList");
 
-  openButton.addEventListener("click", () => {
-    navigationDrawer.open = true;
-  });
-
-  closeButton.addEventListener("click", () => {
-    navigationDrawer.open = false;
-  });
+    function toggleMenu() {
+        menuVisible = !menuVisible;
+        menu.classList.toggle("active");
+    }
 </script>
+
+
+
+
+
 
 <button-view id="toggleButton" onclick="toggleLayout()">切换至手表/电脑手机视图</button-view>
 
@@ -265,15 +232,10 @@
 
 <footer class="footer">
     <div class="footer-content">
-<h1>更多应用请见<a href="https://chiyang001.github.io/APP/allAPP.html" style="color: gold; text-decoration: underline;">应用库</a></h1>
-
-
-
 	<p>炽阳001制作 &copy; 2024. 版权所有。</p>
         <p>权限归炽阳001所有，e装机&是大大帅aaa享有合作设计权。</p>
         <p>本网站属于非盈利性质网站，不进行任何商业经营活动</p>
-        <p>网站版本2.2.4</p>
-	<p><a href="Navigation directory/Update-content.html" style="color: gold; text-decoration: underline;">更新内容</a></p>
+          <p>网站版本2.2.4</p>
     </div>
 </footer>
     <script src="homescript.js"></script>
