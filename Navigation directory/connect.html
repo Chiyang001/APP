@@ -4,7 +4,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/APP/homestyle.css">
 <title>联系方式</title>
 <style>
     body {
@@ -161,6 +160,16 @@
     <li><a href="Navigation directory/connect.html">联系我们</a></li>
     </ul>
 </div>
+    
+<script>
+    var menuVisible = false;
+    var menu = document.getElementById("menuList");
+
+    function toggleMenu() {
+        menuVisible = !menuVisible;
+        menu.classList.toggle("active");
+    }
+</script>
 
 
 
@@ -195,12 +204,6 @@ document.getElementById('mobile-menu').addEventListener('click', function() {
 
 
 
-    var menuVisible = false;
-    var menu = document.getElementById("menuList");
 
-    function toggleMenu() {
-        menuVisible = !menuVisible;
-        menu.classList.toggle("active");
-    }
 </script>
 </html>
