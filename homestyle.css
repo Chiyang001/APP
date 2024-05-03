@@ -30,7 +30,6 @@ h1 {
 .app {
     position: relative;
     background: rgba(255, 255, 255, 0.1); /* 毛玻璃效果 */
-    backdrop-filter: blur(10px);
     border: 2px solid #ffd700; /* 金色边框 */
     border-radius: 10px;
     padding: 20px;
@@ -100,15 +99,6 @@ button:hover {
     background-color: #ffc107; /* 鼠标悬停时的金黄色背景 */
 }
 
-button-search {
-    background-color: #ffd700; /* 金色背景 */
-    color: #1a1a1a; /* 暗黑文字颜色 */
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
 
 button:hover {
     background-color: #ffc107; /* 鼠标悬停时的金黄色背景 */
@@ -135,7 +125,6 @@ button:hover {
 
 .site-description {
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
     border: 1px solid #ffd700;
     border-radius: 10px;
     padding: 20px;
@@ -269,15 +258,6 @@ button:hover {
     display: block; /* 使margin auto生效，居中对齐 */
 }
 
-.menu-toggle {
-    cursor: pointer;
-    display: block;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    z-index: 1;
-}
-
 .bar {
     display: block;
     width: 25px;
@@ -287,34 +267,97 @@ button:hover {
     transition: 0.3s;
 }
 
-.nav-list {
-    list-style: none;
-    position: absolute;
-    background-color: black;
-    width: 100%;
-    top: 0;
-    left: -100%;
-    padding: 0;
-    margin: 0;
-    transition: 0.3s;
-}
 
-.nav-list li {
-    text-align: center;
-    width: 100%;
-    border-bottom: 1px solid gold;
-}
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
 
-.nav-list li a {
-    display: block;
-    padding: 10px;
-    color: gold;
-    text-decoration: none;
-}
+        .menu-container {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
 
-.nav-list li:hover {
-    background-color: #333;
-}
+        .menu-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+
+        .menu-toggle span,
+        .menu-toggle span:before,
+        .menu-toggle span:after,
+        .menu-toggle span:nth-child(4) {
+            display: block;
+            background-color: #ffd700;
+            height: 5px;
+            width: 30px;
+            transition: all 0.3s;
+            position: absolute;
+            top: 50%;
+            left: 0;
+
+        transform-origin: center;
+            margin-top: 1px;
+        }
+
+        .menu-toggle span:before {
+            content: '';
+            margin-top: 5px; /* 4px height / 2 */
+        }
+
+        .menu-toggle span:after {
+            content: '';
+            margin-top: 13px; /* 4px height / 2 */
+        }
+
+        .menu-toggle span:nth-child(4) {
+            content: '';
+            margin-top: 20px; /* 4px height * 3 lines / 2 */
+        }
+
+        .menu {
+            list-style-type: none;
+            background-color: #block;
+            position: fixed;
+            top: 0;
+            left: -200px;
+            width: 200px;
+            height: 100%;
+            transition: left 0.3s ease-in-out;
+            overflow-y: auto;
+   	    left: -700px; /* 稍微增大负值，以确保菜单完全隐藏 */
+            padding: 20px;
+        }
+
+        .menu.active {
+            left: 0;
+            border-right: 5px solid #ffd700; /* 添加黄色边框 */
+        }
+
+        .menu li {
+            margin-bottom: 10px;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: grey;
+            transition: color 0.3s;
+            display: block;
+            padding: 10px;
+            border: 1px solid transparent;
+        }
+
+        .menu li a:hover {
+            color: #ffd700;
+            border-color: #ffd700;
+        }
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #1a1a1a; /* 暗黑背景色 */
@@ -570,32 +613,4 @@ button:hover {
     transition: 0.3s;
 }
 
-.nav-list {
-    list-style: none;
-    position: absolute;
-    background-color: black;
-    width: 100%;
-    top: 0;
-    left: -100%;
-    padding: 0;
-    margin: 0;
-    transition: 0.3s;
-}
-
-.nav-list li {
-    text-align: center;
-    width: 100%;
-    border-bottom: 1px solid gold;
-}
-
-.nav-list li a {
-    display: block;
-    padding: 10px;
-    color: gold;
-    text-decoration: none;
-}
-
-.nav-list li:hover {
-    background-color: #333;
-}
 
