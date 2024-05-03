@@ -162,6 +162,15 @@
     <li><a href="Navigation directory/connect.html">联系我们</a></li>
     </ul>
 </div>
+<script>
+    var menuVisible = false;
+    var menu = document.getElementById("menuList");
+
+    function toggleMenu() {
+        menuVisible = !menuVisible;
+        menu.classList.toggle("active");
+    }
+</script>
 
 
     <div class="container animated">
@@ -192,13 +201,5 @@ document.getElementById('mobile-menu').addEventListener('click', function() {
 });
 
 
-
-    var menuVisible = false;
-    var menu = document.getElementById("menuList");
-
-    function toggleMenu() {
-        menuVisible = !menuVisible;
-        menu.classList.toggle("active");
-    }
 </script>
 </html>
