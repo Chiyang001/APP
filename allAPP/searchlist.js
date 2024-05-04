@@ -67,6 +67,13 @@
       { name: '答案之书', description: '在你感觉时间正确的时候，按下按钮，你要寻找的答案就在那里。 遇到任何问题，你都可以打开它。 获取答案 你的答案是 再尝试一次' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/4a3801d8a8d514578d220d3dda77b163.apk' }, 	
       { name: 'Dungeon Cards', description: '这是一款难以定义游戏类型的魔性卡牌游戏，它披着卡牌的外衣，具备时下最流行的像素风，又有着RPG的元素，甚至还有中国最古老的益智游戏华容道的影子，第一次玩就让你欲罢不能！' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/ee5444833c48cb7f16c29528c611814a.apk' }, 	
       { name: '番茄时钟', description: '真正有效的时间管理方法并非一味地压抑本能，而是会以一种顺应人性的方式引导我们提高效率。番茄工作法正是如此。' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/cccbb8ceeab68ecab68d53c4c46d1cc9.apk' }, 	
+      { name: '教育中心', description: '可以卡顿的最后一个版本' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/524c2e41c7498407eb28accf07308be0.apk' }, 
+      { name: 'QQ', description: '[可打字]可以打字的QQ，已去签名效验' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/c2cf6b5d0af73e5874d7f72a0d2605fb.apk' }, 
+      { name: '铁锈战争', description: '[已改右滑]你可以创建属于你的沙盒，并和你的同伴在其中游戏，玩家可以控制多个目标，在不同的地图开战，不仅可以多线操作，甚至可以精确到单兵作战' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/c429bc9a5797ddf01bba3b7a41b9a2f1.apk' }, 
+
+
+
+		
              // ——————————更多——————————示例：{ name: '', description: '' , downloadUrl: '' }, 
         ];
 	
