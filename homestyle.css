@@ -1,4 +1,18 @@
 body {
+
+    .button-lesson {
+        margin: 10px;
+        padding: 10px 20px;
+        background-color: gold;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+    }
+
+    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #1a1a1a; /* 暗黑背景色 */
     margin: 0;
