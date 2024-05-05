@@ -100,7 +100,7 @@ button-view {
     transition: background-color 0.3s ease;
 }
 
-.button-lesson {
+.button1 {
     background-color: #ffd700; /* 金色背景 */
     color: #1a1a1a; /* 暗黑文字颜色 */
     padding: 10px 20px; /* 调整为20px，增加高度 */
