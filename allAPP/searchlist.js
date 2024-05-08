@@ -76,7 +76,11 @@
       { name: 'ES文件浏览器 pro版', description: '[已改dpi]ES文件浏览器的专业版' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/297fd48551f26e7500762d333da066de.apk' },
       { name: 'UP助手', description: '实时粉丝数查询' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/9d949c6b533ed2dfdaf5e678897f8bc7.apk' },
       { name: '雷霆赛车2', description: '[横屏]雷霆赛车2最新版又名Raging Thunder 2，这是一款惊险刺激的3d赛车竞技游戏，采用重力感应操作，点击屏幕中左侧的闪电符号启动液氮加速。' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/52ff5178abf940896f800fdb477f9e56.apk' }, 
+      { name: '谷歌小恐龙', description: '谷歌小恐龙' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/eb06dadcb85eafd78141bdb94b3b3ad2.apk' }, 
 
+
+
+		
 		
              // ——————————更多——————————示例：      { name: '', description: '' , downloadUrl: '' }, 
         ];
