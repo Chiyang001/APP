@@ -70,11 +70,15 @@
       { name: '教育中心', description: '可以卡顿的最后一个版本' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/524c2e41c7498407eb28accf07308be0.apk' }, 
       { name: 'QQ', description: '[可打字]可以打字的QQ，已去签名效验' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/c2cf6b5d0af73e5874d7f72a0d2605fb.apk' }, 
       { name: '铁锈战争', description: '[已改右滑]你可以创建属于你的沙盒，并和你的同伴在其中游戏，玩家可以控制多个目标，在不同的地图开战，不仅可以多线操作，甚至可以精确到单兵作战' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/c429bc9a5797ddf01bba3b7a41b9a2f1.apk' }, 
-
-
+      { name: '谷歌输入法', description: '这款输入法支持26键打字，还支持滑笔打字' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/0a862dc815e2261f6fb82657cbeb35c9.apk' }, 
+      { name: '兜兜龙', description: '[已改右滑]兜兜龙就是兜兜龙！！' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/1cb302caf13df278c93f1b282bdc6dfa.apk' }, 
+      { name: '狂野飙车5', description: '[已改右滑]非常好的一款赛车游戏，通过倾斜来改变方向！不过在手表上玩要注意，往前倾斜是左，往后倾斜是右，不知道是不是陀螺仪有问题' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/b1c5c2d1f692acb18818dff01df69e63.apk' }, 
+      { name: 'ES文件浏览器 pro版', description: '[已改dpi]ES文件浏览器的专业版' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/297fd48551f26e7500762d333da066de.apk' },
+      { name: 'UP助手', description: '实时粉丝数查询' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/9d949c6b533ed2dfdaf5e678897f8bc7.apk' },
+      { name: '雷霆赛车2', description: '[横屏]雷霆赛车2最新版又名Raging Thunder 2，这是一款惊险刺激的3d赛车竞技游戏，采用重力感应操作，点击屏幕中左侧的闪电符号启动液氮加速。' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/52ff5178abf940896f800fdb477f9e56.apk' }, 
 
 		
-             // ——————————更多——————————示例：{ name: '', description: '' , downloadUrl: '' }, 
+             // ——————————更多——————————示例：      { name: '', description: '' , downloadUrl: '' }, 
         ];
 	
 
