@@ -1,21 +1,119 @@
-//应用分类js
-
+//应用分类&应用分页
 document.addEventListener('DOMContentLoaded', function() {
     var selectElement = document.getElementById('category');
-    var apps = document.querySelectorAll('.app');
+    var appsContainer = document.getElementById('appsContainer');
+    var appContainer = document.querySelector('.app-container.single-column'); // 作为全局变量
+    var apps = Array.from(appsContainer.getElementsByClassName('app'));
+    let filteredApps = apps;
+    const itemsPerPage = 6;
+    let currentPage = 1;
+    let totalPages = Math.ceil(apps.length / itemsPerPage); // 初始化总页数
 
-    selectElement.addEventListener('change', function() {
-        var selectedCategory = this.value;
-        apps.forEach(function(app) {
-            if (app.getAttribute('data-category') === selectedCategory || selectedCategory === '') {
-                app.style.display = 'block'; // 显示对应分类的app
-            } else {
-                app.style.display = 'none'; // 隐藏不符合分类的app
+    // 分页按钮点击事件处理函数
+    function setupPaginationButtons() {
+        document.getElementById('firstPage').addEventListener('click', function() {
+            if (currentPage > 1) {
+                currentPage = 1;
+                renderApps();
+                renderPagination();
+                scrollToTop();
             }
         });
-    });
-});
 
+        document.getElementById('prevPage').addEventListener('click', function() {
+            if (currentPage > 1) {
+                currentPage--;
+                renderApps();
+                renderPagination();
+                scrollToTop();
+            }
+        });
+
+        document.getElementById('nextPage').addEventListener('click', function() {
+            if (currentPage < totalPages) {
+                currentPage++;
+                renderApps();
+                renderPagination();
+                scrollToTop();
+            }
+        });
+
+        document.getElementById('lastPage').addEventListener('click', function() {
+            if (currentPage < totalPages) {
+                currentPage = totalPages;
+                renderApps();
+                renderPagination();
+                scrollToTop();
+            }
+        });
+    }
+
+    // 根据分类筛选应用
+    function filterApps() {
+        const selectedCategory = selectElement.value;
+        filteredApps = apps.filter(app => {
+            return selectedCategory === '' || app.getAttribute('data-category') === selectedCategory;
+        });
+        currentPage = 1; // 筛选后重置当前页码为1
+        totalPages = Math.ceil(filteredApps.length / itemsPerPage); // 重新计算总页数
+        renderApps();
+        renderPagination();
+        totalPages = Math.ceil(filteredApps.length / itemsPerPage);
+    }
+
+// 渲染应用列表
+    function renderApps() {
+        const startIndex = (currentPage - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        const appsToShow = filteredApps.slice(startIndex, endIndex);
+
+        appContainer.innerHTML = ''; // 清空现有应用列表
+
+        appsToShow.forEach(appElement => {
+            const clonedAppElement = appElement.cloneNode(true);
+            appContainer.appendChild(clonedAppElement); // 将克隆的应用元素添加到容器中
+        });
+    }
+
+    // 滚动到顶部函数
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // 平滑滚动
+        });
+    }
+
+    // 渲染分页
+    function renderPagination() {
+        const paginationNumbersElement = document.getElementById('paginationNumbers');
+        paginationNumbersElement.innerHTML = ''; // 清空现有分页数字按钮
+
+        const maxPagesToShow = 7;
+        const startPage = Math.max(1, currentPage - Math.floor(maxPagesToShow / 2));
+        const endPage = Math.min(totalPages, currentPage + Math.ceil(maxPagesToShow / 2) - 1);
+
+        for (let i = startPage; i <= endPage; i++) {
+            const numberButton = document.createElement('button');
+            numberButton.textContent = i;
+            if (i === currentPage) {
+                numberButton.classList.add('active');
+            }
+            numberButton.addEventListener('click', function() {
+                currentPage = i;
+                renderApps();
+                renderPagination();
+            });
+            paginationNumbersElement.appendChild(numberButton);
+        }
+    }
+
+    // 初始化事件监听器和应用列表
+    setupPaginationButtons();
+    selectElement.addEventListener('change', filterApps);
+    renderApps();
+    renderPagination();
+});
+//  ————停—————
 
 
 
