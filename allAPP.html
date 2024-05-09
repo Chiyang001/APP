@@ -1,22 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-   
-    <title>全部应用</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="homestyle.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script src="allAPP/searchlist.js"></script>
     <link rel="stylesheet" href="allAPP/style.css">
+  <title>分页示例</title>
     <style>
         .center-text {
             text-align: center;
             width: 50%; 
             margin: 0 auto;
         }
-        .download-container {
-            margin-top: 10px; /* 根据需要调整间距 */
-            text-align: center; /* 使按钮居中显示 */
-        }
+
         button-search {
             display: inline-block; /* 使按钮单独显示在一行 */
             padding: 5px 10px; /* 根据需要调整内边距 */
@@ -45,9 +43,30 @@
     line-height: 1.6;
 }
 
-
-
-    </style>	
+    .pagination {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .pagination button {
+      padding: 5px 10px;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+    .pagination button.active {
+      background-color: #007bff;
+      color: white;
+      border-color: #007bff;
+    }
+    .dot {
+      height: 10px;
+      width: 10px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 8px;
+    }
+  </style>
 </head>
 <body>
 <div class="menu-toggle" id="mobile-menu">
@@ -101,9 +120,11 @@
 <h3>——您的反馈是我们进步的动力，如果您有任何建议或遇到问题，请随时联系我们——</h3>
 </div>
 </div>
-<div class="app-container single-column">
 
-	
+<div id="appsContainer">
+        <div class="app-container single-column">
+
+
 	<div class="app" data-category="娱乐">
                 <div class="dot"></div>
                 <img src="images/谷歌小恐龙.png" alt="dadashuai">
@@ -160,7 +181,8 @@
 	        <p>[需激活，激活教程见'破解教程/激活输入法']这款输入法支持26键打字，还支持滑笔打字</p>
 		<button onclick="downloadApp('https://fel.forxhr.top:2022/down.php/0a862dc815e2261f6fb82657cbeb35c9.apk')">下载 App</button>
 	</div>	
-	
+
+
 	<div class="app" data-category="游戏">
                 <div class="dot"></div>
                 <img src="images/铁锈战争.png" alt="dadashuai">
@@ -168,7 +190,7 @@
 	        <p>[已改右滑]你可以创建属于你的沙盒，并和你的同伴在其中游戏，玩家可以控制多个目标，在不同的地图开战，不仅可以多线操作，甚至可以精确到单兵作战</p>
 		<button onclick="downloadApp('https://fel.forxhr.top:2022/down.php/c429bc9a5797ddf01bba3b7a41b9a2f1.apk')">下载 App</button>
 	</div>	
-	
+
 	<div class="app" data-category="社交">
                 <div class="dot"></div>
                 <img src="images/QQ.png" alt="dadashuai">
@@ -870,16 +892,25 @@
 		<button onclick="downloadApp('https://fel.forxhr.top:2022/down.php/66fb501cec28157c898ea75c287ccab0.apk')">下载 App</button>
 	</div>	
 
-            </div>
+     </div>
+</div>
 
-
-  </div>
+ <div class="center-text">
+    <h1>                                      </h1>     <!-- 占位 -->
+    <div class="pagination">
+        <button id="firstPage">首页</button>
+        <button id="prevPage">上一页</button>
+        <div id="paginationNumbers"></div>
+        <button id="nextPage">下一页</button>
+        <button id="lastPage">尾页</button>
+    </div>
 <footer class="footer">
     <div class="footer-content">
         <h1>更多应用即将上线，敬请期待</h1>
           <p>网站版本2.2.4</p>
     </div>
 </footer>
+</div>
     <script src="allAPP/script.js"></script>
 </body>
 </html>
