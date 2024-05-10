@@ -2,12 +2,12 @@
 document.addEventListener('DOMContentLoaded', function() {
     var selectElement = document.getElementById('category');
     var appsContainer = document.getElementById('appsContainer');
-    var appContainer = document.querySelector('.app-container.single-column'); // 作为全局变量
+    var appContainer = document.querySelector('.app-container.single-column');
     var apps = Array.from(appsContainer.getElementsByClassName('app'));
     let filteredApps = apps;
     const itemsPerPage = 6;
     let currentPage = 1;
-    let totalPages = Math.ceil(apps.length / itemsPerPage); // 初始化总页数
+    let totalPages = Math.ceil(apps.length / itemsPerPage);
 
     // 分页按钮点击事件处理函数
     function setupPaginationButtons() {
@@ -58,10 +58,9 @@ document.addEventListener('DOMContentLoaded', function() {
         totalPages = Math.ceil(filteredApps.length / itemsPerPage); // 重新计算总页数
         renderApps();
         renderPagination();
-        totalPages = Math.ceil(filteredApps.length / itemsPerPage);
     }
 
-// 渲染应用列表
+    // 渲染应用列表
     function renderApps() {
         const startIndex = (currentPage - 1) * itemsPerPage;
         const endIndex = startIndex + itemsPerPage;
@@ -88,10 +87,20 @@ document.addEventListener('DOMContentLoaded', function() {
         const paginationNumbersElement = document.getElementById('paginationNumbers');
         paginationNumbersElement.innerHTML = ''; // 清空现有分页数字按钮
 
-        const maxPagesToShow = 7;
-        const startPage = Math.max(1, currentPage - Math.floor(maxPagesToShow / 2));
-        const endPage = Math.min(totalPages, currentPage + Math.ceil(maxPagesToShow / 2) - 1);
+        const maxPagesToShow = 3; // 最多显示的分页按钮数量
+        const maxPagesToAlwaysShow = 2; // 始终显示在两端的分页按钮数量
+        const startPage = Math.max(1, currentPage - maxPagesToShow);
+        const endPage = Math.min(totalPages, currentPage + maxPagesToShow);
 
+        // 添加左侧省略号按钮
+        if (startPage > 1) {
+            const leftEllipsis = document.createElement('span');
+            leftEllipsis.textContent = '...';
+            leftEllipsis.classList.add('pagination-ellipsis');
+            paginationNumbersElement.appendChild(leftEllipsis);
+        }
+
+        // 添加分页数字按钮
         for (let i = startPage; i <= endPage; i++) {
             const numberButton = document.createElement('button');
             numberButton.textContent = i;
@@ -105,6 +114,14 @@ document.addEventListener('DOMContentLoaded', function() {
             });
             paginationNumbersElement.appendChild(numberButton);
         }
+
+        // 添加右侧省略号按钮
+        if (endPage < totalPages) {
+            const rightEllipsis = document.createElement('span');
+            rightEllipsis.textContent = '...';
+            rightEllipsis.classList.add('pagination-ellipsis');
+            paginationNumbersElement.appendChild(rightEllipsis);
+        }
     }
 
     // 初始化事件监听器和应用列表
@@ -113,6 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
     renderApps();
     renderPagination();
 });
+
 //  ————停—————
 
 
