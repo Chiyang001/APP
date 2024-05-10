@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var appContainer = document.querySelector('.app-container.single-column');
     var apps = Array.from(appsContainer.getElementsByClassName('app'));
     let filteredApps = apps;
-    const itemsPerPage = 6;
-    let currentPage = 1;
+    const itemsPerPage = 12;  //  每页显示的应用数量
+    let currentPage = 1;  //初始页数
     let totalPages = Math.ceil(apps.length / itemsPerPage);
 
     // 分页按钮点击事件处理函数
