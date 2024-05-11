@@ -77,7 +77,8 @@
       { name: 'UP助手', description: '实时粉丝数查询' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/9d949c6b533ed2dfdaf5e678897f8bc7.apk' },
       { name: '雷霆赛车2', description: '[横屏]雷霆赛车2最新版又名Raging Thunder 2，这是一款惊险刺激的3d赛车竞技游戏，采用重力感应操作，点击屏幕中左侧的闪电符号启动液氮加速。' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/52ff5178abf940896f800fdb477f9e56.apk' }, 
       { name: '谷歌小恐龙', description: '谷歌小恐龙' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/eb06dadcb85eafd78141bdb94b3b3ad2.apk' }, 
-
+      { name: 'APK提取器', description: 'APK提取器，指定应用进行提取，可以选择存放位置' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/411a1cd02bd1ab88dcb7d46ac317922a.apk' }, 
+      { name: 'WearOS 工具箱', description: 'WearOS 工具箱是一款手表专用工具箱，可以用来调整分辨率等，但部分功能需收费' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/3d2adfd1183c81adf3bb9b3dd6373ddb.apk' }, 
 
 
 		
