@@ -1,1 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>工具箱下载</title>
+<style>
+    .center-text {
+        text-align: center;
+        width: 50%; 
+        margin: 0 auto;
+    }
 
+    
+    
+    body {
+        margin: 0;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        background-color: black;
+        color: gold;
+    }
+
+    .video-container {
+        max-width: 800px;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .button-view {
+        margin: 10px;
+        padding: 10px 20px;
+        background-color: gold;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+    }
+
+    .button-view:hover {
+        background-color: #ffd700;
+    }
+
+    #videoPlayer {
+        width: 100%;
+        display: none;
+    }
+
+    #videoFrame {
+        width: 100%;
+        height: 490px;
+        border: none;
+    }
+    .menu-toggle {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .menu-container {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .menu-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 20001;
+
+        }
+        .menu-toggle span,
+        .menu-toggle span:before,
+        .menu-toggle span:after,
+        .menu-toggle span:nth-child(4) {
+            display: block;
+            background-color: #ffd700;
+            height: 5px;
+            width: 30px;
+            transition: all 0.3s;
+            position: absolute;
+            top: 50%;
+            left: 0;
+        transform-origin: center;
+            margin-top: 1px;
+        }
+        .menu-toggle span:before {
+            content: '';
+            margin-top: 5px; /* 4px height / 2 */
+        }
+        .menu-toggle span:after {
+            content: '';
+            margin-top: 13px; /* 4px height / 2 */
+        }
+        .menu-toggle span:nth-child(4) {
+            content: '';
+            margin-top: 20px; /* 4px height * 3 lines / 2 */
+        }
+        .menu {
+            list-style-type: none;
+            background-color: #1a1a1a;
+            position: fixed;
+            top: 0;
+             z-index: 10000; /* 添加z-index属性，确保菜单始终在最上方 */
+            width: 200px;
+            height: 100vh; /* 设置高度为视口的100% */
+            transition: left 0.3s ease-in-out;
+            overflow-y: auto;
+   	    left: -700px; /* 稍微增大负值，以确保菜单完全隐藏 */
+            padding: 20px;
+        }
+        .menu.active {
+            left: 0;
+            border-right: 5px solid #ffd700; /* 添加黄色边框 */
+             z-index: 20000;
+        }
+        .menu li {
+            margin-bottom: 10px;
+        }
+        .menu li a {
+            text-decoration: none;
+            color: grey;
+            transition: color 0.3s;
+            display: block;
+            padding: 10px;
+            border: 1px solid transparent;
+        }
+        .menu li a:hover {
+            color: #ffd700;
+            border-color: #ffd700;
+
+        }
+</style>
+</head>
+<body>
+
+
+<div class="menu-container">
+    <button class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+    </button>
+    <ul class="menu" id="menuList">
+    <li><a href="/APP/index.html">首页</a></li>
+    <li><a href="/APP/allAPP.html">应用库</a></li>
+    <li><a href="lesson.html">破解教程</a></li>
+    <li><a href="gjx.html">工具箱下载</a></li>
+    <li><a href="warning.html">破解警告</a></li>
+    <li><a href="connect.html">联系我们</a></li>
+    </ul>
+</div>
+
+<script>
+    var menuVisible = false;
+    var menu = document.getElementById("menuList");
+
+    function toggleMenu() {
+        menuVisible = !menuVisible;
+        menu.classList.toggle("active");
+    }
+</script>
+
+
+    
+    <h1>4x系列工具箱</h1>
+    <a href="https://gitee.com/j-donkey/hkw-tools/releases/tag/Release1.0.0" target="_blank"><button class="button-view" id="watchTutorialButton" onclick="showVideo()">HKW-Tools</button></a>
+    <h1>3系列工具箱</h1>
+     <a href="https://gitee.com/j-donkey/hkw-tools/releases/tag/Release1.0.0" target="_blank"><button class="button-view" id="watchTutorialButton" onclick="showVideo()">HW3PBOX</button></a>
+</div>
+
+<script>
+function showVideo() {
+    var videoFrame = document.getElementById('videoFrame');
+    videoFrame.src = "https://b23.tv/bELxAlP";
+    document.getElementById('videoPlayer').style.display = "block";
+}
+
+function showVideo2() {
+    var videoFrame = document.getElementById('videoFrame');
+    videoFrame.src = "https://b23.tv/KlIjADS";
+    document.getElementById('videoPlayer').style.display = "block";
+}
+
+function showVideo3() {
+    var videoFrame = document.getElementById('videoFrame');
+    videoFrame.src = "https://b23.tv/BV1em421n7fp";
+    document.getElementById('videoPlayer').style.display = "block";
+}
+    
+function showVideo4() {
+    var videoFrame = document.getElementById('videoFrame');
+    videoFrame.src = "https://b23.tv/BV1kF4m1K7Q9";
+    document.getElementById('videoPlayer').style.display = "block";
+}
+function showVideo5() {
+    var videoFrame = document.getElementById('videoFrame');
+    videoFrame.src = "https://b23.tv/BV1Mw4m1m7E9";
+    document.getElementById('videoPlayer').style.display = "block";
+}
+
+function showVideo6() {
+    var videoFrame = document.getElementById('videoFrame');
+    videoFrame.src = "https://b23.tv/BV1Lp421y7DB";
+    document.getElementById('videoPlayer').style.display = "block";
+}
+
+function showVideo7() {
+    var videoFrame = document.getElementById('videoFrame');
+    videoFrame.src = "https://b23.tv/BV1tF4m1P71c";
+    document.getElementById('videoPlayer').style.display = "block";
+}
+
+    
+    
+function copyText() {
+  var text = document.getElementById("codeToCopy").innerText; // 获取文本
+  var textarea = document.createElement("textarea"); // 创建textarea元素
+  textarea.value = text; // 设置textarea的值
+  textarea.style.position = "fixed"; // 防止显示在页面上
+  document.body.appendChild(textarea); // 将textarea加入到文档中
+  
+  textarea.focus();
+  textarea.select(); // 选中文本
+  
+  try {
+    var successful = document.execCommand('copy'); // 执行复制操作
+    var msg = successful ? '成功复制到剪贴板' : '复制失败';
+    alert(msg); // 使用alert显示消息
+  } catch (err) {
+    console.log('无法复制', err);
+    alert('复制过程中发生错误'); // 复制失败时显示提示
+  }
+  
+  document.body.removeChild(textarea); // 移除textarea元素
+}
+
+document.getElementById('mobile-menu').addEventListener('click', function() {
+    var nav = document.getElementById('nav-list');
+    if (nav.style.left === '0px') {
+        nav.style.left = '-100%';
+    } else {
+        nav.style.left = '0px';
+    }
+});
+
+
+
+</script>
+</body>
+</html>
