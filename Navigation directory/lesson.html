@@ -245,7 +245,9 @@ function showVideo7() {
     videoFrame.src = "https://b23.tv/BV1tF4m1P71c";
     document.getElementById('videoPlayer').style.display = "block";
 }
-
+function goToVideoPage() {
+    window.open('https://chiyang001.github.io/APP/Navigation%20directory/lesson.html', '_blank');
+}
     
     
 function copyText() {
@@ -284,7 +286,7 @@ document.getElementById('mobile-menu').addEventListener('click', function() {
 </script>
 <div class="video-container">
 <div class="placeholder"></div>
-<button onclick= "downloadApp('https://chiyang001.github.io/APP/Navigation%20directory/Q&A.html')">没有找到想要的？看看这里吧！</button>
+<button onclick="goToVideoPage()">没有找到想要的？看看这里吧！</button>
 </div>
 </body>
 </html>
