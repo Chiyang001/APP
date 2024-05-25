@@ -9,6 +9,10 @@
 	    background-color: transparent; /* 背景透明 */
 	}
 
+	.placeholder2 {
+ 	   height: 20px; /* 容器高度 */
+	    background-color: transparent; /* 背景透明 */
+	}
         .center-text {
             text-align: center;
             width: 50%; 
@@ -24,26 +28,27 @@
             background-color: #1a1a1a; 
         }
 
-        .menu-container1 {
-            background-color: #ffd700;  /* 容器按钮颜色 */
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
 
-        .menu-item {
-            position: relative;
-            padding: 10px;
-            cursor: pointer;
-            border-bottom: 1px solid #ddd;
-        }
 
-        .menu-item:last-child {
-            border-bottom: none;
-        }
+.menu-item {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    background-color: #ffd700; /* 黄色背景 */
+    color: black; /* 黑色文字 */
+    margin: 0 auto; /* 按钮水平居中 */
+    width: 50%; /* 按钮宽度 */
+    border-radius: 8px; /* 增加圆角 */
+}
 
-        .menu-item:hover {
-            background-color: #ffd700;
-        }
+    .menu-item:last-child {
+        border-bottom: none;
+    }
+
+    .menu-item:hover {
+        background-color: #e0c91f; /* 鼠标悬停时更深的黄色 */
+    }
 
 .content-container {
     display: block; /* 始终显示内容容器 */
@@ -188,46 +193,64 @@
 
 
 <div class="placeholder"></div>
-    <div class="menu-container1">
-        <div class="menu-item" onclick="toggleContent(this, 'content1')">
+
+<div class="menu-item" data-content-id="content1" onclick="toggleContent(this, 'content1')">
             如何在充电时玩手表？
             <div id="content1" class="content-container">
-                <p>如何在充电时玩手表？<br>1.打开设置<br>2.进入'设备信息'<br>3.点击版本号7下打开开发者选项<br>4.进入开发者选项<br>5.点击'FactoySETapk'<br>6.点击'Chargedischatge'<br>7.此时连接充电器<br>8.退出即可<br>注意事项：在充电时玩手表不可以打开消息列表，还会有损电池，玩表要适度哦！~</p>
+                <p>如何在充电时玩手表？<br><br>1.打开设置<br>2.进入'设备信息'<br>3.点击版本号7下打开开发者选项<br>4.进入开发者选项<br>5.点击'FactoySETapk'<br>6.点击'Chargedischatge'<br>7.此时连接充电器<br>8.退出即可<br>注意事项：在充电时玩手表不可以打开消息列表，还会有损电池，玩表要适度哦！~</p>
             </div>
         </div>
-
-        <div class="menu-item" onclick="toggleContent(this, 'content2')">
+		
+		<div class="placeholder2"></div>
+<div class="menu-item" data-content-id="content2" onclick="toggleContent(this, 'content2')">
             如何在手表上发短信？
             <div id="content2" class="content-container">
-                <p>如何在手表上发短信？<br>1.在网站中下载并安装'腕上工具箱'<br>2.下载后打开<br>3.点击'短信'<br>4.输入收信人(ta的手机号)<br>5.输入要发送的内容<br>6.点击右下角的小飞机即可发送<br>注意事项：发短信要花钱的哦！~</p>
+                <p>如何在手表上发短信？<br><br>1.在网站中下载并安装'腕上工具箱'<br>2.下载后打开<br>3.点击'短信'<br>4.输入收信人(ta的手机号)<br>5.输入要发送的内容<br>6.点击右下角的小飞机即可发送<br>注意事项：发短信要花钱的哦！~</p>
             </div>
         </div>
 
-        <div class="menu-item" onclick="toggleContent(this, 'content3')">
+		<div class="placeholder2"></div>
+<div class="menu-item" data-content-id="content3" onclick="toggleContent(this, 'content3')">
             如何关闭qq消息提醒？
             <div id="content3" class="content-container">
-                <p>如何关闭QQ的消息提醒<br>1.在网站中下载并安装'权限狗'<br>2.打开权限狗<br>3.找到应用QQ点击<br>4.找到控制震动点击<br>5.选择忽略<br>操作成功退出即可</p>
+                <p>如何关闭QQ的消息提醒<br><br>1.在网站中下载并安装'权限狗'<br>2.打开权限狗<br>3.找到应用QQ点击<br>4.找到控制震动点击<br>5.选择忽略<br>操作成功退出即可</p>
             </div>
         </div>
 
-        <div class="menu-item" onclick="toggleContent(this, 'content4')">
+		<div class="placeholder2"></div>
+<div class="menu-item" data-content-id="content4" onclick="toggleContent(this, 'content4')">
             如何将手表设为横屏？
             <div id="content4" class="content-container">
-                <p>如何将打开的应用设为横屏<br>手表修改：<br>1.在网站中下载并安装'wearos工具箱'<br>2.打开waeros工具箱<br>3.输入WIFI的ip进行连接<br>4.连接成功后依次点击-功能-屏幕工具<br>5.将分辨率的宽修改为270，高修改为360<br>点击应用分辨率退出即可<br><br>手机修改：<br>1.打开甲壳虫adb助手<br>2.连接手表(这里就不再赘述了)<br>3.点击实用工具-修改分辨率<br>4.将分辨率的宽修改为270，高修改为360将分辨率的宽修改为270，高修改为360点击确定即可<br>注意事项：不要随便调分辨率！小心调不回去了</p>
+                <p>如何将打开的应用设为横屏<br><br>手表修改：<br>1.在网站中下载并安装'wearos工具箱'<br>2.打开waeros工具箱<br>3.输入WIFI的ip进行连接<br>4.连接成功后依次点击-功能-屏幕工具<br>5.将分辨率的宽修改为270，高修改为360<br>点击应用分辨率退出即可<br><br>手机修改：<br>1.打开甲壳虫adb助手<br>2.连接手表(这里就不再赘述了)<br>3.点击实用工具-修改分辨率<br>4.将分辨率的宽修改为270，高修改为360将分辨率的宽修改为270，高修改为360点击确定即可<br>注意事项：不要随便调分辨率！小心调不回去了</p>
             </div>
         </div>
 
-        <div class="menu-item" onclick="toggleContent(this, 'content4')">
+		<div class="placeholder2"></div>
+<div class="menu-item" data-content-id="content5" onclick="toggleContent(this, 'content5')">
             如何修改应用签名？
-            <div id="content4" class="content-container">
-                <p>如何修改应用签名<br>手表修改：<br>1.在网站中下载并安装'apktoolm'<br>2.打开apktoolm<br>3.找到你要修改的apk文件<br>4.点击apk文件选择签名即可<br><br>手机修改：<br>1.下载并安装'MT管理器'<br>2.打开MT管理器<br>3.找到你要修改的apk文件<br>4.点击apk文件依次点击:功能-APK签名-签名方案(v1+v2或v2)<br>确定即可<br>注意事项：手机也可以使用apktoolm签名apk文件，但手表不可以使用MT签名apk文件</p>
+            <div id="content5" class="content-container">
+                <p>如何修改应用签名<br><br>手表修改：<br>1.在网站中下载并安装'apktoolm'<br>2.打开apktoolm<br>3.找到你要修改的apk文件<br>4.点击apk文件选择签名即可<br><br>手机修改：<br>1.下载并安装'MT管理器'<br>2.打开MT管理器<br>3.找到你要修改的apk文件<br>4.点击apk文件依次点击:功能-APK签名-签名方案(v1+v2或v2)<br>确定即可<br>注意事项：手机也可以使用apktoolm签名apk文件，但手表不可以使用MT签名apk文件</p>
             </div>
         </div>
+
+		<div class="placeholder2"></div>
+<div class="menu-item" data-content-id="content6" onclick="toggleContent(this, 'content6')">
+            [bug]你不该出现的！！
+            <div id="content5" class="content-container">
+                <p>你不该出现的！！<br><br>在手表端使用系统桌面<br>1.往下滑打开面板<br>2.点击设置<br>3.再点击设置后马上往上滑<br>4.此时就有可能会打开消息通知<br>5.此时就有可能会打开消息通知<br>6.如果打开了，手表会震动一下<br>7.往上滑关闭消息面板<br>8.此时你会发现进入了桌面壁纸设置的选项</p>
+            </div>
+        </div>
+
+
+
+
+
 
 
     </div>
 
 <script>
+
     function toggleContent(item, contentId) {
         var contentContainer = document.getElementById(contentId);
         // 切换激活状态
@@ -244,7 +267,6 @@
             contentContainer.style.maxHeight = null;
         }
     }
-
 
 
 
