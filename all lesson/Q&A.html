@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>问题答疑</title>
+    <style>
+	.placeholder {
+ 	   height: 100px; /* 容器高度 */
+	    background-color: transparent; /* 背景透明 */
+	}
+
+	.placeholder2 {
+ 	   height: 20px; /* 容器高度 */
+	    background-color: transparent; /* 背景透明 */
+	}
+        .center-text {
+            text-align: center;
+            width: 50%; 
+            margin: 0 auto;
+           color : #ffd700;
+        }
+        body {
+
+
+            font-family: '微软雅黑', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #1a1a1a; 
+        }
+
+ /* 按钮 */
+button {
+    background-color: #1a1a1a;   /* 暗黑文字颜色 */
+    color: #ffd700;   /* 暗黑文字颜色 */
+    padding: 20px 100px; /* 增加按钮的高度 */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+
+
+
+	    
+.menu-item {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    background-color: #ffd700; /* 黄色背景 */
+    color: black; /* 黑色文字 */
+    margin: 0 auto; /* 按钮水平居中 */
+    width: 50%; /* 按钮宽度 */
+    border-radius: 8px; /* 增加圆角 */
+}
+
+    .menu-item:last-child {
+        border-bottom: none;
+    }
+
+    .menu-item:hover {
+        background-color: #e0c91f; /* 鼠标悬停时更深的黄色 */
+    }
+
+.content-container {
+    display: block; /* 始终显示内容容器 */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out; /* 修改动画时间为0.2秒 */
+}
+
+
+
+        .content-container p {
+            padding: 10px;
+            margin: 0;
+            background-color: #fff;
+            border-top: 1px solid #ddd;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+
+.menu-item.active .content-container {
+    max-height: 1000px; /* 设置一个足够大的值，以容纳内容 */
+}
+	.menu-item.active {
+	    background-color: #ffd700; 
+	}
+
+
+
+
+
+
+/* 菜单 */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .menu-container {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .menu-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 20001;
+
+        }
+        .menu-toggle span,
+        .menu-toggle span:before,
+        .menu-toggle span:after,
+        .menu-toggle span:nth-child(4) {
+            display: block;
+            background-color: #ffd700;
+            height: 5px;
+            width: 30px;
+            transition: all 0.3s;
+            position: absolute;
+            top: 50%;
+            left: 0;
+        transform-origin: center;
+            margin-top: 1px;
+        }
+        .menu-toggle span:before {
+            content: '';
+            margin-top: 5px; /* 4px height / 2 */
+        }
+        .menu-toggle span:after {
+            content: '';
+            margin-top: 13px; /* 4px height / 2 */
+        }
+        .menu-toggle span:nth-child(4) {
+            content: '';
+            margin-top: 20px; /* 4px height * 3 lines / 2 */
+        }
+        .menu {
+            list-style-type: none;
+            background-color: #1a1a1a;
+            position: fixed;
+            top: 0;
+             z-index: 10000; /* 添加z-index属性，确保菜单始终在最上方 */
+            width: 200px;
+            height: 100vh; /* 设置高度为视口的100% */
+            transition: left 0.3s ease-in-out;
+            overflow-y: auto;
+   	    left: -700px; /* 稍微增大负值，以确保菜单完全隐藏 */
+            padding: 20px;
+        }
+        .menu.active {
+            left: 0;
+            border-right: 5px solid #ffd700; /* 添加黄色边框 */
+             z-index: 20000;
+        }
+        .menu li {
+            margin-bottom: 10px;
+        }
+        .menu li a {
+            text-decoration: none;
+            color: grey;
+            transition: color 0.3s;
+            display: block;
+            padding: 10px;
+            border: 1px solid transparent;
+        }
+        .menu li a:hover {
+            color: #ffd700;
+            border-color: #ffd700;
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="center-text">
+    <h1>问题答疑</h1>
+    <h3>这里有着有关手表的各种稀奇古怪的特性和教程，我们的教程，让智能手表破解变得透明、易懂、安全</h3>
+</div>
+
+<div class="menu-container">
+    <button class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+    </button>
+    <ul class="menu" id="menuList">
+    <li><a href="/APP/index.html">首页</a></li>
+    <li><a href="/APP/allAPP.html">应用库</a></li>
+    <li><a href="lesson.html">破解教程</a></li>
+    <li><a href="Q&A.html">问题答疑</a></li>
+    <li><a href="warning.html">破解警告</a></li>
+    <li><a href="connect.html">联系我们</a></li>
+    <li><a href="gjx.html">工具箱下载</a></li>
+    </ul>
+</div>
+
+
+<div class="placeholder"></div>
+
+<div class="menu-item" data-content-id="content1" onclick="toggleContent(this, 'content1')">
+            如何在充电时玩手表？
+            <div id="content1" class="content-container">
+                <p>如何在充电时玩手表？<br><br>1.打开设置<br>2.进入'设备信息'<br>3.点击版本号7下打开开发者选项<br>4.进入开发者选项<br>5.点击'FactoySETapk'<br>6.点击'Chargedischatge'<br>7.此时连接充电器<br>8.退出即可<br>注意事项：在充电时玩手表不可以打开消息列表，还会有损电池，玩表要适度哦！~</p>
+            	<button onclick="window.location.href='https://b23.tv/BV1tx4y1p7B1';">图文看不懂？看看这里吧！</button>
+	    </div>
+        </div>
+		
+		<div class="placeholder2"></div>
+<div class="menu-item" data-content-id="content2" onclick="toggleContent(this, 'content2')">
+            如何在手表上发短信？
+            <div id="content2" class="content-container">
+                <p>如何在手表上发短信？<br><br>1.在网站中下载并安装'腕上工具箱'<br>2.下载后打开<br>3.点击'短信'<br>4.输入收信人(ta的手机号)<br>5.输入要发送的内容<br>6.点击右下角的小飞机即可发送<br>注意事项：发短信要花钱的哦！~</p>
+            	<button onclick="window.location.href='https://b23.tv/BV1rD421u7Kq';">图文看不懂？看看这里吧！</button>
+	    </div>
+        </div>
+
+		<div class="placeholder2"></div>
+<div class="menu-item" data-content-id="content3" onclick="toggleContent(this, 'content3')">
+            如何关闭qq消息提醒？
+            <div id="content3" class="content-container">
+                <p>如何关闭QQ的消息提醒<br><br>1.在网站中下载并安装'权限狗'<br>2.打开权限狗<br>3.找到应用QQ点击<br>4.找到控制震动点击<br>5.选择忽略<br>操作成功退出即可</p>
+            	<button onclick="window.location.href='https://b23.tv/BV1CZ421W72v';">图文看不懂？看看这里吧！</button>
+	    </div>
+        </div>
+
+		<div class="placeholder2"></div>
+<div class="menu-item" data-content-id="content4" onclick="toggleContent(this, 'content4')">
+            如何将手表设为横屏？
+            <div id="content4" class="content-container">
+                <p>如何将打开的应用设为横屏<br><br>手表修改：<br>1.在网站中下载并安装'wearos工具箱'<br>2.打开waeros工具箱<br>3.输入WIFI的ip进行连接<br>4.连接成功后依次点击-功能-屏幕工具<br>5.将分辨率的宽修改为270，高修改为360<br>点击应用分辨率退出即可<br><br>手机修改：<br>1.打开甲壳虫adb助手<br>2.连接手表(这里就不再赘述了)<br>3.点击实用工具-修改分辨率<br>4.将分辨率的宽修改为270，高修改为360将分辨率的宽修改为270，高修改为360点击确定即可<br>注意事项：不要随便调分辨率！小心调不回去了</p>
+            	<button onclick="window.location.href='https://b23.tv/BV1oy411a7Yd';">图文看不懂？看看这里吧！</button>
+	    </div>
+        </div>
+
+		<div class="placeholder2"></div>
+<div class="menu-item" data-content-id="content5" onclick="toggleContent(this, 'content5')">
+            如何修改应用签名？
+            <div id="content5" class="content-container">
+                <p>如何修改应用签名<br><br>手表修改：<br>1.在网站中下载并安装'apktoolm'<br>2.打开apktoolm<br>3.找到你要修改的apk文件<br>4.点击apk文件选择签名即可<br><br>手机修改：<br>1.下载并安装'MT管理器'<br>2.打开MT管理器<br>3.找到你要修改的apk文件<br>4.点击apk文件依次点击:功能-APK签名-签名方案(v1+v2或v2)<br>确定即可<br>注意事项：手机也可以使用apktoolm签名apk文件，但手表不可以使用MT签名apk文件</p>
+            	<button onclick="window.location.href='https://b23.tv/BV197421Z7Ur';">图文看不懂？看看这里吧！</button>
+	    </div>
+        </div>
+
+		<div class="placeholder2"></div>
+<div class="menu-item" data-content-id="content6" onclick="toggleContent(this, 'content6')">
+            [bug]你不该出现的！！
+            <div id="content5" class="content-container">
+                <p>你不该出现的！！<br><br>在手表端使用系统桌面<br>1.往下滑打开面板<br>2.点击设置<br>3.再点击设置后马上往上滑<br>4.此时就有可能会打开消息通知<br>5.此时就有可能会打开消息通知<br>6.如果打开了，手表会震动一下<br>7.往下滑关闭消息面板<br>8.此时你会发现进入了桌面壁纸设置的选项</p>
+            	<button onclick="window.location.href='https://b23.tv/BV1t7421Z76m';">图文看不懂？看看这里吧！</button>
+	    </div>
+        </div>
+
+		<div class="placeholder2"></div>
+<div class="menu-item" data-content-id="content7" onclick="toggleContent(this, 'content7')">
+            如何使用qq卡法？
+	    <div id="content5" class="content-container">
+                <p>如何使用qq卡法？<br><br>1.在手表端下载并安装QQ<br>2.点击打开<br>3.在动态里随便发一条消息(什么都好)<br>4.在评论里疯狂发表情包，一直发到字数上限<br>5.发出信息<br>6.此时往下滑会卡住，这样就成功了<br>注意事项：没卡几次就需要重新进入QQ卡，需要使用充电来关闭后台再重新进入QQ卡</p>
+            	<button onclick="window.location.href='https://b23.tv/BV1Xx4y1n7MR';">图文看不懂？看看这里吧！</button>
+	    </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+<script>
+
+    function toggleContent(item, contentId) {
+        var contentContainer = document.getElementById(contentId);
+        // 切换激活状态
+        var isActive = item.classList.toggle('active');
+        
+        // 如果当前是激活状态，则计算内容的实际高度并应用动画
+        if (isActive) {
+            // 使用requestAnimationFrame来获取准确的元素尺寸
+            requestAnimationFrame(function() {
+                contentContainer.style.maxHeight = contentContainer.scrollHeight + "px";
+            });
+        } else {
+            // 如果是非激活状态，立即重置max-height以关闭内容
+            contentContainer.style.maxHeight = null;
+        }
+    }
+
+
+
+/* 菜单 */
+    var menuVisible = false;
+    var menu = document.getElementById("menuList");
+
+    function toggleMenu() {
+        menuVisible = !menuVisible;
+        menu.classList.toggle("active");
+    }
+</script>
+</body>
+</html>
