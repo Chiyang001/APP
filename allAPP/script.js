@@ -1,28 +1,3 @@
-//菜单
-  var menuVisible = false;
-  var menu = document.getElementById("menuList");
-  var subMenus = document.querySelectorAll(".sub-menu");
-
-  function toggleMenu() {
-    menuVisible =!menuVisible;
-    menu.classList.toggle("active");
-
-    // 隐藏所有子菜单
-    subMenus.forEach(function(subMenu) {
-      subMenu.style.display = "none";
-    });
-  }
-
-  // 为每个子菜单的父菜单项添加点击事件处理程序
-  subMenus.forEach(function(subMenu) {
-    subMenu.parentNode.addEventListener("click", function(event) {
-      event.stopPropagation(); // 阻止事件冒泡
-
-      // 切换子菜单的显示状态
-      subMenu.style.display = subMenu.style.display === "none"? "block" : "none";
-    });
-  });
-
 
 
 
