@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>第三方桌面使用</title>
+    <style>
+	.placeholder {
+ 	   height: 100px; /* 容器高度 */
+	    background-color: transparent; /* 背景透明 */
+	}
+
+	.placeholder2 {
+ 	   height: 20px; /* 容器高度 */
+	    background-color: transparent; /* 背景透明 */
+	}
+        .center-text {
+            text-align: center;
+            width: 50%; 
+            margin: 0 auto;
+           color : #ffd700;
+        }
+        body {
+
+
+            font-family: '微软雅黑', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #1a1a1a; 
+        }
+
+ /* 按钮 */
+button {
+    background-color: #1a1a1a;   /* 暗黑文字颜色 */
+    color: #ffd700;   /* 暗黑文字颜色 */
+    padding: 20px 100px; /* 增加按钮的高度 */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button2 {
+    background-color: #ffd700;  
+    color: #1a1a1a;   
+    padding: 8px 40px; /* 增加按钮的高度 */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+
+
+	    
+.menu-item {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    background-color: #ffd700; /* 黄色背景 */
+    color: black; /* 黑色文字 */
+    margin: 0 auto; /* 按钮水平居中 */
+    width: 50%; /* 按钮宽度 */
+    border-radius: 8px; /* 增加圆角 */
+}
+
+    .menu-item:last-child {
+        border-bottom: none;
+    }
+
+    .menu-item:hover {
+        background-color: #e0c91f; /* 鼠标悬停时更深的黄色 */
+    }
+
+.content-container {
+    display: block; /* 始终显示内容容器 */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out; /* 修改动画时间为0.2秒 */
+}
+
+
+
+        .content-container p {
+            padding: 10px;
+            margin: 0;
+            background-color: #fff;
+            border-top: 1px solid #ddd;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+
+.menu-item.active .content-container {
+    max-height: 1000px; /* 设置一个足够大的值，以容纳内容 */
+}
+	.menu-item.active {
+	    background-color: #ffd700; 
+	}
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+<div class="center-text">
+    <h1>当前位置：专项专选——第三方桌面使用</h1>
+</div>
+ <button2><a href="/APP/all lesson/special.html">返回</a></button2>
+
+
+
+<div class="placeholder"></div>
+
+<div class="menu-item" data-content-id="content1" onclick="toggleContent(this, 'content1')">
+            第一步：安装&下载应用
+            <div id="content1" class="content-container">
+                <p>第一步：安装&下载应用<br><br>1.打开网站下载'磁吸桌面全家桶'<br>2.将下载的压缩包解压并打开<br>3.用(安卓手表adb工具箱，wearos工具箱，甲壳虫adb助手)往手表内下载其中所有应用</p>
+            	<button onclick="window.location.href='https://b23.tv/BV1j7421o72y';">图文看不懂？看看这里吧！</button>
+	    </div>
+        </div>
+		
+		<div class="placeholder2"></div>
+<div class="menu-item" data-content-id="content2" onclick="toggleContent(this, 'content2')">
+            第二步：小黑屋使用
+            <div id="content2" class="content-container">
+                <p>第二步：小黑屋使用<br><br>1.将dpi调整为150以下<br>2.打开小黑屋<br>3.工作模式可以选择为'麦克斯韦妖'<br>4.进入后会显示未激活，点击'复制adb命令'<br>5.打开rarebox(或在手机，电脑输入代码)<br>6.点击'命令终端'<br>7.输入代码(需将开头的'adb shell'删除)<br>8.此时回到小黑屋就可以使用了</p>
+            	<button onclick="window.location.href='https://b23.tv/BV12S411N7vQ';">图文看不懂？看看这里吧！</button>
+	    </div>
+        </div>
+
+		<div class="placeholder2"></div>
+<div class="menu-item" data-content-id="content3" onclick="toggleContent(this, 'content3')">
+            第三步：磁吸桌面基础设置
+            <div id="content3" class="content-container">
+                <p>第三步：磁吸桌面基础设置<br><br>1.打开home设置<br>2.点击'按键和手势'<br>3.将home键设置为返回主桌面<br>4.退出，点击'行为和用户界面'<br>5.打开无限滚动<br>6.使用小黑屋冻结系统桌面即可<br>注意事项：使用磁吸桌面后，就尽量不改变dpi了，会出现显示问题</p>
+            	<button onclick="window.location.href='https://b23.tv/BV14i421v7Ns';">图文看不懂？看看这里吧！</button>
+	    </div>
+        </div>
+
+		<div class="placeholder2"></div>
+<div class="menu-item" data-content-id="content3" onclick="toggleContent(this, 'content3')">
+            最后：总结
+            <div id="content3" class="content-container">
+                <p>最后：总结<br>请看下方视频</p>
+            	<button onclick="window.location.href='https://b23.tv/BV1Lp421y7DB';">总结教程</button>
+	    </div>
+        </div>
+
+
+
+    </div>
+
+<script>
+
+    function toggleContent(item, contentId) {
+        var contentContainer = document.getElementById(contentId);
+        // 切换激活状态
+        var isActive = item.classList.toggle('active');
+        
+        // 如果当前是激活状态，则计算内容的实际高度并应用动画
+        if (isActive) {
+            // 使用requestAnimationFrame来获取准确的元素尺寸
+            requestAnimationFrame(function() {
+                contentContainer.style.maxHeight = contentContainer.scrollHeight + "px";
+            });
+        } else {
+            // 如果是非激活状态，立即重置max-height以关闭内容
+            contentContainer.style.maxHeight = null;
+        }
+    }
+
+</script>
+</body>
+</html>
