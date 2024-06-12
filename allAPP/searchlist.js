@@ -91,7 +91,20 @@
       { name: '轨迹返航', description: '可以用来记录路程，一键返航。部分功能不可用' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/52b72515db43b26132f70120ea5bab46.apk' }, 
       { name: '腕上工具箱', description: '可以用发短信，发短信教程请看 问题答疑-如何在手表上发短信？ ，部分功能不可用' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/b9acc4322e872d7e50d6461a4aeab8fd.apk' }, 
       { name: '网易云游戏', description: '网易云游戏平台提供云游戏服务，无需下载即可畅玩，采用先进技术优化设备性能，提供极致游戏体验。' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/48dc90ee9ce6b614e1c75d0b3702783f.apk' }, 
+      { name: '870游戏', description: '870游戏是一款低门槛高质量的云游戏平台，为广大游戏玩家提供好玩、流畅的综合游戏服务。无论是体验新游，或是享受大型游戏，870游戏都是绝佳选择' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/1a5d43cad1e44df03dda788051aa8295.apk' }, 
+      { name: '抬腕日历', description: '可以用来看日历,部分功能不可用' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/817eb48d3c11142172766fdfda90d7eb.apk' }, 
+      { name: 'MT管理器', description: '一款在华为儿童手表上也可以使用的MT管理器，签名照常使用！在第一次使用时请将dpi调整为150左右，以确保点击到同意' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/9ec0d6f77a5d4cd414d5b9250dddfe9e.apk' }, 
+      { name: 'PojavLauncher', description: 'Minecraft：Java版' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/2fbe0c4e43edd13e4d6592f1e2c9e119.apk' }, 
+      { name: '拼多多', description: '一款可用的拼多多，使用时稍有卡顿' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/f8ef5066e7c7df25d5cc246b2d7fe639.apk' }, 
+      { name: '水表助手', description: '很好用的一款软件，只需输入快递单号，就可实时查看快递' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/030a3e46b80cd28bbccfc29cf156d08f.apk' }, 
+      { name: '输入法切换', description: '可以选择使用的输入法，而不用使用小黑屋来冻结了，请先赐予权限后使用' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/62890e4eaeb94749929b24d8f3953c21.apk' }, 
+      { name: '哔哩哔哩', description: '[dpi:>=220]哔哩哔哩的精简版，可登录，在手表上稍有卡顿。主页布局相较友好' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/5369f92f3b9afe79f49703e2050a6e98.apk' }, 
+      { name: '字节跳动', description: '字节跳动(LuaApp) 一款可以在手表上使用的编译应用，部分功能不可用' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/46a2b2d47061af029abf1d89d0078bbf.apk' }, 
+      { name: '刀锋酷跑', description: '刀锋酷跑，和地铁跑酷类似' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/f2bc13427a0a09086afd281461eb4e62.apk' }, 
+      { name: '录音机', description: '一款可用的录音软件，退出应用重进才可以看见进入刚保存的录音' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/13b6a88f9d914d8800215cf7ff9405a8.apk' },
 
+
+		
 		
              // ——————————更多——————————示例：      { name: '', description: '' , downloadUrl: '' }, 
         ];
