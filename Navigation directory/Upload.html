@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>上传教程</title>
+    <link rel="stylesheet" href="/APP/homestyle.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: gold;
+            background-color: black;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            border: 1px solid gold;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: gold;
+        }
+        p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+        .disclaimer {
+            background-color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        @keyframes fade {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .animated {
+            animation: fade 3s ease-in-out;
+        }
+        .menu-toggle {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+    .menu-toggle {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .menu-container {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .menu-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 20001;
+
+        }
+        .menu-toggle span,
+        .menu-toggle span:before,
+        .menu-toggle span:after,
+        .menu-toggle span:nth-child(4) {
+            display: block;
+            background-color: #ffd700;
+            height: 5px;
+            width: 30px;
+            transition: all 0.3s;
+            position: absolute;
+            top: 50%;
+            left: 0;
+        transform-origin: center;
+            margin-top: 1px;
+        }
+        .menu-toggle span:before {
+            content: '';
+            margin-top: 5px; /* 4px height / 2 */
+        }
+        .menu-toggle span:after {
+            content: '';
+            margin-top: 13px; /* 4px height / 2 */
+        }
+        .menu-toggle span:nth-child(4) {
+            content: '';
+            margin-top: 20px; /* 4px height * 3 lines / 2 */
+        }
+        .menu {
+            list-style-type: none;
+            background-color: #1a1a1a;
+            position: fixed;
+            top: 0;
+             z-index: 10000; /* 添加z-index属性，确保菜单始终在最上方 */
+            width: 200px;
+            height: 100vh; /* 设置高度为视口的100% */
+            transition: left 0.3s ease-in-out;
+            overflow-y: auto;
+   	    left: -700px; /* 稍微增大负值，以确保菜单完全隐藏 */
+            padding: 20px;
+        }
+        .menu.active {
+            left: 0;
+            border-right: 5px solid #ffd700; /* 添加黄色边框 */
+             z-index: 20000;
+        }
+        .menu li {
+            margin-bottom: 10px;
+        }
+        .menu li a {
+            text-decoration: none;
+            color: grey;
+            transition: color 0.3s;
+            display: block;
+            padding: 10px;
+            border: 1px solid transparent;
+        }
+        .menu li a:hover {
+            color: #ffd700;
+            border-color: #ffd700;
+
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="menu-container">
+  <button class="menu-toggle" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+  </button>
+  <ul class="menu" id="menuList">
+    <li><a href="/APP/index.html">首页</a></li>
+    <li><a href="/APP/allAPP.html">应用库</a></li>
+    <li>
+    <a href="#">破解教程</a>
+      <ul class="sub-menu">
+        <li><a href="/APP/all lesson/lesson.html">破解教程</a></li>
+        <li><a href="/APP/all lesson/Q&A.html">图文教程</a></li>
+        <li><a href="/APP/all esson/special.html">专项专选</a></li>
+        <li><a href="#">问题答疑[暂无]</a></li>
+      </ul>
+    </li>
+    <li><a href="warning.html">破解警告</a></li>
+    <li><a href="connect.html">联系我们</a></li>
+    <li><a href="gjx.html">工具箱下载</a></li>
+  </ul>
+</div>
+<script>
+  var menuVisible = false;
+  var menu = document.getElementById("menuList");
+  var subMenus = document.querySelectorAll(".sub-menu");
+
+  function toggleMenu() {
+    menuVisible =!menuVisible;
+    menu.classList.toggle("active");
+
+    // 隐藏所有子菜单
+    subMenus.forEach(function(subMenu) {
+      subMenu.style.display = "none";
+    });
+  }
+
+  // 为每个子菜单的父菜单项添加点击事件处理程序
+  subMenus.forEach(function(subMenu) {
+    subMenu.parentNode.addEventListener("click", function(event) {
+      event.stopPropagation(); // 阻止事件冒泡
+
+      // 切换子菜单的显示状态
+      subMenu.style.display = subMenu.style.display === "none"? "block" : "none";
+    });
+  });
+</script>
+
+
+    <div class="container animated">
+
+
+        <h1>上传应用</h1>
+        <div class="disclaimer">
+    <p><strong>1.加入群聊：</strong>加群聊253474207以上传应用及其他</p>
+    <p><strong>2.上传流程：</strong>如果有想要上传，请艾特群主或炽阳001和奕奕，他会帮你上传应用，要表明上传内容<br>上传注意事项：<br>1.不要上传违规等不良应用<br>2.请改好签名后发到群内<br>3.开发者不常在线，但看到会回，请不要着急(最迟三天绝对上传，除非应用不合格)<br>4.请不要发网站已有的应用，发之前请确认网站并无此应用<br>5.提交应用时请讲明使用方法即特性之类的，以免误判不合格<br>6.可以直接发应用安装包，也可以发直链下载和图片直链(应用封面)</p>
+    <p><strong>注意：</strong>最好不要使用网盘下载，对手表不太友好</p>
+</div>
+
+
+
+        <h1>投稿问题</h1>
+        <div class="disclaimer">
+    <p><strong>1.加入群聊：</strong>加群聊253474207以投稿问题</p>
+    <p><strong>2.投稿流程：</strong>如果有想要上传，请艾特群主或炽阳001和奕奕，他会帮你上传应用，要表明上传内容<br>上传注意事项：<br>1.不要上传违规等不良问题<br>2.请整理好语言后发言，不要口吐不清<br>3.开发者不常在线，但看到会回，请不要着急(最迟三天绝对上传，除非问题不合格)<br>4.请不要发网站已有的问题，发之前请确认网站并无此问题<br>5.提交应用时请讲明方法即特性之类的，以免误判不合格<br>6.如果是因为不会才投稿的，可以让开发者写方法</p>
+</div>
+
+
+    </div>
+</body>
+<script>
+document.getElementById('mobile-menu').addEventListener('click', function() {
+    var nav = document.getElementById('nav-list');
+    if (nav.style.left === '0px') {
+        nav.style.left = '-100%';
+    } else {
+        nav.style.left = '0px';
+    }
+});
+
+
+</script>
+</html>
