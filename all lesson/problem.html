@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>问题答疑</title>
+    <style>
+	.placeholder {
+ 	   height: 100px; /* 容器高度 */
+	    background-color: transparent; /* 背景透明 */
+	}
+
+	.placeholder2 {
+ 	   height: 20px; /* 容器高度 */
+	    background-color: transparent; /* 背景透明 */
+	}
+        .center-text {
+            text-align: center;
+            width: 50%; 
+            margin: 0 auto;
+           color : #ffd700;
+        }
+        body {
+
+
+            font-family: '微软雅黑', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #1a1a1a; 
+        }
+
+ /* 按钮 */
+button {
+    background-color: #1a1a1a;   /* 暗黑文字颜色 */
+    color: #ffd700;   /* 暗黑文字颜色 */
+    padding: 20px 100px; /* 增加按钮的高度 */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+
+
+
+	    
+.menu-item {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    background-color: #ffd700; /* 黄色背景 */
+    color: black; /* 黑色文字 */
+    margin: 0 auto; /* 按钮水平居中 */
+    width: 50%; /* 按钮宽度 */
+    border-radius: 8px; /* 增加圆角 */
+}
+
+    .menu-item:last-child {
+        border-bottom: none;
+    }
+
+    .menu-item:hover {
+        background-color: #e0c91f; /* 鼠标悬停时更深的黄色 */
+    }
+
+.content-container {
+    display: block; /* 始终显示内容容器 */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out; /* 修改动画时间为0.2秒 */
+}
+
+
+
+        .content-container p {
+            padding: 10px;
+            margin: 0;
+            background-color: #fff;
+            border-top: 1px solid #ddd;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+
+.menu-item.active .content-container {
+    max-height: 1000px; /* 设置一个足够大的值，以容纳内容 */
+}
+	.menu-item.active {
+	    background-color: #ffd700; 
+	}
+
+
+
+
+
+
+/* 菜单 */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .menu-container {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .menu-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 20001;
+
+        }
+        .menu-toggle span,
+        .menu-toggle span:before,
+        .menu-toggle span:after,
+        .menu-toggle span:nth-child(4) {
+            display: block;
+            background-color: #ffd700;
+            height: 5px;
+            width: 30px;
+            transition: all 0.3s;
+            position: absolute;
+            top: 50%;
+            left: 0;
+        transform-origin: center;
+            margin-top: 1px;
+        }
+        .menu-toggle span:before {
+            content: '';
+            margin-top: 5px; /* 4px height / 2 */
+        }
+        .menu-toggle span:after {
+            content: '';
+            margin-top: 13px; /* 4px height / 2 */
+        }
+        .menu-toggle span:nth-child(4) {
+            content: '';
+            margin-top: 20px; /* 4px height * 3 lines / 2 */
+        }
+        .menu {
+            list-style-type: none;
+            background-color: #1a1a1a;
+            position: fixed;
+            top: 0;
+             z-index: 10000; /* 添加z-index属性，确保菜单始终在最上方 */
+            width: 200px;
+            height: 100vh; /* 设置高度为视口的100% */
+            transition: left 0.3s ease-in-out;
+            overflow-y: auto;
+   	    left: -700px; /* 稍微增大负值，以确保菜单完全隐藏 */
+            padding: 20px;
+        }
+        .menu.active {
+            left: 0;
+            border-right: 5px solid #ffd700; /* 添加黄色边框 */
+             z-index: 20000;
+        }
+        .menu li {
+            margin-bottom: 10px;
+        }
+        .menu li a {
+            text-decoration: none;
+            color: grey;
+            transition: color 0.3s;
+            display: block;
+            padding: 10px;
+            border: 1px solid transparent;
+        }
+        .menu li a:hover {
+            color: #ffd700;
+            border-color: #ffd700;
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="center-text">
+    <h1>问题教程</h1>
+    <2>您是否遇到不少问题？来看看底下这些有没有你想要的吧</h2>
+    <h3></h3>
+    <h3>没有找到想要的？来看看投稿功能！<a href="#" style="color: gold; text-decoration: underline;">测试</a></h3>
+</div>
+
+<div class="menu-container">
+  <button class="menu-toggle" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+  </button>
+  <ul class="menu" id="menuList">
+    <li><a href="/APP/index.html">首页</a></li>
+    <li><a href="/APP/allAPP.html">应用库</a></li>
+    <li>
+    <a href="#">更多教程</a>
+      <ul class="sub-menu">
+        <li><a href="lesson.html">破解教程</a></li>
+        <li><a href="Q&A.html">图文教程</a></li>
+        <li><a href="special.html">专项专选</a></li>
+        <li><a href="#">问题答疑[暂无]</a></li>
+      </ul>
+    </li>
+    <li><a href="/APP/Navigation directory/warning.html">破解警告</a></li>
+    <li><a href="/APP/Navigation directory/connect.html">联系我们</a></li>
+    <li><a href="/APP/Navigation directory/gjx.html">工具箱下载</a></li>
+  </ul>
+</div>
+
+
+
+<div class="placeholder"></div>
+
+<div class="menu-item" data-content-id="content1" onclick="toggleContent(this, 'content1')">
+            应用打开后怎么一直卡到“同意”页面上？
+            <div id="content1" class="content-container">
+                <p>应用打开后怎么一直卡到“同意”页面上？<br><br>方法一：原因可能是因为dpi大小问题，试试尝试调整一下dpi，150以下<br>方法二：如果方法一修改没用，那有可能是分辨率的问题，或者应用不适配等问题，可尝试调整一下分辨率(新手不建议尝试)</p>
+            	<button onclick="window.location.href='#';">问题没解决？试试这个！</button>
+	    </div>
+        </div>
+		
+		<div class="placeholder2"></div>
+<div class="menu-item" data-content-id="content2" onclick="toggleContent(this, 'content2')">
+            为什么安装应用时会显示“wear不支持安装/卸载”？
+            <div id="content2" class="content-container">
+                <p>为什么安装应用时会显示“wear不支持安装/卸载”？<br><br>方法一：系统自带的安装程序不支持下载应用操作，试试使用安装狮+shizuku的组合(安装狮不会用？看看"专项专选"里的"自主安装应用"吧)<br>方法二：已经安装了安装狮并且可以使用，那有可能是因为默认安装程序是系统自带的安装程序，试试修改一下安装包的打开方式</p>
+            	<button onclick="window.location.href='#';">问题没解决？试试这个！</button>
+	    </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+<script>
+
+    function toggleContent(item, contentId) {
+        var contentContainer = document.getElementById(contentId);
+        // 切换激活状态
+        var isActive = item.classList.toggle('active');
+        
+        // 如果当前是激活状态，则计算内容的实际高度并应用动画
+        if (isActive) {
+            // 使用requestAnimationFrame来获取准确的元素尺寸
+            requestAnimationFrame(function() {
+                contentContainer.style.maxHeight = contentContainer.scrollHeight + "px";
+            });
+        } else {
+            // 如果是非激活状态，立即重置max-height以关闭内容
+            contentContainer.style.maxHeight = null;
+        }
+    }
+
+
+
+/* 菜单 */
+  var menuVisible = false;
+  var menu = document.getElementById("menuList");
+  var subMenus = document.querySelectorAll(".sub-menu");
+
+  function toggleMenu() {
+    menuVisible =!menuVisible;
+    menu.classList.toggle("active");
+
+    // 隐藏所有子菜单
+    subMenus.forEach(function(subMenu) {
+      subMenu.style.display = "none";
+    });
+  }
+
+  // 为每个子菜单的父菜单项添加点击事件处理程序
+  subMenus.forEach(function(subMenu) {
+    subMenu.parentNode.addEventListener("click", function(event) {
+      event.stopPropagation(); // 阻止事件冒泡
+
+      // 切换子菜单的显示状态
+      subMenu.style.display = subMenu.style.display === "none"? "block" : "none";
+    });
+  });
+</script>
+</body>
+</html>
