@@ -145,7 +145,7 @@
             } else {
                 filteredProducts.forEach(product => {
                     const listItem = document.createElement('li');
-                    listItem.innerHTML = `<strong>${product.name}</strong> - 描述：${product.description} - <button-search><a href="${product.downloadUrl}" target="_blank">下载</a></button-search>`;
+                    listItem.innerHTML = `<strong>${product.name}</strong> - 描述：${product.description} - <button-search><a href="${product.downloadUrl}" target="_self">下载</a></button-search>`;
                     searchResults.appendChild(listItem);
                 });
             }
