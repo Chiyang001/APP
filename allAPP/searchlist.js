@@ -138,15 +138,17 @@
         }
 
 // 显示搜索结果
-function displayResults(filteredProducts) {
-    searchResults.innerHTML = '';
-    if (filteredProducts.length === 0) {
-        searchResults.innerHTML = '<li>没有找到匹配的结果。</li>';
-    } else {
-        filteredProducts.forEach(product => {
-            const listItem = document.createElement('li');
-            listItem.innerHTML = `<strong>${product.name}</strong> - 描述：${product.description} - <button-search><a href="${product.downloadUrl}" target="_blank" style="text-decoration: none;"><span class="yellow-text">下载</span></a></button-search>`;
-            searchResults.appendChild(listItem);
-        });
-    }
-}
+        // 显示搜索结果
+        function displayResults(filteredProducts) {
+            searchResults.innerHTML = '';
+            if (filteredProducts.length === 0) {
+                searchResults.innerHTML = '<li>没有找到匹配的结果。</li>';
+            } else {
+                filteredProducts.forEach(product => {
+                    const listItem = document.createElement('li');
+                    listItem.innerHTML = `<strong>${product.name}</strong> - 描述：${product.description} - <button-search><a href="${product.downloadUrl}" target="_blank"  style="text-decoration: none;" <span class="yellow-text">下载</a></button-search>`;
+                    searchResults.appendChild(listItem);
+                });
+            }
+        }
+    });
