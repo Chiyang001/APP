@@ -8,6 +8,10 @@ body {
     color: #fff; /* 文字颜色为白色 */
 }
 
+.yellow-text {
+    color: #ffd700;
+ }
+
 .filter-container {
     max-width: 1200px;
     margin: auto;
