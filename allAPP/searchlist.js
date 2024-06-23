@@ -2,6 +2,7 @@
 	      document.addEventListener('DOMContentLoaded', (event) => {
         let products = [
 
+      { name: '大大帅', description: '下载之后大大帅会跑去你家偷马桶盖！' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/b1feec3ceb8d2505f83c015c3ca7208a.apk' }, 
       { name: '腕上哔哩', description: '能正常观看视频和观看弹幕，还可以缓存视频哦~', downloadUrl: 'https://fel.forxhr.top:2022/down.php/4f51ba22c2e3c9a86c4fac38521a6490.apk' },
       { name: '抬腕文件', description: '可以浏览儿童手表中的文件，但是不支持传输功能' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/6f214c827247dc7d405f8f379396cee5.apk' },
       { name: '抬腕文件-传输', description: '支持浏览手表中本地文件，支持局域网传输文件' , downloadUrl: 'https://fel.forxhr.top:2022/down.php/e691604e24debf7f6fbb29f0de18d78a.apk' },
