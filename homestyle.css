@@ -17,11 +17,6 @@ body {
     z-index: 1;
 }
 
-h1 {
-    text-align: center;
-    color: #ffd700; /* 标题颜色为金色 */
-    margin-bottom: 40px;
-}
 
 .app-list {
     display: flex;
