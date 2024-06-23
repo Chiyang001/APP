@@ -103,7 +103,7 @@
       { name: '刀锋酷跑', description: '刀锋酷跑，和地铁跑酷类似' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/f2bc13427a0a09086afd281461eb4e62.apk' }, 
       { name: '录音机', description: '一款可用的录音软件，退出应用重进才可以看见进入刚保存的录音' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/13b6a88f9d914d8800215cf7ff9405a8.apk' },
       { name: '简单搜索', description: '[初始dpi<=150]无首页推送无首页广告，支持拍题。现在已知手表上能用的浏览器中网页加载速度比较快的浏览器' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/f346cdadd7836adc37bb6c51d8670090.apk' }, 
-
+      { name: '百度地图', description: '一款可用的导航软件，可定位到几楼，妈妈再也不用担心我走丢了' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/bac8c58a74ffb10ee83aff6502eab389.apk' }, 
 		
 		
              // ——————————更多——————————示例：      { name: '', description: '' , downloadUrl: '' }, 
