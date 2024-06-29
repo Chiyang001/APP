@@ -122,13 +122,14 @@
       { name: '腕间图库', description: '腕间图库有许多系统相册所没有的功能，很实用' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/3932c52e4555ed2857197f7c99872227.apk' },
       { name: '龙卷风收音机', description: '可以用来听新闻，很详细，无延迟' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/0567629cbc3d416c039025ced8b273e7.apk' },
       { name: '音乐播放器', description: '可以播放本地音乐，功能多，还可以录音' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/f90f491f3cbed8c7c9de3beb530efb9c.apk' },
-	 { name: '云谷云盘', description: '[初始dpi<=150]可以一键生成下载直链,登录就送5g云存,正常完全够用' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/6d67be5026657b114c4a2384cc4f1080.apk' }, 
-	 { name: '', description: '' , downloadUrl: '' }, 
-	 { name: '', description: '' , downloadUrl: '' }, 
-	 { name: '', description: '' , downloadUrl: '' }, 
-	 { name: '', description: '' , downloadUrl: '' }, 
-	 { name: '', description: '' , downloadUrl: '' }, 
-	 { name: '', description: '' , downloadUrl: '' }, 	
+      { name: '云谷云盘', description: '[初始dpi<=150]可以一键生成下载直链,登录就送5g云存,正常完全够用' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/6d67be5026657b114c4a2384cc4f1080.apk' }, 
+	 { name: 'Amarok', description: '可以用来隐藏应用，并无破绽，使用前需使用shizuku授权' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/21698d6e4bede3ec81c91953f3f61489.apk' }, 
+	 { name: '虚拟大师', description: '可以在手表端打开安卓虚拟机，不建议使用超过50mb的应用' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/e56cb20b087c477fb90b2c3f90ba2a13.apk' }, 
+	 { name: '疯狂动物园', description: '是一款集3D像素，但视角是2.5D、跑酷和模拟养成为一体的休闲游戏。扮演牛仔与各种动物一较高下，百种动物等你挑战！' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/c3e15e919ea395742fe35b18aefd4f00.apk' }, 
+	 { name: 'iApp代码大全', description: '这里汇聚了iApp相关的教程、源码、布局' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/faa6dbde4e219694f497cfb0fc6037d7.apk' ' }, 
+	 { name: '龙之丘', description: '一款很好玩的休闲游戏' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/1c92f8869891db9ea49cc24841160628.apk '}, 
+	 { name: 'Rare浏览器unsafe', description: '一款完全适配华为儿童手表的浏览器，部分功能不可用，因为需要找原作者购买付费版本' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/d580a6841d21d7c6272c380cb817a540.apk' },
+		
              // ——————————更多——————————示例：      { name: '', description: '' , downloadUrl: '' }, 
         ];
 	
