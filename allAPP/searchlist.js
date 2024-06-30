@@ -146,10 +146,8 @@
       { name: 'BiliYou', description: '[已改右滑]一款第三方的B站与哔哩终端功能相近，可登录' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/7fe61ad6927f087103be662fa0d055bb.apk' }, 
       { name: 'Chrome', description: '[已改右滑]一款高版本谷歌浏览器，可以玩原神，大小有点大，下载时间会有些长' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/c55741c7b937091253b1289790775b73.apk' },  
       { name: '腕上飞鸟', description: '[已改右滑]心态且技术不好的人不建议玩...' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/8377dd9963eded90702a1f5ee36ae44f.apk' }, 
-      { name: '', description: '' , downloadUrl: '' }, 
-      { name: '', description: '' , downloadUrl: '' }, 
-		
-		
+      { name: '酷安精简版', description: '酷安精简版内存更小你值得拥有' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/4d299c2db3ceb82787a357f14e3473f8.apk' }, 
+			
              // ——————————更多——————————示例：      { name: '', description: '' , downloadUrl: '' }, 
         ];
 	
