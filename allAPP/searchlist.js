@@ -113,11 +113,11 @@
       { name: '底部状态栏', description: '[需使用"无障碍管理器"授权"无障碍"使用并使用"权限狗"授予权限]超强应用，和安卓面板类似，适配性强，部分功能不可用' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/38322cbcd7818dc1c0d10b936b48d43b.apk' },
       { name: 'Minecraft PE', description: 'Minecraft PE版本0.14.3，可服务器，4x需调整分辨率游玩' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/3a9cf7c5ad5919bcf7837e1028c94654.apk' },
       { name: '僵尸杀手', description: '僵尸杀手(Zombie Killer)，一款打僵尸小游戏' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/af3e930aa714a58d9bf2facbf19e9bde.apk' }, 
-      { name: '磁贴桌面预设（wp风格）', description: 磁贴桌面预设，导入即可使用，解压后使用(文件内含教程)。'' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/2a6c934d7374f460c367ad1a21b5c782.zip' }, 
+      { name: '磁贴桌面预设（wp风格）', description: '磁贴桌面预设，导入即可使用，解压后使用(文件内含教程)。' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/2a6c934d7374f460c367ad1a21b5c782.zip' }, 
       { name: 'MyLight', description: '很实用的手电筒，可以调节亮度' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/1832b0bc33b395e56a297e169a1ae78a.apk' }, 
       { name: 'PipePipe', description: '第三方bilibli，部分功能不可用' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/366c4509a689b08b3576b128ef0d31cc.apk' },
       { name: 'Spotify Lite', description: '有账号的人的听歌神器spotify，已经改了dpi' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/23099e9282bfc8b3f777a4e973b4f9a6.apk' },
-      { name: 'Mi Control Center', description: [需使用"无障碍管理器"授权"无障碍"使用]Mi Control Center(小米状态栏)，很实用，dpi建议小一点'' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/ffbc995b19e9869da1932633c522118e.apk' },
+      { name: 'Mi Control Center', description: "[需使用'无障碍管理器'授权'无障碍'使用]Mi Control Center(小米状态栏)，很实用，dpi建议小一点'' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/ffbc995b19e9869da1932633c522118e.apk' },
       { name: '扫雷经典版', description: '[初始dpi<=150]扫雷经典版' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/4fd4067ed2f31671fd6d704bb4baf2b6.apk' },
       { name: '腕间图库', description: '腕间图库有许多系统相册所没有的功能，很实用' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/3932c52e4555ed2857197f7c99872227.apk' },
       { name: '龙卷风收音机', description: '可以用来听新闻，很详细，无延迟' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/0567629cbc3d416c039025ced8b273e7.apk' },
@@ -147,7 +147,8 @@
       { name: 'Chrome', description: '[已改右滑]一款高版本谷歌浏览器，可以玩原神，大小有点大，下载时间会有些长' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/c55741c7b937091253b1289790775b73.apk' },  
       { name: '腕上飞鸟', description: '[已改右滑]心态且技术不好的人不建议玩...' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/8377dd9963eded90702a1f5ee36ae44f.apk' }, 
       { name: '酷安精简版', description: '酷安精简版内存更小你值得拥有' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/4d299c2db3ceb82787a357f14e3473f8.apk' }, 
-			
+
+		
              // ——————————更多——————————示例：      { name: '', description: '' , downloadUrl: '' }, 
         ];
 	
