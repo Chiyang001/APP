@@ -117,7 +117,7 @@
       { name: 'MyLight', description: '很实用的手电筒，可以调节亮度' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/1832b0bc33b395e56a297e169a1ae78a.apk' }, 
       { name: 'PipePipe', description: '第三方bilibli，部分功能不可用' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/366c4509a689b08b3576b128ef0d31cc.apk' },
       { name: 'Spotify Lite', description: '有账号的人的听歌神器spotify，已经改了dpi' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/23099e9282bfc8b3f777a4e973b4f9a6.apk' },
-      { name: 'Mi Control Center', description: "[需使用'无障碍管理器'授权'无障碍'使用]Mi Control Center(小米状态栏)，很实用，dpi建议小一点'' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/ffbc995b19e9869da1932633c522118e.apk' },
+      { name: 'Mi Control Center', description: "[需使用'无障碍管理器'授权'无障碍'使用]Mi Control Center(小米状态栏)，很实用，dpi建议小一点' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/ffbc995b19e9869da1932633c522118e.apk' },
       { name: '扫雷经典版', description: '[初始dpi<=150]扫雷经典版' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/4fd4067ed2f31671fd6d704bb4baf2b6.apk' },
       { name: '腕间图库', description: '腕间图库有许多系统相册所没有的功能，很实用' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/3932c52e4555ed2857197f7c99872227.apk' },
       { name: '龙卷风收音机', description: '可以用来听新闻，很详细，无延迟' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/0567629cbc3d416c039025ced8b273e7.apk' },
