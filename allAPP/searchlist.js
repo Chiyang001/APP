@@ -180,7 +180,6 @@
             );
         }
 
-// 显示搜索结果
         // 显示搜索结果
         function displayResults(filteredProducts) {
             searchResults.innerHTML = '';
