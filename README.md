@@ -1,3 +1,11 @@
+
+<body>
+    <h1>2024/7/2更新 版本：2.2.6</h1>
+    <ui>
+      <li>奕奕修改：</li>
+      <li>1.更换工具箱路径</li>
+      <li>更换成https://jlv-software.github.io/HKW-Tools/</li>
+    </ui>
 <body>
     <h1>2024/6/28更新 版本：2.2.6</h1>
     <ui>
