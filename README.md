@@ -3,8 +3,7 @@
     <ui>
       <li>大大帅:</li>
       <li>上传应用时写好了,仔细一点!分类标签别写错,别把名字写成标签!!详细的如下:</li>
-      ![Uploading 347db1e9397cca7d22799e5b3f7f55f5.png…]()
-
+      <li>(https://github.com/Chiyang001/APP/assets/166037044/e0960fc1-df98-49cf-84c8-ce32fd96eb33)</li>
 
     <h1>2024/7/3更新 版本：2.2.6</h1>
     <ui>
