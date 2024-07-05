@@ -1,8 +1,8 @@
 <body>
     <h1>2024/7/4更新 版本：2.2.6</h1>
     <ui>
-      <li>lululu1226修改：</li>
-      <li>1.新增1款应用</li>
+![347db1e9397cca7d22799e5b3f7f55f5](https://github.com/Chiyang001/APP/assets/166037044/22c12b5b-eac4-40d2-b4aa-bb19681e0c09)
+
     <h1>2024/7/3更新 版本：2.2.6</h1>
     <ui>
       <li>大大帅修改：</li>
