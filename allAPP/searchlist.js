@@ -105,8 +105,13 @@
       { name: '录音机', description: '一款可用的录音软件，退出应用重进才可以看见进入刚保存的录音' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/13b6a88f9d914d8800215cf7ff9405a8.apk' },
       { name: '简单搜索', description: '[初始dpi<=150]无首页推送无首页广告，支持拍题。现在已知手表上能用的浏览器中网页加载速度比较快的浏览器' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/f346cdadd7836adc37bb6c51d8670090.apk' }, 
       { name: '百度地图', description: '一款可用的导航软件，可定位到几楼，妈妈再也不用担心我走丢了' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/bac8c58a74ffb10ee83aff6502eab389.apk' }, 
-
-		
+       { name: '屏幕手电筒', description: '屏幕手电筒，通过屏幕来照亮' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/dd3b3ec37e87d8cca41729ca0f5f44e4.apk' },
+	{ name: '酷狗概念版', description: '酷狗概念版，可登录' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/e8769f7fa962b64e663027ddf0683098.apk' },
+	 { name: '初始大礼包', description: '软件整合 一步到位，各方面都有 直接安装，含破解必备，整合包制作者:chocola(注:请解压后使用)' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/f1004f844c12095842883d2494e7d435.zip' },
+	 { name: '虚拟返回', description: '[需使用"无障碍管理器"授权"无障碍"使用]很好用又实用的软件，可以设置多种操作：一键切换应用？打开控制面板？一键锁屏关机？这款应用都可以，可塑性超强。部分功能不可用' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/ebcdd8281f71f1f18eaad40911628f5c.apk' },
+	 { name: '底部状态栏', description: '[需使用"无障碍管理器"授权"无障碍"使用并使用"权限狗"授予权限]超强应用，和安卓面板类似，适配性强，部分功能不可用' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/38322cbcd7818dc1c0d10b936b48d43b.apk' },
+	 { name: 'Minecraft PE', description: 'Minecraft PE版本0.14.3，可服务器，4x需调整分辨率游玩' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/3a9cf7c5ad5919bcf7837e1028c94654.apk' },
+	 { name: '僵尸杀手', description: '僵尸杀手(Zombie Killer)，一款打僵尸小游戏' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/af3e930aa714a58d9bf2facbf19e9bde.apk' },
              // ——————————更多——————————示例：      { name: '', description: '' , downloadUrl: '' }, 
         ];
 	
