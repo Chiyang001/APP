@@ -112,6 +112,8 @@
 	 { name: '底部状态栏', description: '[需使用"无障碍管理器"授权"无障碍"使用并使用"权限狗"授予权限]超强应用，和安卓面板类似，适配性强，部分功能不可用' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/38322cbcd7818dc1c0d10b936b48d43b.apk' },
 	 { name: 'Minecraft PE', description: 'Minecraft PE版本0.14.3，可服务器，4x需调整分辨率游玩' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/3a9cf7c5ad5919bcf7837e1028c94654.apk' },
 	 { name: '僵尸杀手', description: '僵尸杀手(Zombie Killer)，一款打僵尸小游戏' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/af3e930aa714a58d9bf2facbf19e9bde.apk' },
+       { name: '東方地下城', description: '地下城的改版，里面都是可爱的東方角色' , downloadUrl: 'https://fel1.forxhr.top:2022/down.php/ef0fb52090e84edf1981100447fd24f8.apk' },
+		
              // ——————————更多——————————示例：      { name: '', description: '' , downloadUrl: '' }, 
         ];
 	
