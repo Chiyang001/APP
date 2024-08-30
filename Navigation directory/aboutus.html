@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们</title>
+    <style>
+/* 菜单 */
+    .menu-toggle {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .menu-container {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .menu-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 20001;
+
+        }
+        .menu-toggle span,
+        .menu-toggle span:before,
+        .menu-toggle span:after,
+        .menu-toggle span:nth-child(4) {
+            display: block;
+            background-color: #ffd700;
+            height: 5px;
+            width: 30px;
+            transition: all 0.3s;
+            position: absolute;
+            top: 50%;
+            left: 0;
+        transform-origin: center;
+            margin-top: 1px;
+        }
+        .menu-toggle span:before {
+            content: '';
+            margin-top: 5px; /* 4px height / 2 */
+        }
+        .menu-toggle span:after {
+            content: '';
+            margin-top: 13px; /* 4px height / 2 */
+        }
+        .menu-toggle span:nth-child(4) {
+            content: '';
+            margin-top: 20px; /* 4px height * 3 lines / 2 */
+        }
+        .menu {
+            list-style-type: none;
+            background-color: #1a1a1a;
+            position: fixed;
+            top: 0;
+             z-index: 10000; /* 添加z-index属性，确保菜单始终在最上方 */
+            width: 200px;
+            height: 100vh; /* 设置高度为视口的100% */
+            transition: left 0.3s ease-in-out;
+            overflow-y: auto;
+   	    left: -700px; /* 稍微增大负值，以确保菜单完全隐藏 */
+            padding: 20px;
+        }
+        .menu.active {
+            left: 0;
+            border-right: 5px solid #ffd700; /* 添加黄色边框 */
+             z-index: 20000;
+        }
+        .menu li {
+            margin-bottom: 10px;
+        }
+        .menu li a {
+            text-decoration: none;
+            color: grey;
+            transition: color 0.3s;
+            display: block;
+            padding: 10px;
+            border: 1px solid transparent;
+        }
+        .menu li a:hover {
+            color: #ffd700;
+            border-color: #ffd700;
+
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #f0f0f0; /* 白色字体 */
+            background-color: #333333; /* 黑色背景 */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            background: #444444; /* 深灰色背景 */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            border: 1px solid #ffd700;
+        }
+        h1 {
+            color: #f1c40f; /* 黄色标题 */
+        }
+        h3 {
+            color: #ffd700; /* 黄色标题 */
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #f1c40f; /* 黄色下划线 */
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            color: #f1c40f; /* 黄色副标题 */
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: #333333; /* 黑色背景 */
+            color: #f0f0f0; /* 白色字体 */
+            border-radius: 8px;
+            margin-top: 20px;
+        }v    </style>
+</head>
+<body>
+
+
+<div class="menu-container">
+  <button class="menu-toggle" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+  </button>
+  <h3><ul class="menu" id="menuList">
+    <li><a href="http://www.chiyangwatch.000.pe">首页</a></li>
+    <li><a href="http://www.chiyangwatch.000.pe/allAPP.html">应用库</a></li>
+    <li><a href="https://dadashuai7608.github.io/wjbz/">腕间壁纸</a></li>
+    <li>
+    <a href="#">更多教程</a>
+      <ul class="sub-menu">
+        <li><a href="http://www.chiyangwatch.000.pe/all lesson/lesson.html">破解教程</a></li>
+        <li><a href="http://www.chiyangwatch.000.pe/all lesson/Q&A.html">图文教程</a></li>
+        <li><a href="http://www.chiyangwatch.000.pe/all lesson/special.html">专项专选</a></li>
+        <li><a href="http://www.chiyangwatch.000.pe/all lesson/problem.html">问题答疑</a></li>
+      </ul>
+    </li>
+    <li><a href="http://www.chiyangwatch.000.pe/Navigation directory/warning.html">破解警告</a></li>
+    <li><a href="http://www.chiyangwatch.000.pe/Navigation directory/connect.html">联系我们</a></li>
+    <li><a href="http://www.chiyangwatch.000.pe/Navigation directory/gjx.html">工具箱下载</a></li>
+    <li><a href="http://www.chiyangwatch.000.pe/Navigation directory/Upload.html">上传应用&其他</a></li>
+  </ul>
+</div></h3>
+	
+<script>
+  var menuVisible = false;
+  var menu = document.getElementById("menuList");
+  var subMenus = document.querySelectorAll(".sub-menu");
+
+  function toggleMenu() {
+    menuVisible =!menuVisible;
+    menu.classList.toggle("active");
+
+    // 隐藏所有子菜单
+    subMenus.forEach(function(subMenu) {
+      subMenu.style.display = "none";
+    });
+  }
+
+  // 为每个子菜单的父菜单项添加点击事件处理程序
+  subMenus.forEach(function(subMenu) {
+    subMenu.parentNode.addEventListener("click", function(event) {
+      event.stopPropagation(); // 阻止事件冒泡
+
+      // 切换子菜单的显示状态
+      subMenu.style.display = subMenu.style.display === "none"? "block" : "none";
+    });
+  });
+</script>
+
+    <div class="container">
+        <h1>关于我们</h1>
+        <div class="section">
+        <h3>欢迎访问我们的智能手表应用下载站！我们是一个专注于为您提供最新、最实用智能手表应用的独立团队。我们的目标是通过精选的应用程序，帮助您充分发挥智能手表的功能，提升您的生活质量和工作效率。</h3>
+            <h2>网站维护开发者</h2>
+             <h3>1.是大大帅aaa</h3>
+             <h3>2.炽阳001</h3>
+             <h3>3.奕奕</h3>
+             <h3>4.Minecraft陈雅辛</h3>
+             <h3>5.LeiDell</h3>
+            <p>我们的网站由 <strong>开发者们</strong> 精心开发。作为一支专业的团队，我们致力于搜集<strong>高质量</strong>的应用程序，以满足您的需求。</p>
+        </div>
+        <div class="section">
+             <h2>网站应用上传者</h2>
+             <h3>1.是大大帅aaa</h3>
+             <h3>2.臭蛋硕</h3>
+             <h3>3.奕奕</h3>
+             <h3>4.Minecraft陈雅辛</h3>
+             <h3>5.🐄🐎</h3>
+             <h3>6.深层煤矿石</h3>
+             <h3>7.chocola</h3>
+             <h3>8.LeiDell</h3>
+            <p>我们<strong>严格筛选</strong>每一个应用，确保它们符合高标准的<strong>安全性</strong>和<strong>可靠性</strong>。</p>
+        </div>
+        <div class="section">
+            <h2>想要加入我们？</h2>
+            <h3>若您想要加入我们，请确保符合以下条件：</h3>
+            <h3>1.有一台win7以上的电脑</h3>
+            <h3>2.每周一定都有时间</h3>
+            <h3>3.有html，js，css的基础（最起码得看懂代码，择其二）</h3>
+            <h3>4.初中以上学龄</h3>
+            <h3>5.有一台华为儿童手表（3s，3pro，3x，4x）</h3>
+            <h3>6.有一个github的账号</h3>
+            <p>如以<strong>满足</strong>以上条件请加qq：<strong>3593192586</strong>进行最后确认和详细信息交流。</p>
+
+        </div>
+        <div class="section">
+            <h2>致辞</h2>
+            <h3>我们致力于为您提供一个安全、可靠的下载平台，确保您能够找到最适合您需求的应用。感谢您的访问和支持，我们期待为您带来更多创新的应用体验！</h3>
+        </div>
+        <div class="footer">
+            <p>感谢您的访问和支持！期待与您的进一步交流。</p>
+        </div>
+    </div>
+</body>
+</html>
