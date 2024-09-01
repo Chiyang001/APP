@@ -79,7 +79,7 @@ var console_text = function() {
   停止内卷 , 
   继续摆烂! ^ ^
           %c by LeiDell
-          %c 加入我们!QQ号:3593192586 
+   加入我们!QQ号:3593192586 
 */  
 }
 console.log(getMultiLine(console_text),'color:#337ab7;font-size:18px;font-style:italic')
