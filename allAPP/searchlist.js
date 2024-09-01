@@ -189,6 +189,7 @@
       { name: '哔哩哔哩概念', description: '' , downloadUrl: '' },
       { name: '腕能漫画', description: '' , downloadUrl: '' },
       { name: '好课帮', description: '' , downloadUrl: '' },
+      { name: 'LeiDell', description: '打开试试!!!😂' , downloadUrl: 'https://leidell.cn' }, 
 
 	
 		// ——————————更多——————————示例：      { name: '', description: '' , downloadUrl: '' },          古人言：别忘了后面那个逗号....
