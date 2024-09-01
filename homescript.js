@@ -53,7 +53,7 @@ document.querySelectorAll('.app').forEach(app => {
     });
 });
 
-document.getElementById('mobile-menu').addEventListener('click', function() {
+document.getElementById('mobile-menu').addEventListener('click', function()
     var nav = document.getElementById('nav-list');
     if (nav.style.left === '0px') {
         nav.style.left = '-100%';
