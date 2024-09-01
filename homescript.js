@@ -63,24 +63,4 @@ document.getElementById('mobile-menu').addEventListener('click', function() }
     }
 });
 
- // joinus彩蛋
- function getMultiLine(f) {
-var lines =f.toString(); 
-return lines.substring(lines.indexOf("/*") + 3, lines.lastIndexOf("*/"));   
-}
-//字符画不能随意缩进，不然显示会错位
-var console_text = function() {  
-/* 
 
-    ──────▄▀▄─────▄▀▄
-─────▄█░░▀▀▀▀▀░░█▄
-─▄▄──█░░░░░░░░░░░█──▄▄
-█▄▄█─█░░▀░░┬░░▀░░█─█▄▄█
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
-  停止内卷 , 
-  继续摆烂! ^ ^
-          %c by LeiDell
-   加入我们!QQ号:3593192586 
-*/  
-}
-console.log(getMultiLine(console_text),'color:#337ab7;font-size:18px;font-style:italic')
