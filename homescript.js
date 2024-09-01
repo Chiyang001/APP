@@ -13,6 +13,7 @@ function downloadApp(downloadUrl) {
     document.body.removeChild(link);
 }
 
+
 function toggleLayout() {
             var container = document.querySelector('.app-list');
             container.classList.toggle('single-column');
