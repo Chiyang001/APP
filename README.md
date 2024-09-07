@@ -2,7 +2,8 @@
        <h1>2024/9/7更新 版本2.2.7</h1>
     <ui>
       <li>LeiDell修改：</li>
-      <li>增加一个应用 后台管理 wat.app.taskmanager.apk</li>
+      <li>1.增加一个应用 后台管理 wat.app.taskmanager.apk</li>
+      <li>2.添加searchlist.js链接 从 Amarok 到 腕上飞鸟</li>
     </ui> 
       <h1>2024/9/3更新 版本2.2.7</h1>
     <ui>
