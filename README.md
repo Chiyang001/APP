@@ -1,4 +1,9 @@
 <body>
+       <h1>2024/9/7更新 版本2.2.7</h1>
+    <ui>
+      <li>LeiDell修改：</li>
+      <li>增加一个应用 后台管理 wat.app.taskmanager.apk</li>
+    </ui> 
       <h1>2024/9/3更新 版本2.2.7</h1>
     <ui>
       <li>大大帅修改：</li>
