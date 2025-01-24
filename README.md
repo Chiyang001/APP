@@ -1,7 +1,7 @@
 <body>
        <h1>2025/1/24更新 版本2.2.7</h1>
     <ui>
-      <li>停止对华为儿童手表应用下载站(https://chiyang001.github.io/APP/)的一切公益维护，移除其必要文件防止有人以此获益，均已转为表极客(app.leidell.cn)</li>
+      <li>停止对华为儿童手表应用下载站(https://chiyang001.github.io/APP/)  的一切公益维护，移除其必要文件防止有人以此获益，均已转为表极客(app.leidell.cn)</li>
     </ui> 
        <h1>2024/9/22更新 版本2.2.7</h1>
     <ui>
